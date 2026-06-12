@@ -1,4 +1,4 @@
-2026-06-11 22:42:45
+2026-06-10 22:37:07
   @1800
     MED
     MED -> ATM
@@ -20,32 +20,14 @@
     MED -> ATM
     MED -> OCN :extrapMethod=nearest_stod
     @@3600
+     ATM
+     OCN
   @1800
     MED
     MED -> ATM
     MED -> OCN :extrapMethod=nearest_stod
-     ATM
-     OCN
-     @1800
-     ATM -> MED :extrapMethod=nearest_stod
-     @
-    @@
-    @@3600
-    OCN -> MED :extrapMethod=nearest_stod
-    @@
-    MED
-  @
     @@3600
      ATM
-     OCN
-     @1800
-     ATM -> MED :extrapMethod=nearest_stod
-     @
-    @@
-    @@3600
-    OCN -> MED :extrapMethod=nearest_stod
-    @@
-    MED
   @1800
     MED
     MED -> ATM
@@ -62,6 +44,24 @@
     @@
     MED
   @
+     @1800
+     ATM -> MED :extrapMethod=nearest_stod
+     @
+    @@
+     OCN
+     @1800
+     ATM -> MED :extrapMethod=nearest_stod
+     @
+    @@
+    @@3600
+    OCN -> MED :extrapMethod=nearest_stod
+    @@
+    @@3600
+    OCN -> MED :extrapMethod=nearest_stod
+    @@
+    MED
+  @
+    MED
   @
  NUOPC_DriverPrint for PET: 0
    Model, Mediator, and Driver components, in the order
@@ -138,12 +138,12 @@ runSeq::
 ::
 NUOPC_RunSequenceArrayPrint: element     4 out of      4
 runSeq::
- NUOPC_DriverPrint for PET: 2
-   Model, Mediator, and Driver components, in the order
-   that they were added to the Driver:
  runElementPrint:      2     3     1 T T
  runElementPrint:     -4    -1     0 T F
 ::
+ NUOPC_DriverPrint for PET: 2
+   Model, Mediator, and Driver components, in the order
+   that they were added to the Driver:
  1 :  ATM
  2 :  OCN
  3 :  MED
@@ -163,6 +163,12 @@ runSeq::
  runElementPrint:      3    -1     1 F T
  runElementPrint:     -1    -1     0 F F
 ::
+NUOPC_RunSequenceArrayPrint: element     2 out of      4
+runSeq::
+ runElementPrint:      1    -1     1 T T
+ runElementPrint:      2    -1     1 T T
+ runElementPrint:     -3     0     0 T T
+ runElementPrint:     -2    -1     0 T F
  NUOPC_DriverPrint for PET: 3
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
@@ -194,15 +200,6 @@ runSeq::
 ::
 NUOPC_RunSequenceArrayPrint: element     3 out of      4
 runSeq::
-NUOPC_RunSequenceArrayPrint: element     2 out of      4
-runSeq::
- runElementPrint:      1    -1     1 T T
- runElementPrint:      2    -1     1 T T
- runElementPrint:     -3     0     0 T T
- runElementPrint:     -2    -1     0 T F
-::
-NUOPC_RunSequenceArrayPrint: element     3 out of      4
-runSeq::
  runElementPrint:      1     3     1 F T
  runElementPrint:     -3    -1     0 F F
 ::
@@ -211,6 +208,9 @@ runSeq::
  runElementPrint:      2     3     1 T T
  runElementPrint:     -4    -1     0 T F
 ::
+::
+NUOPC_RunSequenceArrayPrint: element     3 out of      4
+runSeq::
  runElementPrint:      1     3     1 F T
  runElementPrint:     -3    -1     0 F F
 ::

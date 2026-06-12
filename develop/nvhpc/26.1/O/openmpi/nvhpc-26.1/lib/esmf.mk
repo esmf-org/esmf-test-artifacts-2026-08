@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=9.0.0 beta snapshot
-ESMF_VERSION_STRING_GIT=develop+g44805b02cc
+ESMF_VERSION_STRING_GIT=develop+ge382cba19b
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=9
@@ -35,7 +35,7 @@ ESMF_F90LINKER=mpifort
 
 ESMF_F90COMPILEOPTS=-O  -fpic -mcmodel=small -Mallocatable=03 -pthread  -mp
 ESMF_F90COMPILEPATHS=-I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/mod/modO/Linux.nvhpc.64.openmpi.default -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+ge382cba19b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=-Mfreeform
 ESMF_F90COMPILEFIXCPP=-Mpreprocess -Mnofreeform
@@ -54,7 +54,7 @@ ESMF_CXXLINKER=mpic++
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O -DNDEBUG  -fpic -mcmodel=small -pthread  -mp
 ESMF_CXXCOMPILEPATHS= -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/src/include   -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+ge382cba19b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_NO_F2018ASSUMEDTYPE
 
 ESMF_CXXLINKOPTS=  -mcmodel=small -pthread -Wl,--no-as-needed  -mp
 ESMF_CXXLINKPATHS=-L/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/lib/libO/Linux.nvhpc.64.openmpi.default 
@@ -69,7 +69,7 @@ ESMF_CLINKER=mpicc
 
 ESMF_CCOMPILEOPTS= -O -DNDEBUG  -fpic  -mp
 ESMF_CCOMPILEPATHS=-I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/src/include   -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/build_config/Linux.nvhpc.default
-ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+ge382cba19b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf -D__SDIR__=''
 
 ESMF_CLINKOPTS=   -mp
 ESMF_CLINKPATHS=-L/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/lib/libO/Linux.nvhpc.64.openmpi.default  -L/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nvhpc_26.1_openmpi_O_develop/esmf/lib/libO/Linux.nvhpc.64.openmpi.default 
