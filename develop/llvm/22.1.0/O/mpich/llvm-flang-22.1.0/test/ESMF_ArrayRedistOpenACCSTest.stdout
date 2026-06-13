@@ -1,4 +1,4 @@
-2026-06-10 22:47:59
+2026-06-11 22:53:53
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistOpenACCSTest
  --------------------------------------- 
@@ -26,10 +26,10 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x561cab815010
+vm located at: 0x5616f82f7010
 npets = 1, mypet=0
-  pth_mutex =		 0x561cabdf5960
-  pth_finish_count =	 0x561cabdf89c0
+  pth_mutex =		 0x5616f88d7960
+  pth_finish_count =	 0x5616f88da9c0
 MPI_Comm_size: 1
 MPI_Comm_rank in local MPI communicator: 0
 MPI_Comm_rank in MPI_COMM_WORLD: 0
@@ -50,15 +50,8 @@ ncores = 8
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
  
- 
   System Test ESMF_ArrayRedistOpenACCSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
- 
-  System Test ESMF_ArrayRedistOpenACCSTest
-  SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
- 
- 
- 
  
   System Test ESMF_ArrayRedistOpenACCSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
@@ -67,8 +60,15 @@ ncores = 8
   System Test ESMF_ArrayRedistOpenACCSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
  
+ 
+ 
   System Test ESMF_ArrayRedistOpenACCSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
+ 
+ 
+  System Test ESMF_ArrayRedistOpenACCSTest
+  SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
+ 
  
   System Test ESMF_ArrayRedistOpenACCSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenACCSTest finished correctly.
@@ -120,7 +120,7 @@ ncores = 8
                         complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
- Test finished, localPet =  3
+ Test finished, localPet =  2
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
@@ -164,7 +164,84 @@ ncores = 8
                         complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
- Test finished, localPet =  2
+ Test finished, localPet =  1
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
+ t.F90, line 388
+ User Comp1 Init returning
+ Comp 1 Initialize finished, rc = 0 0
+ Comp 2 Initialize finished, rc = 0 0
+ User Coupler Init starting
+ Import State contains  1  items.
+ User Coupler Init returning
+ Coupler Initialize finished, rc = 0 0
+ User Comp1 Run starting
+ User Comp1 Run returning
+ Comp 1 Run returned, rc = 0 0
+ User Coupler Run starting
+ User Coupler Run returning
+ Coupler Run returned, rc = 0 0
+ Comp 2 Run returned, rc = 0 0
+ User Coupler Final starting
+ User Coupler Final returning
+ Coupler Finalize finished, rc = 0 0
+ User Comp1 Final starting
+ User Comp1 Final returning
+ Comp 1 Finalize finished, rc = 0 0
+ Comp 2 Finalize finished, rc = 0 0
+ All Destroy routines done
+  System Test ESMF_ArrayRedistOpenACCSTest                                     
+                                                                               
+                                                                               
+                        complete.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =  0
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
+ t.F90, line 388
+ --------------------------------------- 
+ Start of  System Test ESMF_ArrayRedistOpenACCSTest
+ --------------------------------------- 
+ Created component user model 1rc = 0
+ Created component user model 2rc = 0
+ Created component user one-way coupler, rc = 0
+ Comp Creates finished
+ Comp1 SetVM finished, rc=  0 0
+ Comp1 SetServices finished, rc=  0 0
+ Comp2 SetVM finished, rc=  0 0
+ Comp2 SetServices finished, rc=  0 0
+ Cpl SetVM finished, rc=  0 0
+ User Coupler Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Coupler Register returning
+ Cpl SetServices finished, rc=  0 0
+ Comp 1 Initialize finished, rc = 0 0
+ Comp 2 Initialize finished, rc = 0 0
+ User Coupler Init starting
+ Import State contains  0  items.
+ User Coupler Init returning
+ Coupler Initialize finished, rc = 0 0
+ Comp 1 Run returned, rc = 0 0
+ User Coupler Run starting
+ User Coupler Run returning
+ Coupler Run returned, rc = 0 0
+ Comp 2 Run returned, rc = 0 0
+ User Coupler Final starting
+ User Coupler Final returning
+ Coupler Finalize finished, rc = 0 0
+ Comp 1 Finalize finished, rc = 0 0
+ Comp 2 Finalize finished, rc = 0 0
+ All Destroy routines done
+  System Test ESMF_ArrayRedistOpenACCSTest                                     
+                                                                               
+                                                                               
+                        complete.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =  3
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
@@ -266,39 +343,6 @@ ncores = 8
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
  t.F90, line 388
- User Comp1 Init returning
- Comp 1 Initialize finished, rc = 0 0
- Comp 2 Initialize finished, rc = 0 0
- User Coupler Init starting
- Import State contains  1  items.
- User Coupler Init returning
- Coupler Initialize finished, rc = 0 0
- User Comp1 Run starting
- User Comp1 Run returning
- Comp 1 Run returned, rc = 0 0
- User Coupler Run starting
- User Coupler Run returning
- Coupler Run returned, rc = 0 0
- Comp 2 Run returned, rc = 0 0
- User Coupler Final starting
- User Coupler Final returning
- Coupler Finalize finished, rc = 0 0
- User Comp1 Final starting
- User Comp1 Final returning
- Comp 1 Finalize finished, rc = 0 0
- Comp 2 Finalize finished, rc = 0 0
- All Destroy routines done
-  System Test ESMF_ArrayRedistOpenACCSTest                                     
-                                                                               
-                                                                               
-                        complete.
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =  0
- ------------------------------------------------------------
- ------------------------------------------------------------
-  PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
- t.F90, line 388
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistOpenACCSTest
  --------------------------------------- 
@@ -392,50 +436,6 @@ ncores = 8
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =  6
- ------------------------------------------------------------
- ------------------------------------------------------------
-  PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes
- t.F90, line 388
- --------------------------------------- 
- Start of  System Test ESMF_ArrayRedistOpenACCSTest
- --------------------------------------- 
- Created component user model 1rc = 0
- Created component user model 2rc = 0
- Created component user one-way coupler, rc = 0
- Comp Creates finished
- Comp1 SetVM finished, rc=  0 0
- Comp1 SetServices finished, rc=  0 0
- Comp2 SetVM finished, rc=  0 0
- Comp2 SetServices finished, rc=  0 0
- Cpl SetVM finished, rc=  0 0
- User Coupler Register starting
- Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=  0 0
- Comp 1 Initialize finished, rc = 0 0
- Comp 2 Initialize finished, rc = 0 0
- User Coupler Init starting
- Import State contains  0  items.
- User Coupler Init returning
- Coupler Initialize finished, rc = 0 0
- Comp 1 Run returned, rc = 0 0
- User Coupler Run starting
- User Coupler Run returning
- Coupler Run returned, rc = 0 0
- Comp 2 Run returned, rc = 0 0
- User Coupler Final starting
- User Coupler Final returning
- Coupler Finalize finished, rc = 0 0
- Comp 1 Finalize finished, rc = 0 0
- Comp 2 Finalize finished, rc = 0 0
- All Destroy routines done
-  System Test ESMF_ArrayRedistOpenACCSTest                                     
-                                                                               
-                                                                               
-                        complete.
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =  1
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenACCSTest, ./ESMF_ArrayRedistOpenACCSTes

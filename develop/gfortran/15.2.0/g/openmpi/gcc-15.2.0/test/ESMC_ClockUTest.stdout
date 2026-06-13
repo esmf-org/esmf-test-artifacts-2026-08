@@ -1,4 +1,4 @@
-2026-06-10 22:36:36
+2026-06-11 22:44:16
 Beginning Test, file ESMC_ClockUTest.c, line 48
 Beginning Test, file ESMC_ClockUTest.c, line 48NUMBER_OF_PROCESSORS 4
 Beginning Test, file ESMC_ClockUTest.c, line 48
@@ -29,39 +29,58 @@ PASS Create ESMC_Clock object, ESMC_ClockUTest.c, line 103
 PASS Create ESMC_Clock object, ESMC_ClockUTest.c, line 103
 Clock ----------------------------------
 Clock ----------------------------------
-Clock ----------------------------------
 name = TEST_CLOCK
 timeStep = 
 Clock ----------------------------------
 name = TEST_CLOCK
 timeStep = 
+Clock ----------------------------------
+name = TEST_CLOCK
+timeStep = 
 name = TEST_CLOCK
 timeStep = 
 TimeInterval ---------------------------
-name = TEST_CLOCK
-timeStep = 
 TimeInterval ---------------------------
-P0Y0M0DT1H0M0S
-end TimeInterval -----------------------
-
-startTime = 
-TimeInterval ---------------------------
-P0Y0M0DT1H0M0S
-end TimeInterval -----------------------
-
-startTime = 
 TimeInterval ---------------------------
 P0Y0M0DT1H0M0S
 end TimeInterval -----------------------
 
 startTime = 
 Time -----------------------------------
+TimeInterval ---------------------------
+P0Y0M0DT1H0M0S
+end TimeInterval -----------------------
+
+startTime = 
+P0Y0M0DT1H0M0S
+end TimeInterval -----------------------
+
+startTime = 
+Time -----------------------------------
 P0Y0M0DT1H0M0S
 end TimeInterval -----------------------
 
 startTime = 
 Time -----------------------------------
 Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+stopTime = 
+Time -----------------------------------
+2006-01-01T01:00:00
+end Time -------------------------------
+
+2006-01-01T00:00:00
+end Time -------------------------------
+
+stopTime = 
+Time -----------------------------------
+2006-01-01T01:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
@@ -87,9 +106,6 @@ Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
 
-2006-01-01T00:00:00
-end Time -------------------------------
-
 stopTime = 
 Time -----------------------------------
 2006-01-01T01:00:00
@@ -105,23 +121,13 @@ currTime =
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
-
-prevTime = 
-Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
 
 advanceCount = 0
 direction = 1
 userChangedDirection = false
-2006-01-01T00:00:00
-end Time -------------------------------
-
-stopTime = 
-Time -----------------------------------
-2006-01-01T01:00:00
-end Time -------------------------------
-
+alarmCount = 0
 stopTimeEnabled = true
 refTime = 
 Time -----------------------------------
@@ -131,19 +137,6 @@ end Time -------------------------------
 currTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
-end Time -------------------------------
-
-2006-01-01T00:00:00
-end Time -------------------------------
-
-stopTime = 
-Time -----------------------------------
-2006-01-01T01:00:00
-end Time -------------------------------
-
-stopTimeEnabled = true
-refTime = 
-Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
 
@@ -152,47 +145,29 @@ Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
 
+
+prevTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
 prevTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
+
+advanceCount = 0
+direction = 1
+userChangedDirection = false
+alarmCount = 0
+alarmList = 
+end Clock ------------------------------
+
+alarmList = 
+end Clock ------------------------------
+
+end Time -------------------------------
+
 prevTime = 
 Time -----------------------------------
-PASS Print ESMC_Clock object, ESMC_ClockUTest.c, line 111
-PASS Print ESMC_Clock object, ESMC_ClockUTest.c, line 111
-PASS Print ESMC_Clock object, ESMC_ClockUTest.c, line 111
-PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 119
-PASS Advance the Clock object, ESMC_ClockUTest.c, line 127
-PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 136
-PASS Get currSimTime in seconds and in hours, ESMC_ClockUTest.c, line 144
-PASS Verify that currSimTime in second units, ESMC_ClockUTest.c, line 151
-PASS Verify that currSimTime in hour units, ESMC_ClockUTest.c, line 159
-PASS Destroy ESMC_Clock object, ESMC_ClockUTest.c, line 168
-PASS Destroy ESMC_Calendar object, ESMC_ClockUTest.c, line 176
-Ending Test, file ESMC_ClockUTest.c, line 287
-PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 119
-PASS Advance the Clock object, ESMC_ClockUTest.c, line 127
-PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 136
-PASS Get currSimTime in seconds and in hours, ESMC_ClockUTest.c, line 144
-PASS Verify that currSimTime in second units, ESMC_ClockUTest.c, line 151
-PASS Verify that currSimTime in hour units, ESMC_ClockUTest.c, line 159
-PASS Destroy ESMC_Clock object, ESMC_ClockUTest.c, line 168
-PASS Destroy ESMC_Calendar object, ESMC_ClockUTest.c, line 176
-advanceCount = 0
-direction = 1
-userChangedDirection = false
-alarmCount = 0
-alarmList = 
-end Clock ------------------------------
-
-alarmCount = 0
-alarmList = 
-end Clock ------------------------------
-
-
-advanceCount = 0
-direction = 1
-userChangedDirection = false
 2006-01-01T00:00:00
 end Time -------------------------------
 
@@ -203,10 +178,35 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
+PASS Print ESMC_Clock object, ESMC_ClockUTest.c, line 111
+PASS Print ESMC_Clock object, ESMC_ClockUTest.c, line 111
+PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 119
+PASS Advance the Clock object, ESMC_ClockUTest.c, line 127
+PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 136
+PASS Get currSimTime in seconds and in hours, ESMC_ClockUTest.c, line 144
+PASS Verify that currSimTime in second units, ESMC_ClockUTest.c, line 151
+PASS Verify that currSimTime in hour units, ESMC_ClockUTest.c, line 159
+PASS Destroy ESMC_Clock object, ESMC_ClockUTest.c, line 168
+PASS Destroy ESMC_Calendar object, ESMC_ClockUTest.c, line 176
+PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 119
+PASS Advance the Clock object, ESMC_ClockUTest.c, line 127
+PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 136
+PASS Get currSimTime in seconds and in hours, ESMC_ClockUTest.c, line 144
+PASS Verify that currSimTime in second units, ESMC_ClockUTest.c, line 151
+PASS Verify that currSimTime in hour units, ESMC_ClockUTest.c, line 159
+PASS Destroy ESMC_Clock object, ESMC_ClockUTest.c, line 168
+PASS Destroy ESMC_Calendar object, ESMC_ClockUTest.c, line 176
+Ending Test, file ESMC_ClockUTest.c, line 287
+end Time -------------------------------
+
+advanceCount = 0
+direction = 1
+userChangedDirection = false
 alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
+PASS Print ESMC_Clock object, ESMC_ClockUTest.c, line 111
 PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 119
 PASS Advance the Clock object, ESMC_ClockUTest.c, line 127
 PASS Get ESMC_Clock object current time and advance count, ESMC_ClockUTest.c, line 136
@@ -227,11 +227,11 @@ PASS Destroy ESMC_Clock object, ESMC_ClockUTest.c, line 168
 PASS Destroy ESMC_Calendar object, ESMC_ClockUTest.c, line 176
 Ending Test, file ESMC_ClockUTest.c, line 287
 Ending Test, file ESMC_ClockUTest.c, line 287
-Ending Test, file ESMC_ClockUTest.c, line 287 PET 3 Test Elapsed Time 110.436 msec.
+Ending Test, file ESMC_ClockUTest.c, line 287 PET 2 Test Elapsed Time 114.631 msec.
 result = 0
-Ending Test, file ESMC_ClockUTest.c, line 287 PET 2 Test Elapsed Time 110.437 msec.
+Ending Test, file ESMC_ClockUTest.c, line 287 PET 0 Test Elapsed Time 115.529 msec.
 result = 0
-Ending Test, file ESMC_ClockUTest.c, line 287 PET 1 Test Elapsed Time 110.103 msec.
+Ending Test, file ESMC_ClockUTest.c, line 287 PET 3 Test Elapsed Time 115.679 msec.
 result = 0
-Ending Test, file ESMC_ClockUTest.c, line 287 PET 0 Test Elapsed Time 113.9 msec.
+Ending Test, file ESMC_ClockUTest.c, line 287 PET 1 Test Elapsed Time 115.441 msec.
 result = 0

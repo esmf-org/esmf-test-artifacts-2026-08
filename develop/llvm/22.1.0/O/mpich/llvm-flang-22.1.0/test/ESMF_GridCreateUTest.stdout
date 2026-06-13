@@ -1,4 +1,4 @@
-2026-06-10 22:47:59
+2026-06-11 22:53:53
   Beginning Test, file ./ESMF_GridCreateUTest.F90, line 105
   NUMBER_OF_PROCESSORS 4
   PASS  Testing Grid IsCreated for uncreated object, ./ESMF_GridCreateUTest.F90
@@ -25,7 +25,13 @@
  Object has been CREATED
  Base name    = Grid002
  Status: Base = Ready,  object = Ready
- Proxy        = no  Beginning Test, file ./ESMF_GridCreateUTest.F90, line 105
+ Proxy        = no
+
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Base ID = 2, vmID:
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1  Beginning Test, file ./ESMF_GridCreateUTest.F90, line 105
   NUMBER_OF_PROCESSORS 4
   PASS  Testing Grid IsCreated for uncreated object, ./ESMF_GridCreateUTest.F90
  , line 124
@@ -41,7 +47,11 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Base ID = 2, vmID:
---- ESMCI::VMId::print() start ---  Beginning Test, file ./ESMF_GridCreateUTest.F90, line 105
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+  Beginning Test, file ./ESMF_GridCreateUTest.F90, line 105
   NUMBER_OF_PROCESSORS 4
   PASS  Testing Grid IsCreated for uncreated object, ./ESMF_GridCreateUTest.F90
  , line 124
@@ -63,17 +73,6 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
  Root Info (Attributes):
-
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Base ID = 2, vmID:
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
- Root Info (Attributes):
-
  Base ID = 2, vmID:
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
@@ -88,7 +87,6 @@
     }
   }
 }
-  vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
@@ -99,7 +97,9 @@
       "NamedAliasCount": 0
     }
   }
-}{
+}--- ESMCI::VMId::print() end ---
+ Root Info (Attributes):
+{
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
@@ -279,7 +279,7 @@
   PASS  Testing GridCreateCubedSphere with calcCoordType=ESMF_CUBEDSPHERECALC_L
  OCAL, ./ESMF_GridCreateUTest.F90, line 3366
   Ending Test, file ./ESMF_GridCreateUTest.F90, line 3371
-  PET 2  Test Elapsed Time  156.76763799999998  msec.
+  PET 3  Test Elapsed Time  147.496642  msec.
   PASS  Print Grid info, ./ESMF_GridCreateUTest.F90, line 164
   PASS  Destroy test Grid for IsCreated, ./ESMF_GridCreateUTest.F90, line 172
   PASS  Testing Grid IsCreated for destroyed object, ./ESMF_GridCreateUTest.F90
@@ -448,7 +448,7 @@
   PASS  Testing GridCreateCubedSphere with calcCoordType=ESMF_CUBEDSPHERECALC_L
  OCAL, ./ESMF_GridCreateUTest.F90, line 3366
   Ending Test, file ./ESMF_GridCreateUTest.F90, line 3371
-  PET 3  Test Elapsed Time  157.11792900000003  msec.
+  PET 1  Test Elapsed Time  155.57239699999997  msec.
   PASS  Print Grid info, ./ESMF_GridCreateUTest.F90, line 164
   PASS  Destroy test Grid for IsCreated, ./ESMF_GridCreateUTest.F90, line 172
   PASS  Testing Grid IsCreated for destroyed object, ./ESMF_GridCreateUTest.F90
@@ -617,7 +617,7 @@
   PASS  Testing GridCreateCubedSphere with calcCoordType=ESMF_CUBEDSPHERECALC_L
  OCAL, ./ESMF_GridCreateUTest.F90, line 3366
   Ending Test, file ./ESMF_GridCreateUTest.F90, line 3371
-  PET 1  Test Elapsed Time  163.713492  msec.
+  PET 0  Test Elapsed Time  155.83870499999998  msec.
   PASS  Print Grid info, ./ESMF_GridCreateUTest.F90, line 164
   PASS  Destroy test Grid for IsCreated, ./ESMF_GridCreateUTest.F90, line 172
   PASS  Testing Grid IsCreated for destroyed object, ./ESMF_GridCreateUTest.F90
@@ -786,4 +786,4 @@
   PASS  Testing GridCreateCubedSphere with calcCoordType=ESMF_CUBEDSPHERECALC_L
  OCAL, ./ESMF_GridCreateUTest.F90, line 3366
   Ending Test, file ./ESMF_GridCreateUTest.F90, line 3371
-  PET 0  Test Elapsed Time  164.77091199999998  msec.
+  PET 2  Test Elapsed Time  148.244073  msec.

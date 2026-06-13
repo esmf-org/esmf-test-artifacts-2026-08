@@ -1,4 +1,4 @@
-2026-06-10 22:36:36
+2026-06-11 22:44:16
  -- start FreeFormatPrint(attrFF) of read in attributes --------
   Verbosity = 4609
   Profiling = 4096
@@ -24,40 +24,6 @@
  IPDvX = false
  InitializeDataComplete = false
  InitializeDataProgress = false
- InitializeDataResolution = true
- -- start FreeFormatPrint(attrFF) of egested attributes --------
- CompLabel = _uninitialized
- Diagnostic = 0
- FinalizePhaseMap = FinalizePhase1=1 ExternalFinalizeReset=2
- HierarchyConnectors = auto
- HierarchyProtocol = ConnectProvidedFields
- IPDvX = false
- InitializeDataComplete = false
- InitializeDataProgress = false
- InitializeDataResolution = true
- InitializePhaseMap = IPDv02p1=2 IPDv02p3=3 IPDv02p5=4 ExternalAdvertise=5 ExternalRealize=6 ExternalDataInitialize=7
- InternalFinalizePhaseMap
- InternalInitializePhaseMap = IPDv05p1=8 IPDv05p2=9 IPDv05p3=10 IPDv05p4=11 IPDv05p6=12 IPDv05p8=13
- InternalRunPhaseMap
- -- start FreeFormatPrint(attrFF) of egested attributes --------
- CompLabel = _uninitialized
- Diagnostic = 0
- FinalizePhaseMap = FinalizePhase1=1 ExternalFinalizeReset=2
- HierarchyConnectors = auto
- HierarchyProtocol = ConnectProvidedFields
- IPDvX = false
- InitializeDataComplete = false
- InitializePhaseMap = IPDv02p1=2 IPDv02p3=3 IPDv02p5=4 ExternalAdvertise=5 ExternalRealize=6 ExternalDataInitialize=7
- InternalFinalizePhaseMap
- InternalInitializePhaseMap = IPDv05p1=8 IPDv05p2=9 IPDv05p3=10 IPDv05p4=11 IPDv05p6=12 IPDv05p8=13
- InternalRunPhaseMap
- Kind = Driver
- NestingGeneration =            0
- Nestling =            0
- Profiling = 4096
- RunPhaseMap = RunPhase1=1
- Verbosity = 4609
- ---- end FreeFormatPrint(attrFF) of egested attributes --------
  -- start FreeFormatPrint(attrFF) of egested attributes --------
  CompLabel = _uninitialized
  Diagnostic = 0
@@ -75,11 +41,34 @@
  Kind = Driver
  NestingGeneration =            0
  Nestling =            0
+ -- start FreeFormatPrint(attrFF) of egested attributes --------
+ CompLabel = _uninitialized
+ Diagnostic = 0
+ FinalizePhaseMap = FinalizePhase1=1 ExternalFinalizeReset=2
+ HierarchyConnectors = auto
+ HierarchyProtocol = ConnectProvidedFields
+ IPDvX = false
+ InitializeDataComplete = false
+ InitializeDataProgress = false
+ InitializeDataResolution = true
+ InitializePhaseMap = IPDv02p1=2 IPDv02p3=3 IPDv02p5=4 ExternalAdvertise=5 ExternalRealize=6 ExternalDataInitialize=7
+ InternalFinalizePhaseMap
+ InternalInitializePhaseMap = IPDv05p1=8 IPDv05p2=9 IPDv05p3=10 IPDv05p4=11 IPDv05p6=12 IPDv05p8=13
+ InternalRunPhaseMap
+ Kind = Driver
+ -- start FreeFormatPrint(attrFF) of egested attributes --------
+ CompLabel = _uninitialized
+ Diagnostic = 0
+ FinalizePhaseMap = FinalizePhase1=1 ExternalFinalizeReset=2
+ HierarchyConnectors = auto
+ HierarchyProtocol = ConnectProvidedFields
+ IPDvX = false
+ InitializeDataComplete = false
+ InitializeDataProgress = false
  Profiling = 4096
  RunPhaseMap = RunPhase1=1
  Verbosity = 4609
  ---- end FreeFormatPrint(attrFF) of egested attributes --------
- InitializeDataProgress = false
  InitializeDataResolution = true
  InitializePhaseMap = IPDv02p1=2 IPDv02p3=3 IPDv02p5=4 ExternalAdvertise=5 ExternalRealize=6 ExternalDataInitialize=7
  InternalFinalizePhaseMap
@@ -92,6 +81,17 @@
  RunPhaseMap = RunPhase1=1
  Verbosity = 4609
  ---- end FreeFormatPrint(attrFF) of egested attributes --------
+ NestingGeneration =            0
+ Nestling =            0
+ Profiling = 4096
+ RunPhaseMap = RunPhase1=1
+ Verbosity = 4609
+ ---- end FreeFormatPrint(attrFF) of egested attributes --------
+ InitializeDataResolution = true
+ InitializePhaseMap = IPDv02p1=2 IPDv02p3=3 IPDv02p5=4 ExternalAdvertise=5 ExternalRealize=6 ExternalDataInitialize=7
+ InternalFinalizePhaseMap
+ InternalInitializePhaseMap = IPDv05p1=8 IPDv05p2=9 IPDv05p3=10 IPDv05p4=11 IPDv05p6=12 IPDv05p8=13
+ InternalRunPhaseMap
  Kind = Driver
  NestingGeneration =            0
  Nestling =            0
@@ -106,15 +106,9 @@
            2 :  OCN
            3 :  LND
    Connector components, in the order
+   that they were added to the Driver:
  NUOPC_DriverPrint for PET:           1
    Model, Mediator, and Driver components, in the order
-   that they were added to the Driver:
-           1 :  ATM
-           2 :  OCN
-           3 :  LND
-   Connector components, in the order
-   that they were added to the Driver:
-           1 :  ATM-TO-OCN
    that they were added to the Driver:
            1 :  ATM-TO-OCN
            2 :  OCN-TO-ATM
@@ -147,6 +141,12 @@ runSeq::
  runElementPrint:      3     1     1 T T
  runElementPrint:     -4    -1     0 T F
 ::
+           1 :  ATM
+           2 :  OCN
+           3 :  LND
+   Connector components, in the order
+   that they were added to the Driver:
+           1 :  ATM-TO-OCN
            2 :  OCN-TO-ATM
            3 :  ATM-TO-LND
            4 :  LND-TO-ATM
@@ -213,14 +213,14 @@ runSeq::
 ::
 NUOPC_RunSequenceArrayPrint: element     4 out of      4
 runSeq::
+ runElementPrint:      3     1     1 T T
+ runElementPrint:     -4    -1     0 T F
+::
  NUOPC_DriverPrint for PET:           3
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
            1 :  ATM
            2 :  OCN
- runElementPrint:      3     1     1 T T
- runElementPrint:     -4    -1     0 T F
-::
            3 :  LND
    Connector components, in the order
    that they were added to the Driver:

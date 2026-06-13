@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=9.0.0 beta snapshot
-ESMF_VERSION_STRING_GIT=develop+ge382cba19b
+ESMF_VERSION_STRING_GIT=develop+g44805b02cc
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=9
@@ -35,7 +35,7 @@ ESMF_F90LINKER=mpiifort
 
 ESMF_F90COMPILEOPTS=-O -fp-speculation=safe -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
 ESMF_F90COMPILEPATHS=-I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/mod/modO/Linux.intel.64.intelmpi.default -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+ge382cba19b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=
 ESMF_F90COMPILEFIXCPP=
@@ -54,7 +54,7 @@ ESMF_CXXLINKER=mpiicpc
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS= -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/src/include   -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+ge382cba19b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
 
 ESMF_CXXLINKOPTS=  -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
 ESMF_CXXLINKPATHS=-L/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/lib/libO/Linux.intel.64.intelmpi.default  -L/gpfsm/dulocal15/sles15/intel/oneapi/2025/compiler/2025.3/lib/
@@ -69,7 +69,7 @@ ESMF_CLINKER=mpiicc
 
 ESMF_CCOMPILEOPTS=-std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC -debug minimal  -qopenmp
 ESMF_CCOMPILEPATHS=-I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/src/include   -I/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/build_config/Linux.intel.default
-ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+ge382cba19b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
+ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
 
 ESMF_CLINKOPTS=   -qopenmp
 ESMF_CLINKPATHS=-L/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/lib/libO/Linux.intel.64.intelmpi.default  -L/gpfsm/dulocal15/sles15/intel/oneapi/2025/compiler/2025.3/lib/ -L/discover/nobackup/projects/gmao/SIteam/ESMF_Testing/intel_2025.3.0_intelmpi_O_develop/esmf/lib/libO/Linux.intel.64.intelmpi.default  

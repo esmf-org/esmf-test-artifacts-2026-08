@@ -1,4 +1,4 @@
-2026-06-10 22:46:51
+2026-06-11 22:53:38
   Beginning Test, file ./ESMF_BaseUTest.F90, line 84
   NUMBER_OF_PROCESSORS 4
   PASS  ESMF_BaseCreate, ./ESMF_BaseUTest.F90, line 94
@@ -20,29 +20,7 @@
   PASS  ESMF_BaseGetVMId of original Base, ./ESMF_BaseUTest.F90, line 241
   PASS  ESMF_BaseSetVMId a new VMId into the Base, ./ESMF_BaseUTest.F90, line 2
  50
-  Beginning Test, file ./ESMF_BaseUTest.F90, line 84
-  NUMBER_OF_PROCESSORS 4
-  PASS  ESMF_BaseCreate, ./ESMF_BaseUTest.F90, line 94
-  PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 106
-  PASS  Destroy a destroyed Base, ./ESMF_BaseUTest.F90, line 115
-  PASS  Destroy a non-created Base, ./ESMF_BaseUTest.F90, line 124
-  PASS  ESMF_BasePrint of deleted Base, ./ESMF_BaseUTest.F90, line 134
-  PASS  ESMF_BasePrint of non-created Base, ./ESMF_BaseUTest.F90, line 144
-  PASS  ESMF_SetName of non-created Base, ./ESMF_BaseUTest.F90, line 154
-  PASS  ESMF_SetName of deleted Base, ./ESMF_BaseUTest.F90, line 165
-  PASS  ESMF_BaseCreate with slash in name, ./ESMF_BaseUTest.F90, line 180
-  PASS  ESMF_BaseCreate, ./ESMF_BaseUTest.F90, line 188
-  PASS  ESMF_SetName with slash in its name, ./ESMF_BaseUTest.F90, line 198
-  PASS  ESMF_SetName, ./ESMF_BaseUTest.F90, line 207
-  PASS  ESMF_GetName, ./ESMF_BaseUTest.F90, line 216
-  PASS  ESMF_BaseValidate, ./ESMF_BaseUTest.F90, line 225
-  PASS  ESMF_BaseGetID, ./ESMF_BaseUTest.F90, line 233
- id = 3
-  PASS  ESMF_BaseGetVMId of original Base, ./ESMF_BaseUTest.F90, line 241
-  PASS  ESMF_BaseSetVMId a new VMId into the Base, ./ESMF_BaseUTest.F90, line 2
- 50
- Base name    = fred
- Status: Base =   Beginning Test, file ./ESMF_BaseUTest.F90, line 84
+ Base name    =   Beginning Test, file ./ESMF_BaseUTest.F90, line 84
   NUMBER_OF_PROCESSORS 4
   PASS  ESMF_BaseCreate, ./ESMF_BaseUTest.F90, line 94
   PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 106
@@ -89,11 +67,33 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+  Beginning Test, file ./ESMF_BaseUTest.F90, line 84
+  NUMBER_OF_PROCESSORS 4
+  PASS  ESMF_BaseCreate, ./ESMF_BaseUTest.F90, line 94
+  PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 106
+  PASS  Destroy a destroyed Base, ./ESMF_BaseUTest.F90, line 115
+  PASS  Destroy a non-created Base, ./ESMF_BaseUTest.F90, line 124
+  PASS  ESMF_BasePrint of deleted Base, ./ESMF_BaseUTest.F90, line 134
+  PASS  ESMF_BasePrint of non-created Base, ./ESMF_BaseUTest.F90, line 144
+  PASS  ESMF_SetName of non-created Base, ./ESMF_BaseUTest.F90, line 154
+  PASS  ESMF_SetName of deleted Base, ./ESMF_BaseUTest.F90, line 165
+  PASS  ESMF_BaseCreate with slash in name, ./ESMF_BaseUTest.F90, line 180
+  PASS  ESMF_BaseCreate, ./ESMF_BaseUTest.F90, line 188
+  PASS  ESMF_SetName with slash in its name, ./ESMF_BaseUTest.F90, line 198
+  PASS  ESMF_SetName, ./ESMF_BaseUTest.F90, line 207
+  PASS  ESMF_GetName, ./ESMF_BaseUTest.F90, line 216
+  PASS  ESMF_BaseValidate, ./ESMF_BaseUTest.F90, line 225
+  PASS  ESMF_BaseGetID, ./ESMF_BaseUTest.F90, line 233
+ id = 3
+  PASS  ESMF_BaseGetVMId of original Base, ./ESMF_BaseUTest.F90, line 241
+  PASS  ESMF_BaseSetVMId a new VMId into the Base, ./ESMF_BaseUTest.F90, line 2
+ 50
  Base name    = fred
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-Ready,  object = Ready
+fred
+ Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 Ready,  object = Ready
@@ -127,7 +127,7 @@ Ready,  object = Ready
   PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ./ESMF_BaseUTes
  t.F90, line 265
  Base name    = fred
- Status: Base = Ready,  object =   PASS  ESMF_BaseGetVMId new VMid, ./ESMF_BaseUTest.F90, line 258
+ Status: Base = Ready,  object = Ready  PASS  ESMF_BaseGetVMId new VMid, ./ESMF_BaseUTest.F90, line 258
   PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ./ESMF_BaseUTes
  t.F90, line 265
  Base name    = fred
@@ -147,7 +147,8 @@ Ready,  object = Ready
       "NamedAliasCount": 0
     }
   }
-}  PASS  ESMF_BaseGetVMId new VMid, ./ESMF_BaseUTest.F90, line 258
+} Base name    = fred
+ Status: Base = Ready,  object = Ready  PASS  ESMF_BaseGetVMId new VMid, ./ESMF_BaseUTest.F90, line 258
   PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ./ESMF_BaseUTes
  t.F90, line 265
  Base name    = fred
@@ -163,7 +164,8 @@ Ready,  object = Ready
 } Base name    = fred
  Status: Base = Ready,  object = Ready
  Proxy        = no
-Ready
+ Root Info (Attributes):
+
  Proxy        = no
  Root Info (Attributes):
 {
@@ -200,7 +202,6 @@ Ready
   }
 }  PASS  ESMF_BasePrint brief, ./ESMF_BaseUTest.F90, line 275
  Base name    = fred
- Status: Base = Ready Base name    = fred
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
@@ -214,8 +215,9 @@ Ready
  Base name    = fred
  Status: Base = Ready,  object = Ready
  Proxy        = no
- Base ID =  Root Info (Attributes):
-{
+ Base ID = 3, vmID:
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = {
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
@@ -226,6 +228,12 @@ Ready
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Base ID = 3, vmID:
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
+ Root Info (Attributes):
   PASS  ESMF_BasePrint brief, ./ESMF_BaseUTest.F90, line 275
  Base name    = fred
  Status: Base = Ready,  object = Ready
@@ -237,7 +245,13 @@ Ready
   localID = 0
 --- ESMCI::VMId::print() end ---
  Root Info (Attributes):
-,  object = Ready
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}
  Proxy        = no
  Base ID = 3, vmID:
 --- ESMCI::VMId::print() start ---
@@ -246,32 +260,18 @@ Ready
   localID = 0
 --- ESMCI::VMId::print() end ---
  Root Info (Attributes):
-3, vmID:
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
- Root Info (Attributes):
 {
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
     }
   }
-}--- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
+}1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
  Root Info (Attributes):
 {
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}{
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
@@ -304,7 +304,7 @@ Ready
   PASS  Compare original vs inquired VMIds, ./ESMF_BaseUTest.F90, line 415
   PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 431
   Ending Test, file ./ESMF_BaseUTest.F90, line 439
-  PET 2  Test Elapsed Time  9.411074000000018  msec.
+  PET 3  Test Elapsed Time  9.638829999999988  msec.
   PASS  ESMF_BasePrint debug, ./ESMF_BaseUTest.F90, line 284
   PASS  ESMF_BaseSerialize - inquire only option, ./ESMF_BaseUTest.F90, line 30
  5
@@ -326,7 +326,7 @@ Ready
   PASS  Compare original vs inquired VMIds, ./ESMF_BaseUTest.F90, line 415
   PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 431
   Ending Test, file ./ESMF_BaseUTest.F90, line 439
-  PET 0  Test Elapsed Time  10.33352300000001  msec.
+  PET 2  Test Elapsed Time  10.16212999999999  msec.
   PASS  ESMF_BasePrint debug, ./ESMF_BaseUTest.F90, line 284
   PASS  ESMF_BaseSerialize - inquire only option, ./ESMF_BaseUTest.F90, line 30
  5
@@ -348,7 +348,7 @@ Ready
   PASS  Compare original vs inquired VMIds, ./ESMF_BaseUTest.F90, line 415
   PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 431
   Ending Test, file ./ESMF_BaseUTest.F90, line 439
-  PET 3  Test Elapsed Time  10.187104000000001  msec.
+  PET 0  Test Elapsed Time  10.048040000000035  msec.
   PASS  ESMF_BasePrint debug, ./ESMF_BaseUTest.F90, line 284
   PASS  ESMF_BaseSerialize - inquire only option, ./ESMF_BaseUTest.F90, line 30
  5
@@ -370,4 +370,4 @@ Ready
   PASS  Compare original vs inquired VMIds, ./ESMF_BaseUTest.F90, line 415
   PASS  ESMF_Destroy, ./ESMF_BaseUTest.F90, line 431
   Ending Test, file ./ESMF_BaseUTest.F90, line 439
-  PET 1  Test Elapsed Time  10.08104500000001  msec.
+  PET 1  Test Elapsed Time  11.086769999999967  msec.
