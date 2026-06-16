@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=9.0.0 beta snapshot
-ESMF_VERSION_STRING_GIT=develop+g44805b02cc
+ESMF_VERSION_STRING_GIT=v9.0.0b15
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=9
@@ -35,7 +35,7 @@ ESMF_F90LINKER=mpifort
 
 ESMF_F90COMPILEOPTS=-O0  -PIC -DESMF_NAG_UNIX_MODULE -dusty -thread_safe
 ESMF_F90COMPILEPATHS=-I/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/mod/modO/Darwin.nagclang.64.openmpi.default -I/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/src/include -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.3-d5o6huwaw3pn4or34vab4gy75tlu5rfu/include -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-7erikgt3vjb437r23jwvfkyrrg6w56yn/include
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v9.0.0b15' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf
 ESMF_F90COMPILEFREECPP=-free -fpp
 ESMF_F90COMPILEFREENOCPP=-free
 ESMF_F90COMPILEFIXCPP=-fixed -fpp
@@ -54,7 +54,7 @@ ESMF_CXXLINKER=mpicxx
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O0 -DNDEBUG  -fPIC -x c++ -mmacosx-version-min=10.7 -stdlib=libc++ -pthread
 ESMF_CXXCOMPILEPATHS=-I/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/src/include  -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.3-d5o6huwaw3pn4or34vab4gy75tlu5rfu/include -I/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v9.0.0b15' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2
 
 ESMF_CXXLINKOPTS= -pthread
 ESMF_CXXLINKPATHS=-L/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/lib/libO/Darwin.nagclang.64.openmpi.default -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.3-d5o6huwaw3pn4or34vab4gy75tlu5rfu/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-7erikgt3vjb437r23jwvfkyrrg6w56yn/lib
@@ -69,7 +69,7 @@ ESMF_CLINKER=mpicc
 
 ESMF_CCOMPILEOPTS=-std=c99 -O0 -DNDEBUG  -fPIC -pthread
 ESMF_CCOMPILEPATHS=-I/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/src/include   -I/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/build_config/Darwin.nagclang.default
-ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
+ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v9.0.0b15' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
 
 ESMF_CLINKOPTS= -pthread
 ESMF_CLINKPATHS=-L/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/lib/libO/Darwin.nagclang.64.openmpi.default -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.3-d5o6huwaw3pn4or34vab4gy75tlu5rfu/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-7erikgt3vjb437r23jwvfkyrrg6w56yn/lib -L/usr/local/esmf/esmf-testing/nagclang_7.2.44_17.0.0_openmpi_O_develop/esmf/lib/libO/Darwin.nagclang.64.openmpi.default -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.3-d5o6huwaw3pn4or34vab4gy75tlu5rfu/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-7erikgt3vjb437r23jwvfkyrrg6w56yn/lib

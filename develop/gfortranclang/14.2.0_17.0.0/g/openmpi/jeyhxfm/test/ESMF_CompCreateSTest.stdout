@@ -1,4 +1,4 @@
-2026-06-11 21:36:53
+2026-06-14 21:36:37
  System Test CompCreate:
  System Test CompCreate:
  System Test CompCreate:
@@ -44,7 +44,7 @@
  User Comp Init 2 starting
  Gridded Component:
   Component name = System Test CompCreate
- ESMF_StatePrint: (pet 2):
+ ESMF_StatePrint: (pet 1):
   State name: igrid export state
      status: Export State, object count: 0
  first init routine called
@@ -52,7 +52,7 @@
  User Comp Init 2 starting
  Gridded Component:
   Component name = System Test CompCreate
- ESMF_StatePrint: (pet 1):
+ ESMF_StatePrint: (pet 0):
   State name: igrid export state
      status: Export State, object count: 0
  Base name    = igrid export state
@@ -64,7 +64,7 @@
  User Comp Init 2 starting
  Gridded Component:
   Component name = System Test CompCreate
- ESMF_StatePrint: (pet 0):
+ ESMF_StatePrint: (pet 2):
   State name: igrid export state
      status: Export State, object count: 0
  Base name    = igrid export state
@@ -93,7 +93,8 @@
       "NamedAliasCount": 0
     }
   }
-}{
+} init, ready to call get data ptr
+{
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
@@ -120,42 +121,8 @@
 } init, ready to call get data ptr
  init, back from data ptr
  init, data =           13  0.660000026              25
- init, ready to call get data ptr
  init, back from data ptr
  init, data =           13  0.660000026              25
- ESMF_StatePrint: (pet 1):
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- ESMF_StatePrint: (pet 2):
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- User Comp Init returning
- Comp Initialize 2 finished
- User Comp Run starting
  ESMF_StatePrint: (pet 3):
   State name: igrid export state
      status: Export State, object count: 1
@@ -169,11 +136,23 @@
       "NamedAliasCount": 0
     }
   }
+} ESMF_StatePrint: (pet 1):
+  State name: igrid export state
+     status: Export State, object count: 1
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
 }     object: 1,name: humidity
             type: Field
  User Comp Init returning
  Comp Initialize 2 finished
- User Comp Run starting
  ESMF_StatePrint: (pet 0):
   State name: igrid export state
      status: Export State, object count: 1
@@ -192,30 +171,39 @@
  User Comp Init returning
  Comp Initialize 2 finished
  User Comp Run starting
+ ESMF_StatePrint: (pet 2):
+  State name: igrid export state
+     status: Export State, object count: 1
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
+ User Comp Init returning
+ Comp Initialize 2 finished
+ User Comp Run starting
+     object: 1,name: humidity
+            type: Field
  User Comp Init returning
  Comp Initialize 2 finished
  User Comp Run starting
  in run, ready to get data block
  run, local data =          13  0.660000026              25
+ ESMF_StatePrint: (pet 3):
+  State name: igrid import state
+ User Comp Run starting
+ in run, ready to get data block
+ run, local data =          13  0.660000026              25
  ESMF_StatePrint: (pet 1):
   State name: igrid import state
      status: Import State, object count: 1
- in run, ready to get data block
- run, local data =          13  0.660000026              25
- ESMF_StatePrint: (pet 2):
-  State name: igrid import state
-     status: Import State, object count: 1
- Base name    = igrid import state
- Status: Base = Ready,  object = Ready
- in run, ready to get data block
- run, local data =          13  0.660000026              25
- ESMF_StatePrint: (pet 3):
-  State name: igrid import state
-     status: Import State, object count: 1
- Base name    = igrid import state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
  in run, ready to get data block
  run, local data =          13  0.660000026              25
  ESMF_StatePrint: (pet 0):
@@ -225,6 +213,16 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ in run, ready to get data block
+ run, local data =          13  0.660000026              25
+ ESMF_StatePrint: (pet 2):
+  State name: igrid import state
+     status: Import State, object count: 1
+ Base name    = igrid import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+     status: Import State, object count: 1
  Base name    = igrid import state
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -237,6 +235,8 @@
   }
 }     object: 1,name: humidity
             type: Field
+ Base name    = igrid import state
+ Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 {
@@ -260,7 +260,6 @@
  Field Print Starts ====>
  Field base status = Ready
    Name = 'humidity'
- Base name    = humidity
 {
   "ESMF": {
     "Instance": {
@@ -269,6 +268,9 @@
   }
 }     object: 1,name: humidity
             type: Field
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'humidity'
  Field Print Starts ====>
  Field base status = Ready
    Name = 'humidity'
@@ -276,10 +278,28 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Field Print Starts ====>
- Field base status = Ready
+{
    Name = 'humidity'
  Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Base name    = humidity
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
@@ -290,30 +310,6 @@
     }
   }
 } Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-   Name = 'humidity'
- Base name    = humidity
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
@@ -330,13 +326,25 @@
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
  ESMF_StatePrint: (pet 3):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
+  State name: igrid export state
   }
 } Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ ESMF_StatePrint: (pet 1):
+  State name: igrid export state
+     status: Export State, object count: 1
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
@@ -349,6 +357,10 @@
  ESMF_StatePrint: (pet 0):
   State name: igrid export state
      status: Export State, object count: 1
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
@@ -357,8 +369,13 @@
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
- ESMF_StatePrint: (pet 1):
+ ESMF_StatePrint: (pet 2):
   State name: igrid export state
+     status: Export State, object count: 1
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
      status: Export State, object count: 1
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
@@ -369,14 +386,11 @@
     "Instance": {
       "NamedAliasCount": 0
     }
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- ESMF_StatePrint: (pet 2):
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
+  }
+}     object: 1,name: humidity
+            type: Field
+ User Comp Run returning
+ Comp Run returned first time
  Root Info (Attributes):
 {
   "ESMF": {
@@ -389,35 +403,16 @@
  User Comp Run returning
  Comp Run returned first time
  User Comp Run starting
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
+ in run, ready to get data block
+ run, local data =          13  0.660000026              25
+ ESMF_StatePrint: (pet 1):
+  State name: igrid import state
  Root Info (Attributes):
 {
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
     }
-  }
-}     object: 1,name: humidity
-            type: Field
- User Comp Run returning
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- User Comp Run returning
- Comp Run returned first time
   }
 }     object: 1,name: humidity
             type: Field
@@ -426,21 +421,24 @@
  User Comp Run starting
  in run, ready to get data block
  run, local data =          13  0.660000026              25
- ESMF_StatePrint: (pet 1):
+ ESMF_StatePrint: (pet 0):
   State name: igrid import state
-     status: Import State, object count: 1
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
+ User Comp Run returning
+ Comp Run returned first time
+ User Comp Run starting
  in run, ready to get data block
  run, local data =          13  0.660000026              25
  ESMF_StatePrint: (pet 2):
   State name: igrid import state
      status: Import State, object count: 1
- Base name    = igrid import state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
- Comp Run returned first time
  User Comp Run starting
  in run, ready to get data block
  run, local data =          13  0.660000026              25
@@ -451,17 +449,23 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- User Comp Run starting
- in run, ready to get data block
- run, local data =          13  0.660000026              25
- ESMF_StatePrint: (pet 0):
-  State name: igrid import state
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
      status: Import State, object count: 1
  Base name    = igrid import state
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 {
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+     status: Import State, object count: 1
  Base name    = igrid import state
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -473,8 +477,18 @@
     }
   }
 }     object: 1,name: humidity
+ Base name    = igrid import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
     }
   }
 }     object: 1,name: humidity
@@ -489,29 +503,6 @@
 {
   "ESMF": {
     "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'humidity'
- Base name    = humidity
- Status: Base = Ready,  object = Ready
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'humidity'
- Base name    = humidity
- Status: Base = Ready,  object = Ready
- Proxy        = no
             type: Field
  Field Print Starts ====>
  Field base status = Ready
@@ -526,9 +517,35 @@
       "NamedAliasCount": 0
     }
   }
+}            type: Field
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'humidity'
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
 {
   "ESMF": {
     "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'humidity'
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
       "NamedAliasCount": 0
     }
   }
@@ -542,37 +559,10 @@
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-} Field status =            2
+ ESMF_StatePrint: (pet 3):
+  State name: igrid export state
+     status: Export State, object count: 1
+ Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
@@ -586,6 +576,34 @@
   State name: igrid export state
      status: Export State, object count: 1
  Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ ESMF_StatePrint: (pet 0):
+  State name: igrid export state
+     status: Export State, object count: 1
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
  ESMF_StatePrint: (pet 2):
   State name: igrid export state
      status: Export State, object count: 1
@@ -599,40 +617,8 @@
       "NamedAliasCount": 0
     }
   }
-}     object: 1,name: humidity
-            type: Field
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- ESMF_StatePrint: (pet 3):
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
+} Base name    = igrid export state
  Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- ESMF_StatePrint: (pet 0):
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 {
@@ -645,18 +631,42 @@
             type: Field
  User Comp Run returning
  Comp Run returned second time
+ User Comp Run starting
+ in run, ready to get data block
+ run, local data =          13  0.660000026              25
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
  User Comp Run returning
  Comp Run returned second time
  User Comp Run starting
  in run, ready to get data block
  run, local data =          13  0.660000026              25
- ESMF_StatePrint: (pet 2):
+ ESMF_StatePrint: (pet 1):
   State name: igrid import state
      status: Import State, object count: 1
  Base name    = igrid import state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
+ User Comp Run returning
+ Comp Run returned second time
+ User Comp Run starting
+ in run, ready to get data block
+ run, local data =          13  0.660000026              25
+ ESMF_StatePrint: (pet 0):
+  State name: igrid import state
+     status: Import State, object count: 1
      object: 1,name: humidity
             type: Field
  User Comp Run returning
@@ -664,89 +674,137 @@
  User Comp Run starting
  in run, ready to get data block
  run, local data =          13  0.660000026              25
+ ESMF_StatePrint: (pet 2):
+  State name: igrid import state
+     status: Import State, object count: 1
+ Base name    = igrid import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  ESMF_StatePrint: (pet 3):
   State name: igrid import state
      status: Import State, object count: 1
-     object: 1,name: humidity
+ Base name    = igrid import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
             type: Field
- User Comp Run returning
- Comp Run returned second time
- User Comp Run starting
- in run, ready to get data block
- run, local data =          13  0.660000026              25
+ Field Print Starts ====>
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'humidity'
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Base name    = igrid import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'humidity'
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
+            type: Field
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'humidity'
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+ Field base status = Ready
+   Name = 'humidity'
+ Base name    = humidity
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ ESMF_StatePrint: (pet 1):
+  State name: igrid export state
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
  ESMF_StatePrint: (pet 0):
-  State name: igrid import state
-     status: Import State, object count: 1
- Base name    = igrid import state
- User Comp Run starting
- in run, ready to get data block
- run, local data =          13  0.660000026              25
- ESMF_StatePrint: (pet 1):
-  State name: igrid import state
-     status: Import State, object count: 1
- Base name    = igrid import state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'humidity'
- Base name    = humidity
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Base name    = igrid import state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- Field Print Starts ====>
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- Field Print Starts ====>
- Field base status = Ready
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-}     object: 1,name: humidity
-            type: Field
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'humidity'
- Base name    = humidity
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
- Root Info (Attributes):
-{
+  State name: igrid export state
   "ESMF": {
     "Instance": {
       "NamedAliasCount": 0
@@ -762,67 +820,28 @@
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
- Field base status = Ready
-   Name = 'humidity'
- Base name    = humidity
+ ESMF_StatePrint: (pet 2):
+  State name: igrid export state
+     status: Export State, object count: 1
+ Base name    = igrid export state
  Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-   Name = 'humidity'
- Base name    = humidity
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
- ESMF_StatePrint: (pet 1):
+ ESMF_StatePrint: (pet 3):
   State name: igrid export state
      status: Export State, object count: 1
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
  Proxy        = no
- ESMF_StatePrint: (pet 2):
-  State name: igrid export state
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}     object: 1,name: humidity
      status: Export State, object count: 1
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
@@ -838,11 +857,6 @@
             type: Field
  User Comp Run returning
  Comp Run returned third time
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- ESMF_StatePrint: (pet 3):
-  State name: igrid export state
      status: Export State, object count: 1
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
@@ -854,21 +868,11 @@
       "NamedAliasCount": 0
     }
   }
-} Field Print Ends   ====>
- ESMF_StatePrint: (pet 0):
-  State name: igrid export state
-     status: Export State, object count: 1
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
+}     object: 1,name: humidity
+            type: Field
+ User Comp Run returning
  Proxy        = no
  Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Root Info (Attributes):
 {
   "ESMF": {
     "Instance": {
@@ -880,18 +884,6 @@
  User Comp Run returning
  Comp Run returned third time
  User Comp Final starting
- final, ready to call get data ptr
- User Comp Final starting
- final, ready to call get data ptr
- final, local data =          13  0.660000026              25
- User Comp Final returning
- -----------------------------------------------------------------
- -----------------------------------------------------------------
- Test finished, my_pet =            2
- -----------------------------------------------------------------
- -----------------------------------------------------------------
- Comp Finalize returned
-     object: 1,name: humidity
             type: Field
  User Comp Run returning
  Comp Run returned third time
@@ -904,10 +896,16 @@
  Test finished, my_pet =            3
  -----------------------------------------------------------------
  -----------------------------------------------------------------
+ User Comp Final starting
+ final, ready to call get data ptr
+ final, local data =          13  0.660000026              25
+ User Comp Final returning
+ -----------------------------------------------------------------
+ -----------------------------------------------------------------
+ Test finished, my_pet =            1
+ -----------------------------------------------------------------
+ -----------------------------------------------------------------
  Comp Finalize returned
-     object: 1,name: humidity
-            type: Field
- User Comp Run returning
  Comp Run returned third time
  User Comp Final starting
  final, ready to call get data ptr
@@ -919,13 +917,15 @@
  -----------------------------------------------------------------
  -----------------------------------------------------------------
  Comp Finalize returned
+ final, ready to call get data ptr
  final, local data =          13  0.660000026              25
  User Comp Final returning
  -----------------------------------------------------------------
  -----------------------------------------------------------------
- Test finished, my_pet =            1
+ Test finished, my_pet =            2
  -----------------------------------------------------------------
  -----------------------------------------------------------------
+ Comp Finalize returned
  Comp Finalize returned
  All Destroy routines done
  System Test CompCreate complete

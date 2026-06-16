@@ -1,17 +1,17 @@
-ESMF hash: v9.0.0b14-4-g44805b0
-Collection timestamp: 2026-06-11 22:56:28
-Build timestamp: 2026-06-11 22:16:46
-Clone timestamp: 2026-06-11 19:01:25
+ESMF hash: v9.0.0b15
+Collection timestamp: 2026-06-14 22:56:03
+Build timestamp: 2026-06-14 22:16:11
+Clone timestamp: 2026-06-14 19:01:24
 Test dir: /usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop
 Machine: fairy
 
 RESULTS:
 ================================
 build:			PASS
-unit tests:		PASS 14336 FAIL 4
+unit tests:		PASS 14339 FAIL 1
 system tests:		PASS 51 FAIL 0
 example tests:		PASS 81 FAIL 0
-nuopc tests:		PASS 45 FAIL 18
+nuopc tests:		PASS 63 FAIL 0
 esmpy install:		PASS
 esmpy tests:		PASS 538 FAIL 0
 
@@ -69,7 +69,7 @@ info.log
 ================================
 --------------------------------------------------------------
 ESMF_VERSION_STRING:      9.0.0 beta snapshot
-ESMF_VERSION_STRING_GIT: develop+g44805b02cc
+ESMF_VERSION_STRING_GIT: v9.0.0b15
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -183,7 +183,7 @@ ESMF_TESTSHAREDOBJ=OFF
 ESMF_TESTWITHTHREADS=ON
 ESMF_TRACE_LIB_BUILD=ON
 ESMF_TRACE_PRELOAD_LINKED=ON
-ESMF_VERSION_STRING_GIT=develop+g44805b02cc
+ESMF_VERSION_STRING_GIT=v9.0.0b15
 ESMF_YAMLCPP=internal
  
 --------------------------------------------------------------
@@ -279,7 +279,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: mpif90
 ESMF_F90COMPILEOPTS: -O  -fPIC -pthread -frecursive -ffree-line-length-none -fno-backtrace
 ESMF_F90COMPILEPATHS: -I/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf/mod/modO/Darwin.gfortranclang.64.mpich.default -I/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf/src/include -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-ldj2txzcjjcdr2sou7zsz6lylgkmqcr4/include -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-ye4ptq7z3gjeh5unfivwpdkfgsbqjkll/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v9.0.0b15' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -ffree-form
 ESMF_F90COMPILEFIXCPP: -cpp -ffixed-form
@@ -296,7 +296,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG  -fPIC -x c++ -mmacosx-version-min=10.7 -stdlib=libc++ -pthread
 ESMF_CXXCOMPILEPATHS: -I/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf/src/include  -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-ldj2txzcjjcdr2sou7zsz6lylgkmqcr4/include -I/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v9.0.0b15' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:  -pthread
@@ -309,7 +309,7 @@ C compiler flags:
 ESMF_CCOMPILER: mpicc
 ESMF_CCOMPILEOPTS: -std=c99 -O -DNDEBUG  -fPIC -pthread
 ESMF_CCOMPILEPATHS: -I/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v9.0.0b15' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortranclang_14.2.0_17.0.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
 
 C linker flags:
 ESMF_CLINKOPTS:  -pthread
@@ -334,6 +334,6 @@ ESMF_F90ESMFPRELOADLINKLIBS=-lesmf -lesmftrace_preload -lpioc -lnetcdf -lnetcdff
 
 
 --------------------------------------------------------------
-Compiling on Thu Jun 11 22:07:51 MDT 2026 on cgdm-fairy
+Compiling on Sun Jun 14 22:07:16 MDT 2026 on cgdm-fairy
 Machine characteristics: Darwin cgdm-fairy 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22 19:48:46 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8103 arm64
 ==============================================================
