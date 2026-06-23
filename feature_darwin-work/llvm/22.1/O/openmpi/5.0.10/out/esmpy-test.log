@@ -1,0 +1,11 @@
+find . -name "*ESMF_LogFile*" -exec rm -f {} \; || :
+find . -name "*.report.json" -exec rm -rf {} \; || :
+find . -name "*-summary.json" -exec rm -rf {} \; || :
+find . -name "*.test" -exec rm -rf {} \; || :
+bash src/esmpy/test/test_all.bash "mpirun "
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import esmpy; print (esmpy.__version__)
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'esmpy'
+make: *** [test] Error 1

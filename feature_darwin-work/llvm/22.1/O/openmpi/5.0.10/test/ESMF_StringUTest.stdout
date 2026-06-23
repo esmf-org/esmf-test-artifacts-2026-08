@@ -1,0 +1,181 @@
+2026-06-23 13:36:40
+  Beginning Test, file ./ESMF_StringUTest.F90, line 46
+  Beginning Test, file ./ESMF_StringUTest.F90, line 46
+  NUMBER_OF_PROCESSORS 2
+  NUMBER_OF_PROCESSORS 2
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+  PASS  Calling f90ints() directly from F90, ./ESMF_StringUTest.F90, line 69
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 60
+  fstr=0123456789abcdefghijklmnopqrstuvwxyz
+  PASS  Calling f90ints() directly from F90, ./ESMF_StringUTest.F90, line 69
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 60
+  fstr=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string2 subroutine
+  PASS  Calling f90string2() directly from F90, ./ESMF_StringUTest.F90, line 76
+ -- leaving f90string2 subroutine
+  PASS  Calling f90string2() directly from F90, ./ESMF_StringUTest.F90, line 76
+ -- entering f90string3 subroutine
+  ints= 102 204 409 819
+  strlen = 120
+  fstr=abcdefghijklmnopqrstuvwxyz0123456789
+  strlen2 = 60
+  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string3 subroutine
+  PASS  Calling f90string3() directly from F90, ./ESMF_StringUTest.F90, line 83
+ -- entering f90string3 subroutine
+  ints= 102 204 409 819
+  strlen = 120
+  fstr=abcdefghijklmnopqrstuvwxyz0123456789
+  strlen2 = 60
+  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string3 subroutine
+  PASS  Calling f90string3() directly from F90, ./ESMF_StringUTest.F90, line 83
+
+
+
+
+-- entering c_strings, slen = 120
+[gs6101-alderaan:08673] *** Process received signal ***
+[gs6101-alderaan:08673] Signal: Segmentation fault: 11 (11)
+[gs6101-alderaan:08673] Signal code: Invalid permissions (2)
+[gs6101-alderaan:08673] Failing at address: 0x2020202104cee732
+[gs6101-alderaan:08673] [ 0] 0   libsystem_platform.dylib            0x000000018156f744 _sigtramp + 56
+[gs6101-alderaan:08673] [ 1] 0   ESMF_StringUTest                    0x0000000104cee388 f90string3_ + 524
+[gs6101-alderaan:08673] [ 2] 0   ESMF_StringUTest                    0x0000000104cee388 f90string3_ + 524
+[gs6101-alderaan:08673] [ 3] [gs6101-alderaan:08672] *** Process received signal ***
+0   ESMF_StringUTest                    0x0000000104ced118 c_strings_ + 1832
+[gs6101-alderaan:08673] [ 4] 0   ESMF_StringUTest                    0x0000000104cedb44 _QQmain + 1160
+[gs6101-alderaan:08673] [ 5] [gs6101-alderaan:08672] Signal: Segmentation fault: 11 (11)
+[gs6101-alderaan:08672] Signal code: Invalid permissions (2)
+[gs6101-alderaan:08672] Failing at address: 0x2020202102d6a732
+102 204 409 819
+ strlen = 120, str='abcdefghijklmnopqrstuvwxyz0123456789                                                                                    '
+
+
+-- ready to call f90int by callback with passed ints
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with passed ints
+
+
+-- ready to call f90int by callback with local ints
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with local ints
+
+
+-- ready to call f90string2 by callback, passing 15
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 15
+  fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
+
+
+-- entering c_strings, slen = 120
+102 204 409 819
+ strlen = 120, str='abcdefghijklmnopqrstuvwxyz0123456789                                                                                    '
+
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string2 by callback, passing 25
+[gs6101-alderaan:08672] [ 0] 0   ESMF_StringUTest                    0x0000000104cee408 main + 20
+[gs6101-alderaan:08673] [ 6] 0   libsystem_platform.dylib            0x000000018156f744 _sigtramp + 56
+[gs6101-alderaan:08672] [ 1] 0   ESMF_StringUTest                    0x0000000102d6a388 f90string3_ + 524
+[gs6101-alderaan:08672] [ 2] 0   ESMF_StringUTest                    0x0000000102d6a388 f90string3_ + 524
+[gs6101-alderaan:08672] [ 3] 0   ESMF_StringUTest                    0x0000000102d69118 c_strings_ + 1832
+[gs6101-alderaan:08672] [ 4] 0   dyld                                0x00000001811a7e00 start + 6992
+[gs6101-alderaan:08673] *** End of error message ***
+0   ESMF_StringUTest                    0x0000000102d69b44 _QQmain + 1160
+[gs6101-alderaan:08672] [ 5] 0   ESMF_StringUTest                    0x0000000102d6a408 main + 20
+[gs6101-alderaan:08672] [ 6] 0   dyld                                0x00000001811a7e00 start + 6992
+[gs6101-alderaan:08672] *** End of error message ***
+
+-- ready to call f90int by callback with passed ints
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 25
+  fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+ -- leaving f90string2 subroutine
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+
+
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string3 by callback, passing 14, 24
+ -- entering f90string3 subroutine
+-- returned from call of f90int by callback with passed ints
+
+
+-- ready to call f90int by callback with local ints
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  ints= 102 204 409 819
+  strlen = 14
+  fstr=ABCDEFGHIJKLMN
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with local ints
+
+
+-- ready to call f90string2 by callback, passing 15
+ -- entering f90string2 subroutine
+  strlen2 = 24
+  ints= 102 204 409 819
+  strlen = 15
+  fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
+
+
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string2 by callback, passing 25
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 25
+  fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+ -- leaving f90string2 subroutine
+
+
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string3 by callback, passing 14, 24
+ -- entering f90string3 subroutine
+  ints= 102 204 409 819
+  strlen = 14
+  fstr=ABCDEFGHIJKLMN
+  strlen2 = 24
+--------------------------------------------------------------------------
+prterun noticed that process rank 1 with PID 8673 on node gs6101-alderaan exited on
+signal 11 (Segmentation fault: 11).
+--------------------------------------------------------------------------

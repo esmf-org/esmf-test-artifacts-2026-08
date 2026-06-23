@@ -1,0 +1,53 @@
+2026-06-23 13:36:40
+  Beginning Test, file ESMF_AttributeUtilUTest.F90, line 79
+  NUMBER_OF_PROCESSORS 2
+  Beginning Test, file ESMF_AttributeUtilUTest.F90, line 79
+  NUMBER_OF_PROCESSORS 2
+  PASS  ESMF_InfoFormatKey w/ name, ESMF_AttributeUtilUTest.F90, line 94
+  PASS  ESMF_InfoFormatKey w/ name, ESMF_AttributeUtilUTest.F90, line 94
+  PASS  Attribute copy by reference, ESMF_AttributeUtilUTest.F90, line 125
+  PASS  Attribute copy by reference, ESMF_AttributeUtilUTest.F90, line 125
+  PASS  Setting scalars and arrays in loop, ESMF_AttributeUtilUTest.F90, line 1
+ 88
+  PASS  Setting scalars and arrays in loop, ESMF_AttributeUtilUTest.F90, line 1
+ 88
+  PASS  Array to scalar, ESMF_AttributeUtilUTest.F90, line 237
+[gs6101-alderaan:78565] *** Process received signal ***
+[gs6101-alderaan:78565] Signal: Bus error: 10 (10)
+[gs6101-alderaan:78565] Signal code: Invalid address alignment (1)
+[gs6101-alderaan:78565] Failing at address: 0x16f014000
+[gs6101-alderaan:78565] [ 0] 0   libsystem_platform.dylib            0x000000018156f744 _sigtramp + 56
+[gs6101-alderaan:78565] [ 1] 0   libflang_rt.runtime.dylib           0x0000000103ffac94 _ZN7Fortran7runtime8AdjustLRILb0EEEvRNS0_10DescriptorERKS2_PKci + 428
+  PASS  Array to scalar, ESMF_AttributeUtilUTest.F90, line 237
+[gs6101-alderaan:78565] [ 2] 0   libesmf.dylib                       0x0000000103370114 _QMesmf_logerrmodPesmf_logwrite + 1352
+[gs6101-alderaan:78565] [ 3] 0   libesmf.dylib                       0x000000010336c2f0 f_esmf_logwrite1_ + 68
+[gs6101-alderaan:78565] [ 4] 0   libesmf.dylib                       0x0000000102c26150 _ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi + 1252
+[gs6101-alderaan:78565] [ 5] [gs6101-alderaan:78564] *** Process received signal ***
+[gs6101-alderaan:78564] Signal: Bus error: 10 (10)
+[gs6101-alderaan:78564] Signal code: Invalid address alignment (1)
+[gs6101-alderaan:78564] Failing at address: 0x16f388000
+[gs6101-alderaan:78564] [ 0] 0   libsystem_platform.dylib            0x000000018156f744 _sigtramp + 56
+[gs6101-alderaan:78564] [ 1] 0   libflang_rt.runtime.dylib           0x0000000103902c94 _ZN7Fortran7runtime8AdjustLRILb0EEEvRNS0_10DescriptorERKS2_PKci + 428
+[gs6101-alderaan:78564] [ 2] 0   libesmf.dylib                       0x0000000102bd12f8 _ZNK5ESMCI4Info3getIiEET_RKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPKS2_PKibPS9_b + 6828
+[gs6101-alderaan:78565] [ 6] 0   libesmf.dylib                       0x00000001029d080c ESMC_InfoGetI4 + 180
+[gs6101-alderaan:78565] [ 7] 0   libesmf.dylib                       0x0000000102c78114 _QMesmf_logerrmodPesmf_logwrite + 1352
+[gs6101-alderaan:78564] [ 3] 0   libesmf.dylib                       0x00000001032cb500 _QMesmf_infomodPesmf_infogeti4 + 304
+[gs6101-alderaan:78565] [ 8] 0   libesmf.dylib                       0x0000000102c742f0 f_esmf_logwrite1_ + 68
+[gs6101-alderaan:78564] [ 4] 0   libesmf.dylib                       0x0000000102f6ece8 _QMesmf_attributemodPesmf_attributegetobjfieldi4 + 1392
+[gs6101-alderaan:78565] [ 9] 0   ESMF_AttributeUtilUTest             0x0000000100dee690 _QQmain + 7328
+[gs6101-alderaan:78565] [10] 0   ESMF_AttributeUtilUTest             0x0000000100df0028 main + 20
+[gs6101-alderaan:78565] [11] 0   dyld                                0x00000001811a7e00 start + 6992
+[gs6101-alderaan:78565] *** End of error message ***
+0   libesmf.dylib                       0x000000010252e150 _ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi + 1252
+[gs6101-alderaan:78564] [ 5] 0   libesmf.dylib                       0x00000001024d92f8 _ZNK5ESMCI4Info3getIiEET_RKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPKS2_PKibPS9_b + 6828
+[gs6101-alderaan:78564] [ 6] 0   libesmf.dylib                       0x00000001022d880c ESMC_InfoGetI4 + 180
+[gs6101-alderaan:78564] [ 7] 0   libesmf.dylib                       0x0000000102bd3500 _QMesmf_infomodPesmf_infogeti4 + 304
+[gs6101-alderaan:78564] [ 8] 0   libesmf.dylib                       0x0000000102876ce8 _QMesmf_attributemodPesmf_attributegetobjfieldi4 + 1392
+[gs6101-alderaan:78564] [ 9] 0   ESMF_AttributeUtilUTest             0x0000000100a7a690 _QQmain + 7328
+[gs6101-alderaan:78564] [10] 0   ESMF_AttributeUtilUTest             0x0000000100a7c028 main + 20
+[gs6101-alderaan:78564] [11] 0   dyld                                0x00000001811a7e00 start + 6992
+[gs6101-alderaan:78564] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 1 with PID 78565 on node gs6101-alderaan exited on
+signal 10 (Bus error: 10).
+--------------------------------------------------------------------------
