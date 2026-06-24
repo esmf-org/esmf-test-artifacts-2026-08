@@ -1,0 +1,179 @@
+2026-06-24 08:54:36
+  Beginning Test, file ./ESMF_StringUTest.F90, line 46
+  NUMBER_OF_PROCESSORS 2
+  Beginning Test, file ./ESMF_StringUTest.F90, line 46
+  NUMBER_OF_PROCESSORS 2
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+  PASS  Calling f90ints() directly from F90, ./ESMF_StringUTest.F90, line 69
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 60
+  fstr=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string2 subroutine
+  PASS  Calling f90string2() directly from F90, ./ESMF_StringUTest.F90, line 76
+ -- entering f90string3 subroutine
+  ints= 102 204 409 819
+  PASS  Calling f90ints() directly from F90, ./ESMF_StringUTest.F90, line 69
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 60
+  fstr=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string2 subroutine
+  PASS  Calling f90string2() directly from F90, ./ESMF_StringUTest.F90, line 76
+ -- entering f90string3 subroutine
+  ints= 102 204 409 819
+  strlen = 120
+  fstr=abcdefghijklmnopqrstuvwxyz0123456789
+  strlen2 = 60
+  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string3 subroutine
+  PASS  Calling f90string3() directly from F90, ./ESMF_StringUTest.F90, line 83
+  strlen = 120
+  fstr=abcdefghijklmnopqrstuvwxyz0123456789
+  strlen2 = 60
+  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string3 subroutine
+  PASS  Calling f90string3() directly from F90, ./ESMF_StringUTest.F90, line 83
+
+
+-- entering c_strings, slen = 120
+102 204 409 819
+ strlen = 120, str='abcdefghijklmnopqrstuvwxyz0123456789                                                                                    '
+
+
+-- ready to call f90int by callback with passed ints
+ -- entering f90ints subroutine
+
+
+-- entering c_strings, slen = 120
+102 204 409 819
+ strlen = 120, str='abcdefghijklmnopqrstuvwxyz0123456789                                                                                    '
+
+
+-- ready to call f90int by callback with passed ints
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with passed ints
+
+
+-- ready to call f90int by callback with local ints
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with passed ints
+
+
+-- ready to call f90int by callback with local ints
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+ -- entering f90ints subroutine
+  ints= 102 204 409 819
+  rc= 0
+ -- exiting f90ints subroutine
+
+  rc= 0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with local ints
+
+
+-- returned from call of f90int by callback with local ints
+
+
+-- ready to call f90string2 by callback, passing 15
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 15
+  fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
+
+-- ready to call f90string2 by callback, passing 15
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 15
+  fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
+
+
+-- returned from call f90string2 by callback
+
+
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string2 by callback, passing 25
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+
+
+-- ready to call f90string2 by callback, passing 25
+ -- entering f90string2 subroutine
+  ints= 102 204 409 819
+  strlen = 25
+  fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+  strlen = 25
+  fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+ -- leaving f90string2 subroutine
+
+
+ -- leaving f90string2 subroutine
+
+
+-- returned from call f90string2 by callback
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string3 by callback, passing 14, 24
+ -- entering f90string3 subroutine
+
+
+-- ready to call f90string3 by callback, passing 14, 24
+ -- entering f90string3 subroutine
+  ints= 102 204 409 819
+  ints= 102 204 409 819
+  strlen = 14
+  fstr=ABCDEFGHIJKLMN
+  strlen2 = 24
+  strlen = 14
+  fstr=ABCDEFGHIJKLMN
+  strlen2 = 24
+[gs6101-alderaan:61185] *** Process received signal ***
+[gs6101-alderaan:61185] Signal: Segmentation fault: 11 (11)
+[gs6101-alderaan:61185] Signal code: Invalid permissions (2)
+[gs6101-alderaan:61185] Failing at address: 0x100bb0000
+[gs6101-alderaan:61184] *** Process received signal ***
+[gs6101-alderaan:61184] Signal: Segmentation fault: 11 (11)
+[gs6101-alderaan:61184] Signal code: Invalid permissions (2)
+[gs6101-alderaan:61184] Failing at address: 0x104130000
+[gs6101-alderaan:61185] [ 0] [gs6101-alderaan:61184] [ 0] 0   libsystem_platform.dylib            0x000000018156f744 _sigtramp + 56
+[gs6101-alderaan:61184] [ 1] 0   ESMF_StringUTest                    0x00000001040e2d5c f90string3_ + 1008
+[gs6101-alderaan:61184] [ 2] 0   ESMF_StringUTest                    0x00000001040e0e74 c_strings_ + 996
+[gs6101-alderaan:61184] 0   libsystem_platform.dylib            0x000000018156f744 _sigtramp + 56
+[gs6101-alderaan:61185] [ 1] 0   ESMF_StringUTest                    0x0000000100b62d5c f90string3_ + 1008
+[gs6101-alderaan:61185] [ 2] 0   ESMF_StringUTest                    0x0000000100b60e74 c_strings_ + 996
+[gs6101-alderaan:61185] [ 3] 0   ESMF_StringUTest                    0x0000000100b62068 _QQmain + 1524
+[gs6101-alderaan:61185] [ 4] 0   ESMF_StringUTest                    0x0000000100b62de4 main + 20
+[gs6101-alderaan:61185] [ 3] 0   ESMF_StringUTest                    0x00000001040e2068 _QQmain + 1524
+[gs6101-alderaan:61184] [ 4] 0   ESMF_StringUTest                    0x00000001040e2de4 main + 20
+[gs6101-alderaan:61184] [ 5] [ 5] 0   dyld                                0x00000001811a7e00 start + 6992
+[gs6101-alderaan:61185] *** End of error message ***
+0   dyld                                0x00000001811a7e00 start + 6992
+[gs6101-alderaan:61184] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 1 with PID 61185 on node gs6101-alderaan exited on
+signal 11 (Segmentation fault: 11).
+--------------------------------------------------------------------------
