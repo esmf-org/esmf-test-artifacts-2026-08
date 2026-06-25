@@ -1,4 +1,4 @@
-2026-06-25 05:12:42
+2026-06-12 02:12:03
 Beginning Test, file ESMC_FieldUTest.c, line 76
 Beginning Test, file ESMC_FieldUTest.c, line 76NUMBER_OF_PROCESSORS 1
 PASS MeshCreate, ESMC_FieldUTest.c, line 88
@@ -14,7 +14,6 @@ PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 195
 PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 205
 PASS Get an ESMC_Mesh object from ESMC_Field object, ESMC_FieldUTest.c, line 213
 PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 221
-PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 229
  Field Print Starts ====>
  Field base status = Ready
    Name = 'field1'
@@ -29,6 +28,7 @@ PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, l
     }
   }
 } Field status =            4
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 229
  gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = field1
@@ -47,17 +47,17 @@ DistGrid dimCount = 1
 deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x120e217a0:
-            rank = 1, typekind = 3, base_addr = 0x1210a1800
+LocalArrayPrint: Array at address 0x13b6212d0:
+            rank = 1, typekind = 3, base_addr = 0x13b8a1800
             dim[0] = 372  
   Integer, *4, Dim 1, Data values:
 ( 1) =  0
 ( 2) =  0
-( 3) =  144
+( 3) =  128
 ( 4) =  58
 ( 5) =  0
 ( 6) =  0
-( 7) =  144
+( 7) =  128
 ( 8) =  60
 ( 9) =  4
 (10) =  61
@@ -120,8 +120,8 @@ DistGrid dimCount = 1
 deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x120e22d30:
-            rank = 1, typekind = 6, base_addr = 0x1210a9a00
+LocalArrayPrint: Array at address 0x13b622860:
+            rank = 1, typekind = 6, base_addr = 0x13b8a9a00
             dim[0] = 608  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -173,4 +173,4 @@ PASS Create ESMC_Field object on LocStream using TypeKind, ESMC_FieldUTest.c, li
 PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 446
 Ending Test, file ESMC_FieldUTest.c, line 507
 [WARNING] yaksa: 10 leaked handle pool objects
-Ending Test, file ESMC_FieldUTest.c, line 507 PET 0 Test Elapsed Time 4.761 msec.
+Ending Test, file ESMC_FieldUTest.c, line 507 PET 0 Test Elapsed Time 3.617 msec.

@@ -7,16 +7,16 @@ module load netcdf-c/pywk6et netcdf-fortran/busq63s
 set -x
 export FC=nagfor
 export ESMPY_DATA_DIR="/usr/local/esmf/esmf-testing/esmf-test-data/grids"
-export ESMF_DIR=/usr/local/esmf/esmf-testing/nag_7.2.44_openmpi_g_develop/esmf
+export ESMF_DIR=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_openmpi_g_develop/esmf
 export ESMF_COMPILER=nag
 export ESMF_COMM=openmpi
 export ESMF_NETCDF=nc-config
 export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
-module list >& /usr/local/esmf/esmf-testing/nag_7.2.44_openmpi_g_develop/module-build.log
-export WORK_ROOT=/usr/local/esmf/esmf-testing/nag_7.2.44_openmpi_g_develop
-export TEMP_ROOT=/usr/local/esmf/esmf-testing/nag_7.2.44_openmpi_g_develop
+module list >& /Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_openmpi_g_develop/module-build.log
+export WORK_ROOT=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_openmpi_g_develop
+export TEMP_ROOT=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_openmpi_g_develop
 cd $TEMP_ROOT/esmf
 export ESMF_DIR=`pwd`
 set -o pipefail

@@ -1,4 +1,4 @@
-2026-06-24 21:09:22
+2026-06-15 16:57:25
   Beginning Test, file ESMF_ArrayBundleCreateUTest.F90, line 81
   NUMBER_OF_PROCESSORS 1
   PASS  Testing ArrayBundle IsCreated for uncreated object, ESMF_ArrayBundleCreateUTest.F90, line 90
@@ -30,10 +30,10 @@ arrayCount = 0
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 2
-Container::print() multipmap:item=0 key=MyArray value=0x15584ec00
-Container::print() multipmap:item=1 key=MyArray2 value=0x15584f200
-Container::print()      list:item=0 key=MyArray value=0x15584ec00
-Container::print()      list:item=1 key=MyArray2 value=0x15584f200
+Container::print() multipmap:item=0 key=MyArray value=0x15984ca00
+Container::print() multipmap:item=1 key=MyArray2 value=0x15984d000
+Container::print()      list:item=0 key=MyArray value=0x15984ca00
+Container::print()      list:item=1 key=MyArray2 value=0x15984d000
 --- ESMCI::ArrayBundle::print end ---
   PASS  ArrayBundlePrint #2 Test, ESMF_ArrayBundleCreateUTest.F90, line 270
   PASS  ArrayBundleLog #2 Test, ESMF_ArrayBundleCreateUTest.F90, line 277
@@ -67,8 +67,8 @@ DistGrid dimCount = 2
 deCount = 4
 localDeCount = 4
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1556082d0:
-            rank = 2, typekind = 6, base_addr = 0x101c78ba0
+LocalArrayPrint: Array at address 0x159608300:
+            rank = 2, typekind = 6, base_addr = 0x1018dcba0
             dim[0] = 8  dim[1] = 12  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -93,8 +93,8 @@ LocalArrayPrint: Array at address 0x1556082d0:
 ( 7,12) =  0
 ( 8,12) =  0
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x155608600:
-            rank = 2, typekind = 6, base_addr = 0x101c78eb0
+LocalArrayPrint: Array at address 0x159608630:
+            rank = 2, typekind = 6, base_addr = 0x1018dceb0
             dim[0] = 7  dim[1] = 12  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -119,8 +119,8 @@ LocalArrayPrint: Array at address 0x155608600:
 ( 6,12) =  0
 ( 7,12) =  0
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x155608930:
-            rank = 2, typekind = 6, base_addr = 0x101c79160
+LocalArrayPrint: Array at address 0x159608960:
+            rank = 2, typekind = 6, base_addr = 0x1018dd160
             dim[0] = 8  dim[1] = 11  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -145,8 +145,8 @@ LocalArrayPrint: Array at address 0x155608930:
 ( 7,11) =  0
 ( 8,11) =  0
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x155608c60:
-            rank = 2, typekind = 6, base_addr = 0x101c79430
+LocalArrayPrint: Array at address 0x159608c90:
+            rank = 2, typekind = 6, base_addr = 0x1018dd430
             dim[0] = 7  dim[1] = 11  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -185,24 +185,24 @@ LocalArrayPrint: Array at address 0x155608c60:
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 9
-Container::print() multipmap:item=0 key=MyArray2 value=0x15584f200
-Container::print() multipmap:item=1 key=MyArray4 value=0x15584fe00
-Container::print() multipmap:item=2 key=MyArray4 value=0x15584fe00
-Container::print() multipmap:item=3 key=MyArray4 value=0x15584fe00
-Container::print() multipmap:item=4 key=MyArray5 value=0x155850a00
-Container::print() multipmap:item=5 key=MyArray5 value=0x155850a00
-Container::print() multipmap:item=6 key=MyArray6 value=0x155850400
-Container::print() multipmap:item=7 key=MyArray6 value=0x155850400
-Container::print() multipmap:item=8 key=MyArray6 value=0x155850400
-Container::print()      list:item=0 key=MyArray2 value=0x15584f200
-Container::print()      list:item=1 key=MyArray6 value=0x155850400
-Container::print()      list:item=2 key=MyArray4 value=0x15584fe00
-Container::print()      list:item=3 key=MyArray4 value=0x15584fe00
-Container::print()      list:item=4 key=MyArray6 value=0x155850400
-Container::print()      list:item=5 key=MyArray5 value=0x155850a00
-Container::print()      list:item=6 key=MyArray4 value=0x15584fe00
-Container::print()      list:item=7 key=MyArray6 value=0x155850400
-Container::print()      list:item=8 key=MyArray5 value=0x155850a00
+Container::print() multipmap:item=0 key=MyArray2 value=0x15984d000
+Container::print() multipmap:item=1 key=MyArray4 value=0x15984dc00
+Container::print() multipmap:item=2 key=MyArray4 value=0x15984dc00
+Container::print() multipmap:item=3 key=MyArray4 value=0x15984dc00
+Container::print() multipmap:item=4 key=MyArray5 value=0x15984e800
+Container::print() multipmap:item=5 key=MyArray5 value=0x15984e800
+Container::print() multipmap:item=6 key=MyArray6 value=0x15984e200
+Container::print() multipmap:item=7 key=MyArray6 value=0x15984e200
+Container::print() multipmap:item=8 key=MyArray6 value=0x15984e200
+Container::print()      list:item=0 key=MyArray2 value=0x15984d000
+Container::print()      list:item=1 key=MyArray6 value=0x15984e200
+Container::print()      list:item=2 key=MyArray4 value=0x15984dc00
+Container::print()      list:item=3 key=MyArray4 value=0x15984dc00
+Container::print()      list:item=4 key=MyArray6 value=0x15984e200
+Container::print()      list:item=5 key=MyArray5 value=0x15984e800
+Container::print()      list:item=6 key=MyArray4 value=0x15984dc00
+Container::print()      list:item=7 key=MyArray6 value=0x15984e200
+Container::print()      list:item=8 key=MyArray5 value=0x15984e800
 --- ESMCI::ArrayBundle::print end ---
   PASS  ArrayBundleLog #3 Test, ESMF_ArrayBundleCreateUTest.F90, line 474
   PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateUTest.F90, line 482
@@ -264,4 +264,4 @@ Container::print()      list:item=8 key=MyArray5 value=0x155850a00
   PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 712
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 724
   Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 748
-  PET 0  Test Elapsed Time    5.3820000000000254  msec.
+  PET 0  Test Elapsed Time    5.8829999999999716  msec.
