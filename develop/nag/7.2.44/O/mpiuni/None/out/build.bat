@@ -7,17 +7,17 @@ module load netcdf-c/igrwluw netcdf-fortran/tkdn4yz
 set -x
 export FC=nagfor
 export ESMPY_DATA_DIR="/usr/local/esmf/esmf-testing/esmf-test-data/grids"
-export ESMF_DIR=/usr/local/esmf/esmf-testing/nag_7.2.44_mpiuni_O_develop/esmf
+export ESMF_DIR=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_mpiuni_O_develop/esmf
 export ESMF_COMPILER=nag
 export ESMF_COMM=mpiuni
 export ESMF_NETCDF=nc-config
 export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
-export ESMF_MPIRUN=/usr/local/esmf/esmf-testing/nag_7.2.44_mpiuni_O_develop/esmf/src/Infrastructure/stubs/mpiuni/mpirun
-module list >& /usr/local/esmf/esmf-testing/nag_7.2.44_mpiuni_O_develop/module-build.log
-export WORK_ROOT=/usr/local/esmf/esmf-testing/nag_7.2.44_mpiuni_O_develop
-export TEMP_ROOT=/usr/local/esmf/esmf-testing/nag_7.2.44_mpiuni_O_develop
+export ESMF_MPIRUN=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_mpiuni_O_develop/esmf/src/Infrastructure/stubs/mpiuni/mpirun
+module list >& /Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_mpiuni_O_develop/module-build.log
+export WORK_ROOT=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_mpiuni_O_develop
+export TEMP_ROOT=/Users/theurich/ESMF-Nightly-Testing/nag_7.2.44_mpiuni_O_develop
 cd $TEMP_ROOT/esmf
 export ESMF_DIR=`pwd`
 set -o pipefail

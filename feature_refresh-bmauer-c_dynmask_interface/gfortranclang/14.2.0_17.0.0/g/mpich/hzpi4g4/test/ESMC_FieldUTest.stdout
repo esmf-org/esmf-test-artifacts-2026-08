@@ -1,4 +1,4 @@
-2026-06-21 00:46:47
+2026-05-25 02:33:52
 Beginning Test, file ESMC_FieldUTest.c, line 76
 Beginning Test, file ESMC_FieldUTest.c, line 76NUMBER_OF_PROCESSORS 1
 PASS MeshCreate, ESMC_FieldUTest.c, line 88
@@ -47,31 +47,31 @@ DistGrid dimCount = 1
 deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x127f05f80:
-            rank = 1, typekind = 3, base_addr = 0x13001a600
+LocalArrayPrint: Array at address 0x1146045f0:
+            rank = 1, typekind = 3, base_addr = 0x135008600
             dim[0] = 372  
   Integer, *4, Dim 1, Data values:
 ( 1) =  0
 ( 2) =  0
-( 3) =  221
-( 4) =  58
+( 3) =  0
+( 4) =  0
 ( 5) =  0
 ( 6) =  0
-( 7) =  221
-( 8) =  60
-( 9) =  4
-(10) =  61
+( 7) =  0
+( 8) =  0
+( 9) =  0
+(10) =  0
   skipping to end ...
-(363) =  181
-(364) =  1078
-(365) =  182
-(366) =  1079
-(367) =  183
-(368) =  1080
-(369) =  184
-(370) =  1081
-(371) =  185
-(372) =  1082
+(363) =  0
+(364) =  0
+(365) =  0
+(366) =  0
+(367) =  0
+(368) =  0
+(369) =  0
+(370) =  0
+(371) =  0
+(372) =  0
 --- ESMCI::Array::print end ---
  arrayrank =            1
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
@@ -92,7 +92,8 @@ PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 26
    Name = 'field2'
  Base name    = field2
  Status: Base = Ready,  object = Ready
- Proxy        = no
+ Proxy        = PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 269
+no
  Root Info (Attributes):
 {
   "ESMF": {
@@ -101,7 +102,6 @@ PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 26
     }
   }
 } Field status =            4
-PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 269
  gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = field2
@@ -120,8 +120,8 @@ DistGrid dimCount = 1
 deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x127f07590:
-            rank = 1, typekind = 6, base_addr = 0x130022800
+LocalArrayPrint: Array at address 0x114605d80:
+            rank = 1, typekind = 6, base_addr = 0x13500c200
             dim[0] = 608  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -173,4 +173,4 @@ PASS Create ESMC_Field object on LocStream using TypeKind, ESMC_FieldUTest.c, li
 PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 446
 Ending Test, file ESMC_FieldUTest.c, line 507
 [WARNING] yaksa: 10 leaked handle pool objects
-Ending Test, file ESMC_FieldUTest.c, line 507 PET 0 Test Elapsed Time 9.101 msec.
+Ending Test, file ESMC_FieldUTest.c, line 507 PET 0 Test Elapsed Time 73.421 msec.
