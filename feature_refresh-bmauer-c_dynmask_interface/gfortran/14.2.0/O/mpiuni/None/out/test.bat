@@ -22,6 +22,7 @@ export ESMF_DIR=`pwd`
 make install 2>&1| tee $WORK_ROOT/install.log
 make all_tests 2>&1| tee $WORK_ROOT/test.log
 export ESMFMKFILE=`find $PWD/DEFAULTINSTALLDIR -iname esmf.mk`
+export CMAKE_PREFIX_PATH=$(dirname $ESMFMKFILE)/cmake/ESMF:${CMAKE_PREFIX_PATH}
 /usr/local/esmf/esmf-testing/gfortran_14.2.0_mpiuni_O_feature_refresh-bmauer-c_dynmask_interface/esmpy_install.bat
 cd /usr/local/esmf/esmf-testing/gfortran_14.2.0_mpiuni_O_feature_refresh-bmauer-c_dynmask_interface
 conda activate /usr/local/esmf/esmf-testing/conda_environments/esmf-test-scripts-environment-python3.11-numpy1.26

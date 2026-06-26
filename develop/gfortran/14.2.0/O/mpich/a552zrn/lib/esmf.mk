@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=9.0.0 beta snapshot
-ESMF_VERSION_STRING_GIT=develop+g44805b02cc
+ESMF_VERSION_STRING_GIT=develop+g552ab628d8
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=9
@@ -35,7 +35,7 @@ ESMF_F90LINKER=mpif90
 
 ESMF_F90COMPILEOPTS=-O  -fPIC -pthread -ffree-line-length-none -fopenmp
 ESMF_F90COMPILEPATHS=-I/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/mod/modO/Darwin.gfortran.64.mpich.default -I/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/src/include -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-kjkr6ddstbtlo5sequ65zqh4it6hy3am/include -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-kcbfb7vjkgam5zy4o5q2ukvyd2xh2p6i/include
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g552ab628d8' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=-ffree-form
 ESMF_F90COMPILEFIXCPP=-cpp -ffixed-form
@@ -54,7 +54,7 @@ ESMF_CXXLINKER=mpicxx
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O -DNDEBUG  -fPIC -pthread -fopenmp
 ESMF_CXXCOMPILEPATHS=-I/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/src/include  -I/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-kjkr6ddstbtlo5sequ65zqh4it6hy3am/include -I/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g552ab628d8' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
 
 ESMF_CXXLINKOPTS= -pthread -fopenmp
 ESMF_CXXLINKPATHS=-L/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/lib/libO/Darwin.gfortran.64.mpich.default -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-kjkr6ddstbtlo5sequ65zqh4it6hy3am/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-kcbfb7vjkgam5zy4o5q2ukvyd2xh2p6i/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/gcc-14.2.0-qqymykmrplffv57mi6bq7jls5ndk3ymq/lib/gcc/aarch64-apple-darwin24.5.0/14.2.0/../../../
@@ -69,7 +69,7 @@ ESMF_CLINKER=mpicc
 
 ESMF_CCOMPILEOPTS=-std=c99 -O -DNDEBUG  -fPIC -fopenmp
 ESMF_CCOMPILEPATHS=-I/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/src/include   -I/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/build_config/Darwin.gfortran.default
-ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g44805b02cc' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
+ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='develop+g552ab628d8' -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich -DESMF_DIR=/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
 
 ESMF_CLINKOPTS= -fopenmp
 ESMF_CLINKPATHS=-L/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/lib/libO/Darwin.gfortran.64.mpich.default -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-kjkr6ddstbtlo5sequ65zqh4it6hy3am/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-kcbfb7vjkgam5zy4o5q2ukvyd2xh2p6i/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/gcc-14.2.0-qqymykmrplffv57mi6bq7jls5ndk3ymq/lib/gcc/aarch64-apple-darwin24.5.0/14.2.0/../../../ -L/usr/local/esmf/esmf-testing/gfortran_14.2.0_mpich_O_develop/esmf/lib/libO/Darwin.gfortran.64.mpich.default -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-c-4.9.2-kjkr6ddstbtlo5sequ65zqh4it6hy3am/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/netcdf-fortran-4.6.2-kcbfb7vjkgam5zy4o5q2ukvyd2xh2p6i/lib -L/usr/local/esmf/spack/opt/spack/darwin-m1/gcc-14.2.0-qqymykmrplffv57mi6bq7jls5ndk3ymq/lib/gcc/aarch64-apple-darwin24.5.0/14.2.0/../../../
