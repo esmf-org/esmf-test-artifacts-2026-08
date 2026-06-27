@@ -1,0 +1,34 @@
+2026-06-27 08:19:23
+  Beginning Test, file ./ESMF_ArrayScatterUTest.F90, line 86
+  NUMBER_OF_PROCESSORS 4
+ 1.E-04 1.E-10
+  Beginning Test, file ./ESMF_ArrayScatterUTest.F90, line 86
+  NUMBER_OF_PROCESSORS 4
+ 1.E-04 1.E-10
+  Beginning Test, file ./ESMF_ArrayScatterUTest.F90, line 86
+  NUMBER_OF_PROCESSORS 4
+ 1.E-04 1.E-10
+  Beginning Test, file ./ESMF_ArrayScatterUTest.F90, line 86
+  NUMBER_OF_PROCESSORS 4
+ 1.E-04 1.E-10
+[gs6101-Dagobah:21599] *** Process received signal ***
+[gs6101-Dagobah:21599] Signal: Bus error: 10 (10)
+[gs6101-Dagobah:21599] Signal code: Invalid address alignment (1)
+[gs6101-Dagobah:21599] Failing at address: 0x102a24000
+[gs6101-Dagobah:21599] [ 0] 0   libsystem_platform.dylib            0x000000018321f744 _sigtramp + 56
+[gs6101-Dagobah:21599] [ 1] 0   libflang_rt.runtime.dylib           0x0000000101bfac94 _ZN7Fortran7runtime8AdjustLRILb0EEEvRNS0_10DescriptorERKS2_PKci + 428
+[gs6101-Dagobah:21599] [ 2] 0   libesmf.dylib                       0x00000001050e78d4 _QMesmf_logerrmodPesmf_logwrite + 3140
+[gs6101-Dagobah:21599] [ 3] 0   libesmf.dylib                       0x00000001050de8ec f_esmf_logwrite1_ + 96
+[gs6101-Dagobah:21599] [ 4] 0   libesmf.dylib                       0x0000000104411370 _ZN5ESMCI6LogErr5WriteERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEiiS9_S9_ + 200
+[gs6101-Dagobah:21599] [ 5] 0   libesmf.dylib                       0x0000000104411fc8 _ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi + 608
+[gs6101-Dagobah:21599] [ 6] 0   libesmf.dylib                       0x0000000103f5d4a8 _ZN5ESMCI5Array7scatterEPv18ESMC_TypeKind_FlagiPiS3_iPNS_2VME + 620
+[gs6101-Dagobah:21599] [ 7] 0   libesmf.dylib                       0x0000000103f42d54 c_esmc_arrayscatter_ + 412
+[gs6101-Dagobah:21599] [ 8] 0   libesmf.dylib                       0x00000001048b9380 _QMesmf_arrayscattermodPesmf_arrayscatter2dr4 + 2220
+[gs6101-Dagobah:21599] [ 9] 0   ESMF_ArrayScatterUTest              0x00000001008bd924 _QQmain + 3892
+[gs6101-Dagobah:21599] [10] 0   ESMF_ArrayScatterUTest              0x00000001008c8bbc main + 20
+[gs6101-Dagobah:21599] [11] 0   dyld                                0x0000000182e57e00 start + 6992
+[gs6101-Dagobah:21599] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 0 with PID 21599 on node gs6101-Dagobah exited on
+signal 10 (Bus error: 10).
+--------------------------------------------------------------------------

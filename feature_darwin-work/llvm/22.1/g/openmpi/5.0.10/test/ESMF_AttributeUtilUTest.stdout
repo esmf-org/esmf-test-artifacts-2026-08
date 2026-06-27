@@ -1,0 +1,55 @@
+2026-06-27 08:19:23
+  Beginning Test, file ESMF_AttributeUtilUTest.F90, line 79
+  NUMBER_OF_PROCESSORS 2
+  PASS  ESMF_InfoFormatKey w/ name, ESMF_AttributeUtilUTest.F90, line 94
+  Beginning Test, file ESMF_AttributeUtilUTest.F90, line 79
+  NUMBER_OF_PROCESSORS 2
+  PASS  ESMF_InfoFormatKey w/ name, ESMF_AttributeUtilUTest.F90, line 94
+  PASS  Attribute copy by reference, ESMF_AttributeUtilUTest.F90, line 125
+  PASS  Attribute copy by reference, ESMF_AttributeUtilUTest.F90, line 125
+  PASS  Setting scalars and arrays in loop, ESMF_AttributeUtilUTest.F90, line 1
+ 88
+  PASS  Setting scalars and arrays in loop, ESMF_AttributeUtilUTest.F90, line 1
+ 88
+  PASS  Array to scalar, ESMF_AttributeUtilUTest.F90, line 237
+[gs6101-Dagobah:75292] *** Process received signal ***
+[gs6101-Dagobah:75292] Signal: Bus error: 10 (10)
+[gs6101-Dagobah:75292] Signal code: Invalid address alignment (1)
+[gs6101-Dagobah:75292] Failing at address: 0x16d90c000
+[gs6101-Dagobah:75292] [ 0] 0   libsystem_platform.dylib            0x000000018321f744 _sigtramp + 56
+[gs6101-Dagobah:75292] [ 1] 0   libflang_rt.runtime.dylib           0x000000010374ec94 _ZN7Fortran7runtime8AdjustLRILb0EEEvRNS0_10DescriptorERKS2_PKci + 428
+  PASS  Array to scalar, ESMF_AttributeUtilUTest.F90, line 237
+[gs6101-Dagobah:75292] [ 2] [gs6101-Dagobah:75291] *** Process received signal ***
+[gs6101-Dagobah:75291] Signal: Bus error: 10 (10)
+[gs6101-Dagobah:75291] Signal code: Invalid address alignment (1)
+[gs6101-Dagobah:75291] Failing at address: 0x16d3e0000
+[gs6101-Dagobah:75291] [ 0] 0   libsystem_platform.dylib            0x000000018321f744 _sigtramp + 56
+[gs6101-Dagobah:75291] [ 1] 0   libflang_rt.runtime.dylib           0x0000000103d2ac94 _ZN7Fortran7runtime8AdjustLRILb0EEEvRNS0_10DescriptorERKS2_PKci + 428
+[gs6101-Dagobah:75291] [ 2] 0   libesmf.dylib                       0x0000000106c3b8d4 _QMesmf_logerrmodPesmf_logwrite + 3140
+[gs6101-Dagobah:75292] [ 3] 0   libesmf.dylib                       0x00000001072178d4 _QMesmf_logerrmodPesmf_logwrite + 3140
+[gs6101-Dagobah:75291] [ 3] 0   libesmf.dylib                       0x0000000106c328ec f_esmf_logwrite1_ + 96
+[gs6101-Dagobah:75292] [ 4] 0   libesmf.dylib                       0x000000010720e8ec f_esmf_logwrite1_ + 96
+[gs6101-Dagobah:75291] [ 4] 0   libesmf.dylib                       0x0000000105f65370 _ZN5ESMCI6LogErr5WriteERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEiiS9_S9_ + 200
+[gs6101-Dagobah:75292] [ 5] 0   libesmf.dylib                       0x0000000106541370 _ZN5ESMCI6LogErr5WriteERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEiiS9_S9_ + 200
+[gs6101-Dagobah:75291] [ 5] 0   libesmf.dylib                       0x0000000105f65fc8 _ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi + 608
+[gs6101-Dagobah:75292] [ 6] 0   libesmf.dylib                       0x0000000106541fc8 _ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi + 608
+[gs6101-Dagobah:75291] [ 6] 0   libesmf.dylib                       0x0000000105ee263c _ZNK5ESMCI4Info3getIiEET_RKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPKS2_PKibPS9_b + 4024
+[gs6101-Dagobah:75292] [ 7] 0   libesmf.dylib                       0x00000001064be63c _ZNK5ESMCI4Info3getIiEET_RKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPKS2_PKibPS9_b + 4024
+[gs6101-Dagobah:75291] [ 7] 0   libesmf.dylib                       0x0000000105a78f9c ESMC_InfoGetI4 + 192
+[gs6101-Dagobah:75292] [ 8] 0   libesmf.dylib                       0x0000000106054f9c ESMC_InfoGetI4 + 192
+[gs6101-Dagobah:75291] [ 8] 0   libesmf.dylib                       0x0000000106afb2ec _QMesmf_infomodPesmf_infogeti4 + 632
+[gs6101-Dagobah:75292] [ 9] 0   libesmf.dylib                       0x00000001070d72ec _QMesmf_infomodPesmf_infogeti4 + 632
+[gs6101-Dagobah:75291] [ 9] 0   libesmf.dylib                       0x0000000106516540 _QMesmf_attributemodPesmf_attributegetobjfieldi4 + 2540
+[gs6101-Dagobah:75292] [10] 0   ESMF_AttributeUtilUTest             0x00000001024f70ac _QQmain + 9916
+[gs6101-Dagobah:75292] [11] 0   ESMF_AttributeUtilUTest             0x00000001024f8f48 main + 20
+[gs6101-Dagobah:75292] [12] 0   dyld                                0x0000000182e57e00 start + 6992
+[gs6101-Dagobah:75292] *** End of error message ***
+0   libesmf.dylib                       0x0000000106af2540 _QMesmf_attributemodPesmf_attributegetobjfieldi4 + 2540
+[gs6101-Dagobah:75291] [10] 0   ESMF_AttributeUtilUTest             0x0000000102a230ac _QQmain + 9916
+[gs6101-Dagobah:75291] [11] 0   ESMF_AttributeUtilUTest             0x0000000102a24f48 main + 20
+[gs6101-Dagobah:75291] [12] 0   dyld                                0x0000000182e57e00 start + 6992
+[gs6101-Dagobah:75291] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 1 with PID 75292 on node gs6101-Dagobah exited on
+signal 10 (Bus error: 10).
+--------------------------------------------------------------------------
