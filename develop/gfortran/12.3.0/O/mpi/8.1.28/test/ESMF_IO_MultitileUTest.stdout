@@ -1,4 +1,4 @@
-2026-07-11 03:54:48
+2026-07-12 06:26:41
   Beginning Test, file ESMF_IO_MultitileUTest.F90, line 116
   NUMBER_OF_PROCESSORS           8
   Beginning Test, file ESMF_IO_MultitileUTest.F90, line 116
@@ -94,8 +94,6 @@
   PASS  Create single-tile field for failure testing, ESMF_IO_MultitileUTest.F90, line 251
   PASS  Create single-tile field for failure testing, ESMF_IO_MultitileUTest.F90, line 251
   PASS  Create single-tile field for failure testing, ESMF_IO_MultitileUTest.F90, line 251
-  PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
-  PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
   PASS  Create single-tile field for failure testing, ESMF_IO_MultitileUTest.F90, line 251
   PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
   PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
@@ -103,6 +101,8 @@
   PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
   PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
   PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
+  PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
+  PASS  Failure test: try to write fields with different tile counts, ESMF_IO_MultitileUTest.F90, line 260
   PASS  Create arrays for multitile IO tests, ESMF_IO_MultitileUTest.F90, line 272
   PASS  Create arrays for multitile IO tests, ESMF_IO_MultitileUTest.F90, line 272
   PASS  Create arrays for multitile IO tests, ESMF_IO_MultitileUTest.F90, line 272
@@ -124,14 +124,14 @@
   PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
   PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
   PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
-  PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
+  PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
   PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
   PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
   PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
   PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
   PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
   PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
-  PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
+  PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
   PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
   PASS  Read an ArrayBundle with multi-tile arrays, ESMF_IO_MultitileUTest.F90, line 294
   PASS  Confirm that ArrayBundle-read arrays match originals, ESMF_IO_MultitileUTest.F90, line 309
@@ -144,17 +144,17 @@
   PASS  Write a multi-tile Array to existing files, ESMF_IO_MultitileUTest.F90, line 322
   PASS  Write a multi-tile Array to existing files, ESMF_IO_MultitileUTest.F90, line 322
   PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
-  PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
-  PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
-  PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
-  PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
-  PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
   PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
   PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
   PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
   PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
   PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
   PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
+  PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
+  PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
+  PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
+  PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
+  PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
   PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
   PASS  Confirm that Array-read array matches original, ESMF_IO_MultitileUTest.F90, line 348
   PASS  Read a multi-tile Array, ESMF_IO_MultitileUTest.F90, line 335
@@ -168,6 +168,13 @@
   PASS  Write a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 361
   PASS  Write a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 361
   PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
+  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
+  PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
+  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
+  PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
+  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
+  PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
+  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
   PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
   PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
   PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
@@ -176,13 +183,6 @@
   PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
   PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
   PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
-  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
-  PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
-  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
-  PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
-  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
-  PASS  Read a multi-tile Field with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 374
-  PASS  Confirm that Field-read field matches original with uneven DEs per PET, ESMF_IO_MultitileUTest.F90, line 397
   PASS  Write a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 413
   PASS  Write a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 413
   PASS  Write a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 413
@@ -191,9 +191,10 @@
   PASS  Write a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 413
   PASS  Write a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 413
   PASS  Write a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 413
+  PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
+  PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
   PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
   PASS  Confirm that Field-read field matches original with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 449
-  PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
   PASS  Confirm that Field-read field matches original with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 449
   Ending Test, file ESMF_IO_MultitileUTest.F90, line 462
   PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
@@ -208,18 +209,17 @@
   PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
   PASS  Confirm that Field-read field matches original with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 449
   Ending Test, file ESMF_IO_MultitileUTest.F90, line 462
-  PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
   PASS  Confirm that Field-read field matches original with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 449
   Ending Test, file ESMF_IO_MultitileUTest.F90, line 462
   Ending Test, file ESMF_IO_MultitileUTest.F90, line 462
   PASS  Read a multi-tile Field with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 426
   PASS  Confirm that Field-read field matches original with uneven DEs per PET and ungridded dims, ESMF_IO_MultitileUTest.F90, line 449
   Ending Test, file ESMF_IO_MultitileUTest.F90, line 462
-  PET           5  Test Elapsed Time    35.356000000000002       msec.
-  PET           1  Test Elapsed Time    35.429000000000002       msec.
-  PET           3  Test Elapsed Time    35.574999999999996       msec.
-  PET           4  Test Elapsed Time    34.276000000000003       msec.
-  PET           0  Test Elapsed Time    35.826999999999984       msec.
-  PET           6  Test Elapsed Time    35.450999999999993       msec.
-  PET           2  Test Elapsed Time    34.352999999999994       msec.
-  PET           7  Test Elapsed Time    36.383000000000010       msec.
+  PET           0  Test Elapsed Time    34.854999999999997       msec.
+  PET           4  Test Elapsed Time    34.117999999999995       msec.
+  PET           6  Test Elapsed Time    34.849000000000004       msec.
+  PET           2  Test Elapsed Time    33.949999999999996       msec.
+  PET           1  Test Elapsed Time    34.836999999999996       msec.
+  PET           5  Test Elapsed Time    35.048999999999999       msec.
+  PET           3  Test Elapsed Time    34.999000000000002       msec.
+  PET           7  Test Elapsed Time    35.751000000000005       msec.

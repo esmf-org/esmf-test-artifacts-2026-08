@@ -1,6 +1,4 @@
-2026-07-11 03:58:50
-CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
-CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
+2026-07-12 06:33:21
   Beginning Test, file ESMF_VMComponentUTest.F90, line 287
   NUMBER_OF_PROCESSORS 4
  stdout before ESMF_GridCompSetVM() j,i= 2*1
@@ -26,6 +24,33 @@ CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
   PASS  Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 356
   PASS  Check petCount for Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 362
  stdout inside mygcomp_setvmForcePthreads()
+CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
+  Beginning Test, file ESMF_VMComponentUTest.F90, line 287
+  NUMBER_OF_PROCESSORS 4
+ stdout before ESMF_GridCompSetVM() j,i= 2*1
+ stdout inside mygcomp_setvm()
+ stdout between ESMF_GridCompSetVM() and ESMF_GridCompSetServices() j,i= 2*1
+ stdout inside mygcomp_register_nexh() from localPet= 1
+ stdout after ESMF_GridCompSetServices() j,i= 2*1
+ stdout before ESMF_GridCompSetVM() j,i= 1,  2
+ stdout inside mygcomp_setvm()
+ stdout between ESMF_GridCompSetVM() and ESMF_GridCompSetServices() j,i= 1,  2
+ stdout inside mygcomp_register_nexh() from localPet= 1
+ stdout after ESMF_GridCompSetServices() j,i= 1,  2
+ stdout inside mygcomp_init() from localPet= 1
+ stdout inside mygcomp_run() from localPet= 1
+ stdout inside mygcomp_run() from localPet= 1
+ stdout inside mygcomp_run() from localPet= 1
+ stdout inside mygcomp_final() from localPet= 1
+ stdout inside mygcomp_init() from localPet= 1
+ stdout inside mygcomp_run() from localPet= 1
+ stdout inside mygcomp_run() from localPet= 1
+ stdout inside mygcomp_run() from localPet= 1
+ stdout inside mygcomp_final() from localPet= 1
+  PASS  Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 356
+  PASS  Check petCount for Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 362
+ stdout inside mygcomp_setvmForcePthreads()
+CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
   Beginning Test, file ESMF_VMComponentUTest.F90, line 287
   NUMBER_OF_PROCESSORS 4
  stdout before ESMF_GridCompSetVM() j,i= 2*1
@@ -78,30 +103,5 @@ CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
   PASS  Check petCount for Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 362
  stdout inside mygcomp_setvmForcePthreads()
 CCE OpenMP fatal error: omp_get_max_threads attempted from non-OpenMP thread
-  Beginning Test, file ESMF_VMComponentUTest.F90, line 287
-  NUMBER_OF_PROCESSORS 4
- stdout before ESMF_GridCompSetVM() j,i= 2*1
- stdout inside mygcomp_setvm()
- stdout between ESMF_GridCompSetVM() and ESMF_GridCompSetServices() j,i= 2*1
- stdout inside mygcomp_register_nexh() from localPet= 1
- stdout after ESMF_GridCompSetServices() j,i= 2*1
- stdout before ESMF_GridCompSetVM() j,i= 1,  2
- stdout inside mygcomp_setvm()
- stdout between ESMF_GridCompSetVM() and ESMF_GridCompSetServices() j,i= 1,  2
- stdout inside mygcomp_register_nexh() from localPet= 1
- stdout after ESMF_GridCompSetServices() j,i= 1,  2
- stdout inside mygcomp_init() from localPet= 1
- stdout inside mygcomp_run() from localPet= 1
- stdout inside mygcomp_run() from localPet= 1
- stdout inside mygcomp_run() from localPet= 1
- stdout inside mygcomp_final() from localPet= 1
- stdout inside mygcomp_init() from localPet= 1
- stdout inside mygcomp_run() from localPet= 1
- stdout inside mygcomp_run() from localPet= 1
- stdout inside mygcomp_run() from localPet= 1
- stdout inside mygcomp_final() from localPet= 1
-  PASS  Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 356
-  PASS  Check petCount for Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, line 362
- stdout inside mygcomp_setvmForcePthreads()
-srun: error: c5n1446: tasks 0-3: Exited with exit code 255
-srun: Terminating StepId=135799114.34
+srun: error: c5n1100: tasks 0-3: Exited with exit code 255
+srun: Terminating StepId=135799414.34
