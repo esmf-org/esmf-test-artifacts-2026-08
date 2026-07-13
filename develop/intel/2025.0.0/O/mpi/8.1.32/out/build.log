@@ -214,8 +214,8 @@ ESMF_F90ESMFPRELOADLINKLIBS=-lesmf -lesmftrace_preload -lpioc -lnetcdff -lnetcdf
 
 
 --------------------------------------------------------------
-Compiling on Sun Jul 12 06:21:17 AM EDT 2026 on c5n1601
-Machine characteristics: Linux c5n1601 6.4.0-150600.23.53_15.0.11-cray_shasta_c #1 SMP Tue Jul 15 19:33:24 UTC 2025 (80d95d6) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Jul 13 04:08:21 AM EDT 2026 on c5n1246
+Machine characteristics: Linux c5n1246 6.4.0-150600.23.53_15.0.11-cray_shasta_c #1 SMP Tue Jul 15 19:33:24 UTC 2025 (80d95d6) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/tmp/intel_2025.0.0_mpi_O_develop/esmf'
@@ -1747,9 +1747,6 @@ CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tm
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:385:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
   385 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:833:13: warning: enumeration values 'ESMC_CALKIND_GREGORIAN' and 'ESMC_CALKIND_JULIAN' not handled in switch [-Wswitch]
-  833 |     switch (this->calendar->calkindflag)
-      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:402:9: warning: array index 511 is past the end of the array (that has type 'char[256]') [-Warray-bounds]
   402 |         this->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
       |         ^          ~~~~~~~~~~~~~~~
@@ -1759,13 +1756,6 @@ CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tm
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:564:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
   564 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3159:25: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
- 3159 |     char timeStringTemp[timeStringLen+1];
-      |                         ^~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3159:25: note: function parameter 'timeStringLen' with unknown value cannot be used in a constant expression
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3095:11: note: declared here
- 3095 |       int timeStringLen,              // in  - max number of characters that can be stored in timeString, not including the null terminator
-      |           ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:667:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
   667 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
@@ -1787,13 +1777,6 @@ CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tm
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1087:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1087 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1471:25: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
- 1471 |     char timeStringTemp[timeStringLen+1];
-      |                         ^~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1471:25: note: function parameter 'timeStringLen' with unknown value cannot be used in a constant expression
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1397:11: note: declared here
- 1397 |       int timeStringLen,              // in  - max number of characters that can be stored in timeString, not including the null terminator
-      |           ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1180:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1180 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
@@ -1809,12 +1792,22 @@ CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tm
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1351:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1351 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:833:13: warning: enumeration values 'ESMC_CALKIND_GREGORIAN' and 'ESMC_CALKIND_JULIAN' not handled in switch [-Wswitch]
+  833 |     switch (this->calendar->calkindflag)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1820:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1820 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1854:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
- 1854 |     if (this == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3159:25: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+ 3159 |     char timeStringTemp[timeStringLen+1];
+      |                         ^~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3159:25: note: function parameter 'timeStringLen' with unknown value cannot be used in a constant expression
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3095:11: note: declared here
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C :18543095: | 9:   warning:  'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare] 
+  int t i1854m | e S t  riif n(gthLiesn ,= =   E S M C _ N U L L _ P O/I/N TiEnR )  -{ 
+m      a| x        ^~~~    ~~~~~~~~~~~~~~~~~ 
+number of characters that can be stored in timeString, not including the null terminator
+      |           ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1926:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1926 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
@@ -1824,26 +1817,21 @@ CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tm
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:2020:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  2020 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:594:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
-  594 |     if (this == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:729:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
-  729 |     if (this == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:870:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
-  870 |     if (this == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1471:25: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+ 1471 |     char timeStringTemp[timeStringLen+1];
+      |                         ^~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1471:25: note: function parameter 'timeStringLen' with unknown value cannot be used in a constant expression
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1397:11: note: declared here
+ 1397 |       int timeStringLen,              // in  - max number of characters that can be stored in timeString, not including the null terminator
+      |           ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:109:9: warning: array index 511 is past the end of the array (that has type 'char[256]') [-Warray-bounds]
   109 |         clock->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
       |         ^           ~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/../include/ESMCI_Clock.h:86:5: note: array 'name' declared here
    86 |     char         name[ESMF_MAXSTR];  // name of clock
       |     ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1004:/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C9::317 :warning: 9'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]:
- warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
- 1004 |      317  | i f   ( tihfi s( t=h=i sE S=M=C _ENSUMLCL__NPUOLILN_TPEORI)N T{E
-R      )|          ^~~~    ~~~~~~~~~~~~~~~~~{
-
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:317:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+  317 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:334:9: warning: array index 511 is past the end of the array (that has type 'char[256]') [-Warray-bounds]
   334 |         this->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
@@ -1853,9 +1841,6 @@ R      )|          ^~~~    ~~~~~~~~~~~~~~~~~{
       |     ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:467:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
   467 |     if (this == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1382:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
- 1382 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:615:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
   615 |     if (this == ESMC_NULL_POINTER) {
@@ -1887,11 +1872,17 @@ R      )|          ^~~~    ~~~~~~~~~~~~~~~~~{
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1220:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1220 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:594:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+  594 |     if (this == ESMC_NULL_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1455:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1455 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1568:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1568 |     if (this == ESMC_NULL_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:729:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+  729 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1602:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1602 |     if (this == ESMC_NULL_POINTER) {
@@ -1902,26 +1893,35 @@ R      )|          ^~~~    ~~~~~~~~~~~~~~~~~{
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1711:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  1711 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:870:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+  870 |     if (this == ESMC_NULL_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1004:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1883 :10049 | :   warning:   'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+if (this  1883= | =   E S MifC _N(ULtLh_PiOsIN T==E RE)S MC{_
+N      U| L        ^~~~    ~~~~~~~~~~~~~~~~~L
+_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2161:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+ 2161 |     if (this == ESMC_NULL_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1382:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+ 1382 |     if (this == ESMC_NULL_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2241:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+ 2241 |     if (this == ESMC_NULL_POINTER) {
+      |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2013:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  2013 |     if (this == ESMC_NULL_POINTER || time == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1883:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
- 1883 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2260:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  2260 |     if (this == ESMC_NULL_POINTER || time == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2161:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
- 2161 |     if (this == ESMC_NULL_POINTE/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.CR): 2503{:
-9      :|          ^~~~    ~~~~~~~~~~~~~~~~~warning: 
-'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2503:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  2503 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2552:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  2552 |     if (this == ESMC_NULL_POINTER) {
-      |         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2241:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
- 2241 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2602:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
  2602 |     if (this == ESMC_NULL_POINTER) {
@@ -1942,8 +1942,8 @@ R      )|          ^~~~    ~~~~~~~~~~~~~~~~~{
  2884 |     if (this == ESMC_NULL_POINTER) {
       |         ^~~~    ~~~~~~~~~~~~~~~~~
 2 warnings generated.
-1 warning generated.
 21 warnings generated.
+1 warning generated.
 22 warnings generated.
 15 warnings generated.
 make[8]: Leaving directory '/tmp/intel_2025.0.0_mpi_O_develop/esmf/mod/modO/Unicos.intel.64.mpi.default'
@@ -2568,7 +2568,7 @@ CMAKE_EXE_LINKER_FLAGS
 # General
 -------
 PIO Version:		2.6.6
-Configured On:		Sun Jul 12 06:25:34 AM EDT 2026
+Configured On:		Mon Jul 13 04:12:42 AM EDT 2026
 Host System:		x86_64-Linux-6.4.0-150600.23.53_15.0.11-cray_shasta_c
 Build Directory: 	/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Build
 Install Prefix:         /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Install
@@ -2897,20 +2897,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
-      |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:29:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -2925,8 +2911,8 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:15:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
@@ -2940,6 +2926,20 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:15:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:15:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -2981,7 +2981,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C:36:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C:36:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -2995,7 +2995,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C:36:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C:36:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -3037,44 +3037,8 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Vector_Regrid.C:24:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
-      |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
-      |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:3332:9: warning: 'DOT_PRODUCT3D' macro redefined [-Wmacro-redefined]
- 3332 | #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
-      |         ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:1061:9: note: previous definition is here
- 1061 | #define DOT_PRODUCT3D(a,b) a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
-      |         ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -3102,6 +3066,42 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Vector_Regrid.C:24:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:3332:9: warning: 'DOT_PRODUCT3D' macro redefined [-Wmacro-redefined]
+ 3332 | #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
+      |         ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:1061:9: note: previous definition is here
+ 1061 | #define DOT_PRODUCT3D(a,b) a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+      |         ^
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:22:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MeshCXX.h:16:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
@@ -3143,6 +3143,16 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C:1044:29: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
  1044 |     char *esmfmesh_filename=".esmf.nc";
       |                             ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:190:25: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+  190 |       if ((*regridMethod==ESMC_REGRID_METHOD_BINNING)) {
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:190:25: note: remove extraneous parentheses around the comparison to silence this warning
+  190 |       if ((*regridMethod==ESMC_REGRID_METHOD_BINNING)) {
+      |           ~             ^                           ~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:190:25: note: use '=' to turn this equality comparison into an assignment
+  190 |       if ((*regridMethod==ESMC_REGRID_METHOD_BINNING)) {
+      |                         ^~
+      |                         =
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Vector_Regrid.C:158:53: warning: 'binary_function<CoordFromId::CoordFromIdEntry, CoordFromId::CoordFromIdEntry, bool>' is deprecated [-Wdeprecated-declarations]
   158 |   class CoordFromIdEntry_just_id_less : public std::binary_function<CoordFromIdEntry, CoordFromIdEntry, bool> {
       |                                                     ^
@@ -3155,61 +3165,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:190:25: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
-  190 |       if ((*regridMethod==ESMC_REGRID_METHOD_BINNING)) {
-      |            ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:190:25: note: remove extraneous parentheses around the comparison to silence this warning
-  190 |       if ((*regridMethod==ESMC_REGRID_METHOD_BINNING)) {
-      |           ~             ^                           ~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:190:25: note: use '=' to turn this equality comparison into an assignment
-  190 |       if ((*regridMethod==ESMC_REGRID_METHOD_BINNING)) {
-      |                         ^~
-      |                         =
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
-  217 |   double cmin[sdim], cmax[sdim];
-      |               ^~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:15: note: read of non-const variable 'sdim' is not allowed in a constant expression
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:216:7: note: declared here
-  216 |   int sdim = dstpl->get_coord_dim();
-      |       ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:27: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
-  217 |   double cmin[sdim], cmax[sdim];
-      |                           ^~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:27: note: read of non-const variable 'sdim' is not allowed in a constant expression
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:216:7: note: declared here
-  216 |   int sdim = dstpl->get_coord_dim();
-      |       ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:37:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
-      |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:296:9: warning: expression result unused [-Wunused-value]
-  296 |    for (ni2; ni2 != ne2; ++ni2) {
-      |         ^~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:369:9: warning: expression result unused [-Wunused-value]
-  369 |    for (ni2; ni2 != ne2; ++ni2) {
-      |         ^~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:629:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
-  629 | }
-      | ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:650:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
-  650 | }
-      | ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:802:8: warning: expression result unused [-Wunused-value]
-  802 |   for (ni2; ni2 != ne2; ++ni2) {
-      |        ^~~
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
@@ -3226,9 +3181,51 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1157:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
- 1157 | }
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  217 |   double cmin[sdim], cmax[sdim];
+      |               ^~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:15: note: read of non-const variable 'sdim' is not allowed in a constant expression
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:216:7: note: declared here
+  216 |   int sdim = dstpl->get_coord_dim();
+      |       ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:27: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  217 |   double cmin[sdim], cmax[sdim];
+      |                           ^~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:217:27: note: read of non-const variable 'sdim' is not allowed in a constant expression
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:216:7: note: declared here
+  216 |   int sdim = dstpl->get_coord_dim();
+      |       ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:296:9: warning: expression result unused [-Wunused-value]
+  296 |    for (ni2; ni2 != ne2; ++ni2) {
+      |         ^~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:369:9: warning: expression result unused [-Wunused-value]
+  369 |    for (ni2; ni2 != ne2; ++ni2) {
+      |         ^~~
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:37:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:629:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  629 | }
       | ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:650:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  650 | }
+      | ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:802:8: warning: expression result unused [-Wunused-value]
+  802 |   for (ni2; ni2 != ne2; ++ni2) {
+      |        ^~~
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
@@ -3261,6 +3258,24 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1157:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+ 1157 | }
+      | ^
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:38:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
@@ -3277,8 +3292,8 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:38:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:28:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -3308,27 +3323,15 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:28:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:801:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  801 |   double pnts[3*PM_MAX_PNTS_IN_POLY];
+      |               ^~~~~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:801:17: note: read of non-const variable 'PM_MAX_PNTS_IN_POLY' is not allowed in a constant expression
+  801 |   double pnts[3*PM_MAX_PNTS_IN_POLY];
+      |                 ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:742:7: note: declared here
+  742 |   int PM_MAX_PNTS_IN_POLY = 4;
       |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:465:10: warning: expression result unused [-Wunused-value]
-  465 |     for (ni; ni != ne; ++ni) {
-      |          ^~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:487:10: warning: expression result unused [-Wunused-value]
-  487 |     for (ei; ei != ee; ++ei) {
-      |          ^~
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C:16:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
@@ -3345,21 +3348,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:617:10: warning: expression result unused [-Wunused-value]
-  617 |     for (ei; ei != ee; ++ei) {
-      |          ^~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:728:10: warning: expression result unused [-Wunused-value]
-  728 |     for (it; it != elems.end(); it++) {
-      |          ^~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:801:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
-  801 |   double pnts[3*PM_MAX_PNTS_IN_POLY];
-      |               ^~~~~~~~~~~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:801:17: note: read of non-const variable 'PM_MAX_PNTS_IN_POLY' is not allowed in a constant expression
-  801 |   double pnts[3*PM_MAX_PNTS_IN_POLY];
-      |                 ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:742:7: note: declared here
-  742 |   int PM_MAX_PNTS_IN_POLY = 4;
-      |       ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:894:12: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
   894 |   double s[pdim];
       |            ^~~~
@@ -3437,20 +3425,18 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
-  365 |   double cmin[sdim], cmax[sdim];
-      |               ^~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:15: note: read of non-const variable 'sdim' is not allowed in a constant expression
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:364:7: note: declared here
-  364 |   int sdim = dstpl->get_coord_dim();
-      |       ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:27: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
-  365 |   double cmin[sdim], cmax[sdim];
-      |                           ^~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:27: note: read of non-const variable 'sdim' is not allowed in a constant expression
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:364:7: note: declared here
-  364 |   int sdim = dstpl->get_coord_dim();
-      |       ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:465:10: warning: expression result unused [-Wunused-value]
+  465 |     for (ni; ni != ne; ++ni) {
+      |          ^~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:487:10: warning: expression result unused [-Wunused-value]
+  487 |     for (ei; ei != ee; ++ei) {
+      |          ^~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:617:10: warning: expression result unused [-Wunused-value]
+  617 |     for (ei; ei != ee; ++ei) {
+      |          ^~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:728:10: warning: expression result unused [-Wunused-value]
+  728 |     for (it; it != elems.end(); it++) {
+      |          ^~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1843:5: warning: expression result unused [-Wunused-value]
  1843 |     static_cast<int>(*ip++);
       |     ^~~~~~~~~~~~~~~~~~~~~~~
@@ -3475,9 +3461,32 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1864:5: warning: expression result unused [-Wunused-value]
  1864 |     static_cast<int>(*ip++);
       |     ^~~~~~~~~~~~~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  365 |   double cmin[sdim], cmax[sdim];
+      |               ^~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:15: note: read of non-const variable 'sdim' is not allowed in a constant expression
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:364:7: note: declared here
+  364 |   int sdim = dstpl->get_coord_dim();
+      |       ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:27: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  365 |   double cmin[sdim], cmax[sdim];
+      |                           ^~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:365:27: note: read of non-const variable 'sdim' is not allowed in a constant expression
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:364:7: note: declared here
+  364 |   int sdim = dstpl->get_coord_dim();
+      |       ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:518:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  518 | }
+      | ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:535:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  535 | }
+      | ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:787:10: warning: expression result unused [-Wunused-value]
   787 |     for (pb; pb !=  pe; ++pb) {
       |          ^~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1188:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+ 1188 | }
+      | ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:1110:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
  1110 | }
       | ^
@@ -3486,33 +3495,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
       | ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:1454:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
  1454 | }
-      | ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:518:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
-  518 | }
-      | ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:535:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
-  535 | }
-      | ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2648:20: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
- 2648 |     int nodeowners[nodes.size()];
-      |                    ^~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2648:26: note: non-constexpr function 'size' cannot be used in a constant expression
- 2648 |     int nodeowners[nodes.size()];
-      |                          ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/moab/Range.hpp:238:12: note: declared here
-  238 |     size_t size() const;
-      |            ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2824:20: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
- 2824 |     int nodeowners[owner.size()];
-      |                    ^~~~~~~~~~~~
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2824:26: note: non-constexpr function 'size' cannot be used in a constant expression
- 2824 |     int nodeowners[owner.size()];
-      |                          ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_vector.h:992:7: note: declared here
-  992 |       size() const _GLIBCXX_NOEXCEPT
-      |       ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1188:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
- 1188 | }
       | ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:219:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
   219 |   double coords[nd*max_num_nodes];
@@ -3546,6 +3528,25 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
   648 |     si.elem=NULL;
       |            ~^~~~
       |             0
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2648:20: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+ 2648 |     int nodeowners[nodes.size()];
+      |                    ^~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2648:26: note: non-constexpr function 'size' cannot be used in a constant expression
+ 2648 |     int nodeowners[nodes.size()];
+      |                          ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/moab/Range.hpp:238:12: note: declared here
+  238 |     size_t size() const;
+      |            ^
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2824:20: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+ 2824 |     int nodeowners[owner.size()];
+      |                    ^~~~~~~~~~~~
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2824:26: note: non-constexpr function 'size' cannot be used in a constant expression
+ 2824 |     int nodeowners[owner.size()];
+      |                          ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_vector.h:992:7: note: declared here
+  992 |       size() const _GLIBCXX_NOEXCEPT
+      |       ^
+1 warning generated.
 2 warnings generated.
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Vector_Regrid.C:36:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_DInfo.h:294:45: warning: 'binary_function<DInfo<int, Coord>::DInfoEntry, DInfo<int, Coord>::DInfoEntry, bool>' is deprecated [-Wdeprecated-declarations]
@@ -3567,28 +3568,27 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
 1 warning generated.
-1 warning generated.
 2 warnings generated.
 1 warning generated.
 1 warning generated.
 1 warning generated.
 1 warning generated.
 2 warnings generated.
+1 warning generated.
 1 warning generated.
 1 warning generated.
 2 warnings generated.
 6 warnings generated.
-1 warning generated.
 10 warnings generated.
-2 warnings generated.
 1 warning generated.
-3 warnings generated.
+2 warnings generated.
 6 warnings generated.
+3 warnings generated.
+1 warning generated.
 1 warning generated.
 1 warning generated.
 1 warning generated.
 2 warnings generated.
-1 warning generated.
 3 warnings generated.
 1 warning generated.
 4 warnings generated.
@@ -3656,6 +3656,19 @@ CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tm
 CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.17/intel/2023.2/include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_WriteWeightsPar.o
 CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.17/intel/2023.2/include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_FindPnts.o
 CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.17/intel/2023.2/include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_SM.o
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:12:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:12:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -3673,19 +3686,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:15:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
-      |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:12:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
@@ -3716,21 +3716,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15:
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
-  141 |     } _GLIBCXX11_DEPRECATED;
-      |       ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
-      |                                ^
-/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
- 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
-      |                                              ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:264:31: warning: 'binary_function<const ESMCI::MeshObj *, const ESMCI::MeshObj *, bool>' is deprecated [-Wdeprecated-declarations]
   264 | class robj_sort : public std::binary_function<const MeshObj*, const MeshObj*, bool> {
       |                               ^
@@ -3747,6 +3732,21 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
   272 | class id_sort : public std::binary_function<CommRel::CommNode,MeshObj *,bool> {
       |                             ^
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::MeshObj *, bool>' has been explicitly marked deprecated here
+  141 |     } _GLIBCXX11_DEPRECATED;
+      |       ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
   141 |     } _GLIBCXX11_DEPRECATED;
       |       ^
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
@@ -3867,9 +3867,8 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:16:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
@@ -3882,8 +3881,9 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:12:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:16:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
@@ -3935,16 +3935,16 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
   141 |     } _GLIBCXX11_DEPRECATED;
       |       ^
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
- 1948 | # define _GLIBCXX11_DEPRECATEIn file included from D /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C_:G12LI:
-BIn file included from C/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.hX:X17_:
-DIn file included from E/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.hP:R16E:
-CA/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.hT:E64D:
-32      | :                               ^ 
-warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h
-:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
-    193964 |  | # cdleafsisn er a_nGgLeI_BsCoXrXt_ D:E PpRuEbClAiTcE Ds t_d_:a:tbtirniabruyt_ef_u_n c(t(i_o_nd<eCpormemcRaetle:d:_C_o)m)m
-N      o| d                                             ^e
-,CommRel::CommNode,bool> {
+ 1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
+      |                                ^
+/usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
+ 1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+      |                                              ^
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h:17:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' has been explicitly marked deprecated here
   141 |     } _GLIBCXX11_DEPRECATED;
@@ -3984,7 +3984,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-1 warning generated.
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:12:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
@@ -4000,6 +3999,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
+1 warning generated.
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17:
@@ -4099,9 +4099,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_SFuncAdaptor.h:76:59: note: add an explicit instantiation declaration to suppress this warning if 'ESMCI::dg0_shape_func<3>::dof_description' is explicitly instantiated in another translation unit
    76 |   const int *DofDescriptionTable() const { return &SFUNC::dof_description[0][0]; }
       |                                                           ^
-/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1531:22: warning: expression result unused [-Wunused-value]
- 1531 |   delete[] sendbuff, recvbuff;
-      |                      ^~~~~~~~
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C:13:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -4124,9 +4121,12 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
   202 |   std::vector<MPI_Request> request(num_incoming+1, NULL);
       |                            ~~~~~~~                 ^~~~
       |                                                    0
+/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1531:22: warning: expression result unused [-Wunused-value]
+ 1531 |   delete[] sendbuff, recvbuff;
+      |                      ^~~~~~~~
 1 warning generated.
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C:12:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h:18:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -4140,8 +4140,8 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:12:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h:18:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
@@ -4229,8 +4229,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
   309 | class id_less : public std::binary_function<std::pair<MeshObj*,Attr>,std::pair<MeshObj*,Attr>,bool> {
       |                             ^
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/bits/stl_function.h:141:7: note: 'binary_function<std::pair<ESMCI::MeshObj *, ESMCI::Attr>, std::pair<ESMCI::MeshObj *, ESMCI::Attr>, bool>' has been explicitly marked deprecated here
-9   warning141s |  generated  .
-  } _GLIBCXX11_DEPRECATED;
+  141 |     } _GLIBCXX11_DEPRECATED;
       |       ^
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1948:32: note: expanded from macro '_GLIBCXX11_DEPRECATED'
  1948 | # define _GLIBCXX11_DEPRECATED _GLIBCXX_DEPRECATED
@@ -4250,6 +4249,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
+9 warnings generated.
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:13:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -4290,7 +4290,6 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 1 warning generated.
 1 warning generated.
 1 warning generated.
-1 warning generated.
 3 warnings generated.
 1 warning generated.
 1 warning generated.
@@ -4300,8 +4299,9 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 1 warning generated.
 1 warning generated.
 1 warning generated.
-2 warnings generated.
+1 warning generated.
 5 warnings generated.
+2 warnings generated.
 1 warning generated.
 1 warning generated.
 1 warning generated.
@@ -4383,7 +4383,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:13:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -4398,7 +4398,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:13:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -4443,10 +4443,8 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
@@ -4459,8 +4457,10 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^
@@ -4794,13 +4794,13 @@ cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_202
   425 |       if ((hg->hindex[i+1] == hg->hindex[i])) {
       |            ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_hypergraph.c:425:28: note: remove extraneous parentheses around the comparison to silence this warning
-  425 |       if ((hg->hindex[i+1] == hg->hindex[i])) {
+  425 |       if ((hg->hindex[cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_rdivide.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/phg_rdivide.o
+i+1] == hg->hindex[i])) {
       |           ~                ^               ~
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_hypergraph.c:425:28: note: use '=' to turn this equality comparison into an assignment
   425 |       if ((hg->hindex[i+1] == hg->hindex[i])) {
       |                            ^~
       |                            =
-cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_rdivide.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/phg_rdivide.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_refinement.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/phg_refinement.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/phg_scale.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_serialpartition.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/phg_serialpartition.o
@@ -4811,12 +4811,12 @@ cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_202
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/rcb_box.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/rcb_box.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/rcb.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/rcb.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/rcb_util.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/rcb_util.o
+cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/reftree_build.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/reftree_build.o
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_Vcycle.c:545:83: warning: for loop has empty body [-Wempty-body]
   545 |        for (++j; j < hg->hindex[i+1]  &&  part[hg->hvertex[j]] == netpart[i]; ++j);
       |                                                                                   ^
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/phg_Vcycle.c:545:83: note: put the semicolon on a separate line to silence this warning
 1 warning generated.
-cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/reftree_build.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/reftree_build.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/reftree_coarse_path.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/reftree_coarse_path.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/reftree_hash.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/reftree_hash.o
 cc -c -std=c99 -O -DNDEBUG -fp-speculation=safe -fPIC  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/reftree_part.c -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/reftree_part.o
@@ -5205,7 +5205,7 @@ make[7]: Entering directory '/tmp/intel_2025.0.0_mpi_O_develop/esmf/mod/modO/Uni
 make[8]: Entering directory '/tmp/intel_2025.0.0_mpi_O_develop/esmf/mod/modO/Unicos.intel.64.mpi.default'
 CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.17/intel/2023.2/include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/interface"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_Mesh_F.o
 CC -c -std=c++11 -O -DNDEBUG -fp-speculation=safe -fPIC -pthread  -qopenmp -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/../include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.17/intel/2023.2/include -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+gf1c7bb6d5f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2025.0.0_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/interface"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/ESMC_Mesh.C -o /tmp/intel_2025.0.0_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMC_Mesh.o
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:30:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/ESMC_Mesh.C:29:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MeshCap.h:15:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -5220,7 +5220,7 @@ In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/
 /usr/lib64/gcc/x86_64-suse-linux/14/../../../../include/c++/14/x86_64-suse-linux/bits/c++config.h:1939:46: note: expanded from macro '_GLIBCXX_DEPRECATED'
  1939 | # define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
       |                                              ^
-In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/ESMC_Mesh.C:29:
+In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:30:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MeshCap.h:15:
 In file included from /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16:
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: 'binary_function<ESMCI::CommRel::CommNode, ESMCI::CommRel::CommNode, bool>' is deprecated [-Wdeprecated-declarations]
@@ -6850,6 +6850,6 @@ make[1]: Leaving directory '/tmp/intel_2025.0.0_mpi_O_develop/esmf'
 /tmp/intel_2025.0.0_mpi_O_develop/esmf/cmake/generate_config.py --esmfmkfile=/tmp/intel_2025.0.0_mpi_O_develop/esmf/lib/libO/Unicos.intel.64.mpi.default/esmf.mk --template=/tmp/intel_2025.0.0_mpi_O_develop/esmf/cmake/ESMFConfig.cmake.in --outputdir=/tmp/intel_2025.0.0_mpi_O_develop/esmf/lib/libO/Unicos.intel.64.mpi.default/cmake/ESMF
 Successfully generated config: /tmp/intel_2025.0.0_mpi_O_develop/esmf/lib/libO/Unicos.intel.64.mpi.default/cmake/ESMF/ESMFConfig.cmake (MPI: TRUE, Imported Target: libesmf.so)
 Successfully generated version handler: /tmp/intel_2025.0.0_mpi_O_develop/esmf/lib/libO/Unicos.intel.64.mpi.default/cmake/ESMF/ESMFConfigVersion.cmake
-ESMF library built successfully on Sun Jul 12 06:30:58 AM EDT 2026
+ESMF library built successfully on Mon Jul 13 04:18:03 AM EDT 2026
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
