@@ -1,4 +1,4 @@
-2026-07-20 04:51:21
+2026-07-23 04:57:32
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistOpenMPSTest
  --------------------------------------- 
@@ -26,10 +26,10 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x55a40e3859f0
+vm located at: 0x55a14a2c89f0
 npets = 4, mypet=0
-  pth_mutex =		 0x55a40e38c4e0
-  pth_finish_count =	 0x55a40e38beb0
+  pth_mutex =		 0x55a14a2cf4e0
+  pth_finish_count =	 0x55a14a2ceeb0
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
 MPI_Comm_rank in MPI_COMM_WORLD: 0
@@ -72,9 +72,6 @@ ncores = 8
  User Coupler Register returning
  Cpl SetServices finished, rc=             0            0
  User Comp1 Init starting
---- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistOpenMPSTest
  --------------------------------------- 
@@ -95,17 +92,20 @@ ncores = 8
  User Coupler Register returning
  Cpl SetServices finished, rc=             0            0
  User Comp1 Init starting
+--- ESMCI::VM::print() start ---
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x55eeb4ebcdc0
-npets = 4, mypet=1
-  pth_mutex =		 0x55eeb4ec2c90
-  pth_finish_count =	 0x55eeb4ec2f40
+vm located at: 0x55b213c69fd0
+npets = 4, mypet=2
+  pth_mutex =		 0x55b213c6fef0
+  pth_finish_count =	 0x55b213c6fbc0
 MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 1
-MPI_Comm_rank in MPI_COMM_WORLD: 1
+MPI_Comm_rank in local MPI communicator: 2
+MPI_Comm_rank in MPI_COMM_WORLD: 2
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
@@ -132,10 +132,10 @@ ncores = 8
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x562089970dc0
+vm located at: 0x56156e100dc0
 npets = 4, mypet=3
-  pth_mutex =		 0x562089976c90
-  pth_finish_count =	 0x562089976f40
+  pth_mutex =		 0x56156e106c90
+  pth_finish_count =	 0x56156e106f40
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
 MPI_Comm_rank in MPI_COMM_WORLD: 3
@@ -185,13 +185,13 @@ ncores = 8
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x5578735f0fd0
-npets = 4, mypet=2
-  pth_mutex =		 0x5578735f6ef0
-  pth_finish_count =	 0x5578735f6bc0
+vm located at: 0x5600a3c47dc0
+npets = 4, mypet=1
+  pth_mutex =		 0x5600a3c4dc90
+  pth_finish_count =	 0x5600a3c4df40
 MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 2
-MPI_Comm_rank in MPI_COMM_WORLD: 2
+MPI_Comm_rank in local MPI communicator: 1
+MPI_Comm_rank in MPI_COMM_WORLD: 1
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
@@ -6097,21 +6097,6 @@ ncores = 8
  user_model1.run(): tid =             0  is working on column j =           677
  user_model1.run(): tid =             0  is working on column j =           678
  user_model1.run(): tid =             0  is working on column j =           679
- user_model1.run(): tid =             0  is working on column j =           726
- user_model1.run(): tid =             0  is working on column j =           727
- user_model1.run(): tid =             0  is working on column j =           728
- user_model1.run(): tid =             0  is working on column j =           729
- user_model1.run(): tid =             0  is working on column j =           730
- user_model1.run(): tid =             0  is working on column j =           726
- user_model1.run(): tid =             0  is working on column j =           727
- user_model1.run(): tid =             0  is working on column j =           728
- user_model1.run(): tid =             0  is working on column j =           729
- user_model1.run(): tid =             0  is working on column j =           730
- user_model1.run(): tid =             0  is working on column j =           726
- user_model1.run(): tid =             0  is working on column j =           727
- user_model1.run(): tid =             0  is working on column j =           728
- user_model1.run(): tid =             0  is working on column j =           729
- user_model1.run(): tid =             0  is working on column j =           730
  user_model1.run(): tid =             0  is working on column j =           680
  user_model1.run(): tid =             0  is working on column j =           681
  user_model1.run(): tid =             0  is working on column j =           682
@@ -6163,6 +6148,21 @@ ncores = 8
  user_model1.run(): tid =             0  is working on column j =           728
  user_model1.run(): tid =             0  is working on column j =           729
  user_model1.run(): tid =             0  is working on column j =           730
+ user_model1.run(): tid =             0  is working on column j =           726
+ user_model1.run(): tid =             0  is working on column j =           727
+ user_model1.run(): tid =             0  is working on column j =           728
+ user_model1.run(): tid =             0  is working on column j =           729
+ user_model1.run(): tid =             0  is working on column j =           730
+ user_model1.run(): tid =             0  is working on column j =           726
+ user_model1.run(): tid =             0  is working on column j =           727
+ user_model1.run(): tid =             0  is working on column j =           728
+ user_model1.run(): tid =             0  is working on column j =           729
+ user_model1.run(): tid =             0  is working on column j =           730
+ user_model1.run(): tid =             0  is working on column j =           726
+ user_model1.run(): tid =             0  is working on column j =           727
+ user_model1.run(): tid =             0  is working on column j =           728
+ user_model1.run(): tid =             0  is working on column j =           729
+ user_model1.run(): tid =             0  is working on column j =           730
  
   System Test ESMF_ArrayRedistOpenMPSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenMPSTest finished correctly.
@@ -6195,6 +6195,48 @@ ncores = 8
   System Test ESMF_ArrayRedistOpenMPSTest
   SUCCESS:  System Test ESMF_ArrayRedistOpenMPSTest finished correctly.
  
+ user_model1.run(): tid =             0  is working on column j =           731
+ user_model1.run(): tid =             0  is working on column j =           732
+ user_model1.run(): tid =             0  is working on column j =           733
+ user_model1.run(): tid =             0  is working on column j =           734
+ user_model1.run(): tid =             0  is working on column j =           735
+ user_model1.run(): tid =             0  is working on column j =           736
+ user_model1.run(): tid =             0  is working on column j =           737
+ user_model1.run(): tid =             0  is working on column j =           738
+ user_model1.run(): tid =             0  is working on column j =           739
+ user_model1.run(): tid =             0  is working on column j =           740
+ user_model1.run(): tid =             0  is working on column j =           741
+ user_model1.run(): tid =             0  is working on column j =           742
+ user_model1.run(): tid =             0  is working on column j =           743
+ user_model1.run(): tid =             0  is working on column j =           744
+ user_model1.run(): tid =             0  is working on column j =           745
+ user_model1.run(): tid =             0  is working on column j =           746
+ user_model1.run(): tid =             0  is working on column j =           747
+ user_model1.run(): tid =             0  is working on column j =           748
+ user_model1.run(): tid =             0  is working on column j =           749
+ user_model1.run(): tid =             0  is working on column j =           750
+ User Comp1 Run returning
+ Comp 1 Run returned, rc =            0            0
+ User Coupler Run starting
+ User Coupler Run returning
+ Coupler Run returned, rc =            0            0
+ Comp 2 Run returned, rc =            0            0
+ User Coupler Final starting
+ User Coupler Final returning
+ Coupler Finalize finished, rc =            0            0
+ User Comp1 Final starting
+ User Comp1 Final returning
+ Comp 1 Finalize finished, rc =            0            0
+ Comp 2 Finalize finished, rc =            0            0
+ All Destroy routines done
+  System Test ESMF_ArrayRedistOpenMPSTest                                                                                                                                                                                                                        
+  complete.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =             1
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+  PASS  System Test ESMF_ArrayRedistOpenMPSTest, ESMF_ArrayRedistOpenMPSTest.F90, line 391
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistOpenMPSTest
  --------------------------------------- 
@@ -6242,48 +6284,6 @@ ncores = 8
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =             5
- ------------------------------------------------------------
- ------------------------------------------------------------
-  PASS  System Test ESMF_ArrayRedistOpenMPSTest, ESMF_ArrayRedistOpenMPSTest.F90, line 391
- user_model1.run(): tid =             0  is working on column j =           731
- user_model1.run(): tid =             0  is working on column j =           732
- user_model1.run(): tid =             0  is working on column j =           733
- user_model1.run(): tid =             0  is working on column j =           734
- user_model1.run(): tid =             0  is working on column j =           735
- user_model1.run(): tid =             0  is working on column j =           736
- user_model1.run(): tid =             0  is working on column j =           737
- user_model1.run(): tid =             0  is working on column j =           738
- user_model1.run(): tid =             0  is working on column j =           739
- user_model1.run(): tid =             0  is working on column j =           740
- user_model1.run(): tid =             0  is working on column j =           741
- user_model1.run(): tid =             0  is working on column j =           742
- user_model1.run(): tid =             0  is working on column j =           743
- user_model1.run(): tid =             0  is working on column j =           744
- user_model1.run(): tid =             0  is working on column j =           745
- user_model1.run(): tid =             0  is working on column j =           746
- user_model1.run(): tid =             0  is working on column j =           747
- user_model1.run(): tid =             0  is working on column j =           748
- user_model1.run(): tid =             0  is working on column j =           749
- user_model1.run(): tid =             0  is working on column j =           750
- User Comp1 Run returning
- Comp 1 Run returned, rc =            0            0
- User Coupler Run starting
- User Coupler Run returning
- Coupler Run returned, rc =            0            0
- Comp 2 Run returned, rc =            0            0
- User Coupler Final starting
- User Coupler Final returning
- Coupler Finalize finished, rc =            0            0
- User Comp1 Final starting
- User Comp1 Final returning
- Comp 1 Finalize finished, rc =            0            0
- Comp 2 Finalize finished, rc =            0            0
- All Destroy routines done
-  System Test ESMF_ArrayRedistOpenMPSTest                                                                                                                                                                                                                        
-  complete.
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =             1
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenMPSTest, ESMF_ArrayRedistOpenMPSTest.F90, line 391
@@ -6408,7 +6408,7 @@ ncores = 8
   complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
- Test finished, localPet =             6
+ Test finished, localPet =             7
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenMPSTest, ESMF_ArrayRedistOpenMPSTest.F90, line 391
@@ -6449,7 +6449,7 @@ ncores = 8
   complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
- Test finished, localPet =             7
+ Test finished, localPet =             6
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_ArrayRedistOpenMPSTest, ESMF_ArrayRedistOpenMPSTest.F90, line 391
