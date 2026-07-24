@@ -218,14 +218,14 @@ ESMF_F90ESMFPRELOADLINKLIBS=-lesmf -lesmftrace_preload -lpioc -lnetcdff -lnetcdf
 
 
 --------------------------------------------------------------
-Compiling on Thu Jul 23 04:52:31 AM EDT 2026 on c5n0431
-Machine characteristics: Linux c5n0431 6.4.0-150600.23.53_15.0.11-cray_shasta_c #1 SMP Tue Jul 15 19:33:24 UTC 2025 (80d95d6) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Fri Jul 24 04:54:20 AM EDT 2026 on c5n1150
+Machine characteristics: Linux c5n1150 6.4.0-150600.23.53_15.0.11-cray_shasta_c #1 SMP Tue Jul 15 19:33:24 UTC 2025 (80d95d6) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/tmp/gfortran_12.3.0_mpi_O_develop/esmf'
 Making directory /tmp/gfortran_12.3.0_mpi_O_develop/esmf/lib/libO/Unicos.gfortran.64.mpi.default for library
-Making directory /tmp/gfortran_12.3.0_mpi_O_develop/esmf/mod/modO/Unicos.gfortran.64.mpi.default for *.mod files
 Making directory /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include for include files
+Making directory /tmp/gfortran_12.3.0_mpi_O_develop/esmf/mod/modO/Unicos.gfortran.64.mpi.default for *.mod files
 Making directory /tmp/gfortran_12.3.0_mpi_O_develop/esmf/obj/objO/Unicos.gfortran.64.mpi.default for *.o files
 cd /tmp/gfortran_12.3.0_mpi_O_develop/esmf ;\
 make ACTION=tree_include tree
@@ -2160,7 +2160,7 @@ CMAKE_EXE_LINKER_FLAGS
 # General
 -------
 PIO Version:		2.6.6
-Configured On:		Thu Jul 23 04:56:55 AM EDT 2026
+Configured On:		Fri Jul 24 04:58:51 AM EDT 2026
 Host System:		x86_64-Linux-6.4.0-150600.23.53_15.0.11-cray_shasta_c
 Build Directory: 	/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Build
 Install Prefix:         /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Install
@@ -2192,7 +2192,7 @@ PIO Logging:		no
 MPIEXEC:		mpiexec
 Fortran:		no
 
--- Configuring done (3.8s)
+-- Configuring done (3.9s)
 -- Generating done (0.1s)
 -- Build files have been written to: /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Build
 make[7]: Entering directory '/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Build'
@@ -2481,6 +2481,16 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
+In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:16,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:29:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/string:48,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:23:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:15:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
@@ -2492,16 +2502,6 @@ In file included from /usr/include/c++/12/string:48,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshTypes.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MeshRedist.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:12:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:16,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:29:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^~~~~~~~~~~~~~~
-In file included from /usr/include/c++/12/string:48,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:23:
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
@@ -2519,6 +2519,16 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
+In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:34:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/string:48,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:21:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:17:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
@@ -2531,32 +2541,22 @@ In file included from /usr/include/c++/12/string:48,
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C:36:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^~~~~~~~~~~~~~~
-In file included from /usr/include/c++/12/string:48,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C:21:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:34:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^~~~~~~~~~~~~~~
-In file included from /usr/include/c++/12/string:48,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:21:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C:36:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
    64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
       |                                ^~~~~~~~~~~~~~~
 In file included from /usr/include/c++/12/string:48,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C:21:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C:36:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/string:48,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C:21:
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
@@ -2609,18 +2609,6 @@ In file included from /usr/include/c++/12/bits/refwrap.h:39,
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:30:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^~~~~~~~~~~~~~~
-In file included from /usr/include/c++/12/string:48,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_Util.h:25,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_LogErr.h:35,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:27:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
@@ -2631,6 +2619,18 @@ In file included from /usr/include/c++/12/bits/refwrap.h:39,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_VMKernel.h:27,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_VM.h:41,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:21:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:30:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/string:48,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_Util.h:25,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_LogErr.h:35,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:27:
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
@@ -2658,6 +2658,10 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C: In function ‘void ESMCI_mesh_create_from_SCRIP_file(int, char*, bool, ESMC_CoordSys_Flag, ESMCI::DistGrid*, ESMCI::Mesh**)’:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C:1044:29: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1044 |     char *esmfmesh_filename=".esmf.nc";
+      |                             ^~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Vector_Regrid.C:36:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_DInfo.h:294:45: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
   294 | class DInfoEntry_just_id_less : public std::binary_function<typename DInfo<IDTYPE, INFOTYPE>::DInfoEntry,typename  DInfo<IDTYPE, INFOTYPE>::DInfoEntry, bool> {
@@ -2671,10 +2675,6 @@ In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C: In function ‘void ESMCI_mesh_create_from_SCRIP_file(int, char*, bool, ESMC_CoordSys_Flag, ESMCI::DistGrid*, ESMCI::Mesh**)’:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C:1044:29: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
- 1044 |     char *esmfmesh_filename=".esmf.nc";
-      |                             ^~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
@@ -2718,20 +2718,6 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
-In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^~~~~~~~~~~~~~~
-In file included from /usr/include/c++/12/string:48,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_Util.h:25,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_LogErr.h:35,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:19:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
@@ -2746,6 +2732,20 @@ In file included from /usr/include/c++/12/string:48,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_GridToMesh.h:26,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/string:48,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_Util.h:25,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/include/ESMCI_LogErr.h:35,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:19:
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
@@ -3061,6 +3061,12 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:165:34: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+  165 | class md_attr_comp : public std::binary_function<Kernel,Attr,bool> {
+      |                                  ^~~~~~~~~~~~~~~
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:14:
@@ -3074,12 +3080,6 @@ In file included from /usr/include/c++/12/string:48,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:12:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:165:34: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-  165 | class md_attr_comp : public std::binary_function<Kernel,Attr,bool> {
-      |                                  ^~~~~~~~~~~~~~~
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
@@ -3245,23 +3245,6 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
-In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
-      |                                ^~~~~~~~~~~~~~~
-In file included from /usr/include/c++/12/string:48,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/sacado/Sacado_Version.hpp:35,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/sacado/Sacado_No_Kokkos.hpp:43,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshTypes.h:15,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_ShapeFunc.h:15,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:15,
-                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15:
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_SparseMsg.C: In member function ‘void ESMCI::SparseMsg::setSizes(ESMCI::UInt*)’:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_SparseMsg.C:117:56: warning: passing NULL to non-pointer argument 2 of ‘std::vector<_Tp, _Alloc>::vector(size_type, const value_type&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; size_type = long unsigned int; value_type = int; allocator_type = std::allocator<int>]’ [-Wconversion-null]
   117 |   std::vector<MPI_Request> request(num_incoming+1, NULL);
@@ -3282,6 +3265,23 @@ In file included from /usr/include/c++/12/vector:64,
 /usr/include/c++/12/bits/stl_vector.h:564:47: note:   declared here
   564 |       vector(size_type __n, const value_type& __value,
       |                             ~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   64 | class range_sort : public std::binary_function<CommRel::CommNode,CommRel::CommNode,bool> {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/12/string:48,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/sacado/Sacado_Version.hpp:35,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/sacado/Sacado_No_Kokkos.hpp:43,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshTypes.h:15,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_ShapeFunc.h:15,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:15,
+                 from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C:13:
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:64:32: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
@@ -3322,24 +3322,6 @@ In file included from /usr/include/c++/12/string:48,
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:115:36: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-  115 | class find_rel0_less : public std::binary_function<MeshObj::Relation,find_rel0_data,bool> {
-      |                                    ^~~~~~~~~~~~~~~
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:145:36: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-  145 | class find_rel1_less : public std::binary_function<MeshObj::Relation,find_rel1_data,bool> {
-      |                                    ^~~~~~~~~~~~~~~
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
-/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:173:36: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
-  173 | class find_rel2_less : public std::binary_function<MeshObj::Relation,UInt,bool> {
-      |                                    ^~~~~~~~~~~~~~~
-/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
-  131 |     struct binary_function
-      |            ^~~~~~~~~~~~~~~
 In file included from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
@@ -3355,6 +3337,24 @@ In file included from /usr/include/c++/12/string:48,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:15,
                  from /tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:12:
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:115:36: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+  115 | class find_rel0_less : public std::binary_function<MeshObj::Relation,find_rel0_data,bool> {
+      |                                    ^~~~~~~~~~~~~~~
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:145:36: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+  145 | class find_rel1_less : public std::binary_function<MeshObj::Relation,find_rel1_data,bool> {
+      |                                    ^~~~~~~~~~~~~~~
+/usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+/tmp/gfortran_12.3.0_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:173:36: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+  173 | class find_rel2_less : public std::binary_function<MeshObj::Relation,UInt,bool> {
+      |                                    ^~~~~~~~~~~~~~~
 /usr/include/c++/12/bits/stl_function.h:131:12: note: declared here
   131 |     struct binary_function
       |            ^~~~~~~~~~~~~~~
@@ -5768,6 +5768,6 @@ make[1]: Leaving directory '/tmp/gfortran_12.3.0_mpi_O_develop/esmf'
 /tmp/gfortran_12.3.0_mpi_O_develop/esmf/cmake/generate_config.py --esmfmkfile=/tmp/gfortran_12.3.0_mpi_O_develop/esmf/lib/libO/Unicos.gfortran.64.mpi.default/esmf.mk --template=/tmp/gfortran_12.3.0_mpi_O_develop/esmf/cmake/ESMFConfig.cmake.in --outputdir=/tmp/gfortran_12.3.0_mpi_O_develop/esmf/lib/libO/Unicos.gfortran.64.mpi.default/cmake/ESMF
 Successfully generated config: /tmp/gfortran_12.3.0_mpi_O_develop/esmf/lib/libO/Unicos.gfortran.64.mpi.default/cmake/ESMF/ESMFConfig.cmake (MPI: TRUE, Imported Target: libesmf.so)
 Successfully generated version handler: /tmp/gfortran_12.3.0_mpi_O_develop/esmf/lib/libO/Unicos.gfortran.64.mpi.default/cmake/ESMF/ESMFConfigVersion.cmake
-ESMF library built successfully on Thu Jul 23 05:02:17 AM EDT 2026
+ESMF library built successfully on Fri Jul 24 05:04:15 AM EDT 2026
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
