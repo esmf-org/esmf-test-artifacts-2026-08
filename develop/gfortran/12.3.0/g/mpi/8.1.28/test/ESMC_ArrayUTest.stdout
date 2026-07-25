@@ -1,4 +1,4 @@
-2026-07-23 05:01:50
+2026-07-25 04:33:12
 Beginning Test, file ESMC_ArrayUTest.c, line 46
 Beginning Test, file ESMC_ArrayUTest.c, line 46NUMBER_OF_PROCESSORS 4
 PASS ArraySpecSet, ESMC_ArrayUTest.c, line 55
@@ -38,8 +38,8 @@ PASS Get localDECount from ESMC_Array object, ESMC_ArrayUTest.c, line 105
  Proxy        = no
  Root Info (Attributes):
 PASS Create ESMC_Array object, ESMC_ArrayUTest.c, line 96
-PASS Create ESMC_Array object, ESMC_ArrayUTest.c, line 96
 PASS Get localDECount from ESMC_Array object, ESMC_ArrayUTest.c, line 105
+PASS Create ESMC_Array object, ESMC_ArrayUTest.c, line 96
 PASS Get localDECount from ESMC_Array object, ESMC_ArrayUTest.c, line 105
 --- ESMCI::Array::print start ---
  Base name    = array1
@@ -65,7 +65,12 @@ PASS Get localDECount from ESMC_Array object, ESMC_ArrayUTest.c, line 105
   }
 PASS Print ESMC_Array object, ESMC_ArrayUTest.c, line 113
 PASS Print ESMC_Array object, ESMC_ArrayUTest.c, line 113
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
 PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
 {
   "ESMF": {
@@ -73,20 +78,15 @@ PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
       "NamedAliasCount": 0
     }
   }
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
+PASS Print ESMC_Array object, ESMC_ArrayUTest.c, line 113
+PASS Print ESMC_Array object, ESMC_ArrayUTest.c, line 113
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.c, line 129
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-Ending Test, file ESMC_ArrayUTest.c, line 133
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.c, line 129
 Ending Test, file ESMC_ArrayUTest.c, line 133
-PASS Print ESMC_Array object, ESMC_ArrayUTest.c, line 113
-PASS Print ESMC_Array object, ESMC_ArrayUTest.c, line 113
 PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.c, line 121
+Ending Test, file ESMC_ArrayUTest.c, line 133
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.c, line 129
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.c, line 129
 Ending Test, file ESMC_ArrayUTest.c, line 133
@@ -112,7 +112,7 @@ LocalArrayPrint: Array at address 0x4d2f70:
 ( 1, 9) =  0
 ( 1,10) =  0
 --- ESMCI::Array::print end ---
-Ending Test, file ESMC_ArrayUTest.c, line 133 PET 1 Test Elapsed Time 2.14 msec.
+Ending Test, file ESMC_ArrayUTest.c, line 133 PET 1 Test Elapsed Time 2.074 msec.
 }Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
@@ -134,15 +134,15 @@ LocalArrayPrint: Array at address 0x4d2f70:
 ( 1, 9) =  0
 ( 1,10) =  0
 --- ESMCI::Array::print end ---
-Ending Test, file ESMC_ArrayUTest.c, line 133 PET 3 Test Elapsed Time 2.132 msec.
+Ending Test, file ESMC_ArrayUTest.c, line 133 PET 3 Test Elapsed Time 2.083 msec.
 }Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x4d36e0:
-            rank = 2, typekind = 3, base_addr = 0x4d3a10
+LocalArrayPrint: Array at address 0x4d38f0:
+            rank = 2, typekind = 3, base_addr = 0x4d3c20
             dim[0] = 2  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
@@ -166,7 +166,7 @@ LocalArrayPrint: Array at address 0x4d36e0:
 ( 1,10) =  0
 ( 2,10) =  0
 --- ESMCI::Array::print end ---
-Ending Test, file ESMC_ArrayUTest.c, line 133 PET 0 Test Elapsed Time 2.14 msec.
+Ending Test, file ESMC_ArrayUTest.c, line 133 PET 0 Test Elapsed Time 2.112 msec.
 }Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
@@ -188,4 +188,4 @@ LocalArrayPrint: Array at address 0x4d3180:
 ( 1, 9) =  0
 ( 1,10) =  0
 --- ESMCI::Array::print end ---
-Ending Test, file ESMC_ArrayUTest.c, line 133 PET 2 Test Elapsed Time 2.36 msec.
+Ending Test, file ESMC_ArrayUTest.c, line 133 PET 2 Test Elapsed Time 2.348 msec.
