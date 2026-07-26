@@ -1,0 +1,87 @@
+2026-07-25 22:49:47
+[borgl082:220103:0:220103] Caught signal 8 (Floating point exception: floating-point overflow)
+==== backtrace (tid: 220103) ====
+ 0 0x0000000000016910 __funlockfile()  ???:0
+ 1 0x0000000000f746c2 ESMCI::XXE::exec_psssDstRra<float, double, double>()  ???:0
+ 2 0x0000000000f191d7 ESMCI::XXE::psssDstRra<float, double, double>()  ???:0
+ 3 0x0000000000ec362b ESMCI::XXE::psssDstRra<float, double, int>()  ???:0
+ 4 0x0000000000e985f2 ESMCI::XXE::psssDstRra<float, int, int>()  ???:0
+ 5 0x0000000000e8b9e7 ESMCI::XXE::psssDstRra<int, int, int>()  ???:0
+ 6 0x0000000000e7f5d3 ESMCI::XXE::exec()  ESMCI_DELayout.C:0
+ 7 0x0000000000e7e830 ESMCI::XXE::exec()  ESMCI_DELayout.C:0
+ 8 0x0000000000d64362 ESMCI::sparseMatMulStoreEncodeXXE<ESMCI::SeqIndex<int>, ESMCI::SeqIndex<int> >()  ???:0
+ 9 0x0000000000d552f6 ESMCI::Array::tSparseMatMulStore<int, int>()  ???:0
+10 0x0000000000d50b3d ESMCI::Array::sparseMatMulStore<int, int>()  ???:0
+11 0x0000000000d4b680 ESMCI::Array::tRedistStore<int, int>()  ???:0
+12 0x0000000000d3ec42 ESMCI::Array::redistStore()  ???:0
+13 0x0000000000d11579 ESMCI::ArrayBundle::redistStore()  ???:0
+14 0x0000000000d05af8 c_esmc_arraybundlerediststorenf_()  ???:0
+15 0x000000000152c36c esmf_arraybundlemod_MP_esmf_arraybundlerediststorenf()  ???:0
+16 0x000000000179da9b esmf_fieldbundlemod_MP_esmf_fieldbundlerediststorenf()  ???:0
+17 0x0000000001fe1eb3 nuopc_connector_MP_fieldbundlecplstore()  ???:0
+18 0x0000000002008b59 nuopc_connector_MP_initializeipdv05p6b()  ???:0
+19 0x00000000010609f5 ESMCI::FTable::callVFuncPtr()  ???:0
+20 0x000000000105dac8 ESMCI_FTableCallEntryPointVMHop()  ???:0
+21 0x00000000014b22d8 ESMCI::VMK::enter()  ???:0
+22 0x00000000014d1957 ESMCI::VM::enter()  ???:0
+23 0x000000000105df61 c_esmc_ftablecallentrypointvm_()  ???:0
+24 0x00000000017567ae esmf_compmod_MP_esmf_compexecute()  ???:0
+25 0x000000000176c25b esmf_cplcompmod_MP_esmf_cplcompinitialize()  ???:0
+26 0x0000000002106275 nuopc_driver_MP_loopconnectorcompss()  ???:0
+27 0x000000000211b57c nuopc_driver_MP_initializeipdv02p3()  ???:0
+28 0x000000000214255c nuopc_driver_MP_initializegeneric()  ???:0
+29 0x00000000010609f5 ESMCI::FTable::callVFuncPtr()  ???:0
+30 0x000000000105dac8 ESMCI_FTableCallEntryPointVMHop()  ???:0
+31 0x00000000014b22d8 ESMCI::VMK::enter()  ???:0
+32 0x00000000014d1957 ESMCI::VM::enter()  ???:0
+33 0x000000000105df61 c_esmc_ftablecallentrypointvm_()  ???:0
+34 0x00000000017567ae esmf_compmod_MP_esmf_compexecute()  ???:0
+35 0x00000000019f885c esmf_gridcompmod_MP_esmf_gridcompinitialize()  ???:0
+36 0x00000000004a5c46 esmapp_()  ???:0
+37 0x0000000000442433 __NAGf90_cosmp_init()  ???:0
+38 0x00000000004a5823 main()  ???:0
+39 0x000000000003524d __libc_start_main()  ???:0
+40 0x000000000041989a _start()  /home/abuild/rpmbuild/BUILD/glibc-2.31/csu/../sysdeps/x86_64/start.S:120
+=================================
+Runtime Error: *** Arithmetic exception: Code -6 - aborting
+[borgl082:220103] *** Process received signal ***
+[borgl082:220103] Signal: Aborted (6)
+[borgl082:220103] Signal code:  (-6)
+[borgl082:220103] [ 0] /lib64/libpthread.so.0(+0x16910)[0x14a7ddc7f910]
+[borgl082:220103] [ 1] /lib64/libc.so.6(gsignal+0x10d)[0x14a7dcc53d2b]
+[borgl082:220103] [ 2] /lib64/libc.so.6(abort+0x177)[0x14a7dcc553e5]
+[borgl082:220103] [ 3] /discover/nobackup/projects/gmao/SIteam/comp/SLES-15/nag/7.2.28/lib/NAG_Fortran/libf72rts.so.1(__NAGf90_signal_handler+0x9b)[0x14a7dcec708b]
+[borgl082:220103] [ 4] /lib64/libpthread.so.0(+0x16910)[0x14a7ddc7f910]
+[borgl082:220103] [ 5] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE15exec_psssDstRraIfddEEvPT_PiPT0_PT1_S4_ii+0xc6)[0x14a7dfa6a6c2]
+[borgl082:220103] [ 6] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE10psssDstRraIfddEEvPT_NS0_4TKIdEPiPT0_S4_PT1_S5_S4_iiiiiiiS5_S5_b+0x61f)[0x14a7dfa0f1d7]
+[borgl082:220103] [ 7] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE10psssDstRraIfdiEEvPT_NS0_4TKIdEPiPT0_S4_PT1_S5_S4_iiiiiiiS5_S5_b+0x59b)[0x14a7df9b962b]
+[borgl082:220103] [ 8] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE10psssDstRraIfiiEEvPT_NS0_4TKIdEPiPT0_S4_PT1_S5_S4_iiiiiiiS5_S5_b+0x3c8)[0x14a7df98e5f2]
+[borgl082:220103] [ 9] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE10psssDstRraIiiiEEvPT_NS0_4TKIdEPiPT0_S4_PT1_S5_S4_iiiiiiiS5_S5_b+0x194)[0x14a7df9819e7]
+[borgl082:220103] [10] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE4execEiPPcPiiPbS4_PdiiS3_PNS0_10SuperVectPE+0x2279)[0x14a7df9755d3]
+[borgl082:220103] [11] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3XXE4execEiPPcPiiPbS4_PdiiS3_PNS0_10SuperVectPE+0x14d6)[0x14a7df974830]
+[borgl082:220103] [12] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI26sparseMatMulStoreEncodeXXEINS_8SeqIndexIiEES2_EEiPNS_2VMEPNS_8DELayoutES6_bii18ESMC_TypeKind_FlagS7_S7_RSt6vectorINS_11ArrayHelper13SendnbElementIT_T0_EESaISD_EERS8_INS9_13RecvnbElementISC_SB_EESaISI_EEPKiPPciPPNS_11RouteHandleEbPiST_+0x971)[0x14a7df85a362]
+[borgl082:220103] [13] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI5Array18tSparseMatMulStoreIiiEEiPS0_S2_PPNS_11RouteHandleERKSt6vectorINS_12SparseMatrixIT_T0_EESaISA_EEbbPiSF_+0x1ca6)[0x14a7df84b2f6]
+[borgl082:220103] [14] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI5Array17sparseMatMulStoreIiiEEiPS0_S2_PPNS_11RouteHandleERKSt6vectorINS_12SparseMatrixIT_T0_EESaISA_EEbbPiSF_+0x2af)[0x14a7df846b3d]
+[borgl082:220103] [15] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI5Array12tRedistStoreIiiEEiPS0_S2_PPNS_11RouteHandleEPNS_10InterArrayIiEE18ESMC_TypeKind_FlagPvbPi+0x23f7)[0x14a7df841680]
+[borgl082:220103] [16] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI5Array11redistStoreEPS0_S1_PPNS_11RouteHandleEPNS_10InterArrayIiEE18ESMC_TypeKind_FlagPvbPi+0x134)[0x14a7df834c42]
+[borgl082:220103] [17] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI11ArrayBundle11redistStoreEPS0_S1_PPNS_11RouteHandleEP12ESMC_LogicaliPNS_10InterArrayIiEE18ESMC_TypeKind_FlagPv+0xce7)[0x14a7df807579]
+[borgl082:220103] [18] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(c_esmc_arraybundlerediststorenf_+0x63)[0x14a7df7fbaf8]
+[borgl082:220103] [19] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(esmf_arraybundlemod_MP_esmf_arraybundlerediststorenf+0x731)[0x14a7e002236c]
+[borgl082:220103] [20] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(esmf_fieldbundlemod_MP_esmf_fieldbundlerediststorenf+0x5e1)[0x14a7e0293a9b]
+[borgl082:220103] [21] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(nuopc_connector_MP_fieldbundlecplstore+0x11107)[0x14a7e0ad7eb3]
+[borgl082:220103] [22] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(nuopc_connector_MP_initializeipdv05p6b+0xb9d8)[0x14a7e0afeb59]
+[borgl082:220103] [23] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI6FTable12callVFuncPtrEPKcPNS_2VMEPi+0xc55)[0x14a7dfb569f5]
+[borgl082:220103] [24] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(ESMCI_FTableCallEntryPointVMHop+0x32e)[0x14a7dfb53ac8]
+[borgl082:220103] [25] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI3VMK5enterEPNS_7VMKPlanEPvS3_+0xe2)[0x14a7dffa82d8]
+[borgl082:220103] [26] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(_ZN5ESMCI2VM5enterEPNS_6VMPlanEPvS3_+0xb7)[0x14a7dffc7957]
+[borgl082:220103] [27] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(c_esmc_ftablecallentrypointvm_+0x35f)[0x14a7dfb53f61]
+[borgl082:220103] [28] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(esmf_compmod_MP_esmf_compexecute+0xaa6)[0x14a7e024c7ae]
+[borgl082:220103] [29] /discover/nobackup/projects/gmao/SIteam/ESMF_Testing/nag_7.2.28_openmpi_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.nag.64.openmpi.default/libesmf.so(esmf_cplcompmod_MP_esmf_cplcompinitialize+0x176)[0x14a7e026225b]
+[borgl082:220103] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 220103 on node borgl082 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
