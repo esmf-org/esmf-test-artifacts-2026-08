@@ -1,4 +1,4 @@
-2026-07-27 04:44:13
+2026-07-28 05:08:51
   Beginning Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 87
   NUMBER_OF_PROCESSORS            6
   PASS  srcDistgrid Create Test, ESMF_ArrayArbIdxSMMUTest.F90, line 119
@@ -296,8 +296,13 @@
   PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1013
   PASS  ArraySMMStore with tensor mixing factorIndexList Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1047
   PASS  ArraySMM: srcArray3 -> dstArray3 Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1055
+  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1013
+  PASS  ArraySMMStore with tensor mixing factorIndexList Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1047
+  PASS  ArraySMM: srcArray3 -> dstArray3 Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1055
 --- ESMCI::Array::print start ---
  Base name    = Array011
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
   PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1013
   PASS  ArraySMMStore with tensor mixing factorIndexList Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1047
   PASS  ArraySMM: srcArray3 -> dstArray3 Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1055
@@ -342,9 +347,6 @@
       "NamedAliasCount": 0
     }
   }
-  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1013
-  PASS  ArraySMMStore with tensor mixing factorIndexList Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1047
-  PASS  ArraySMM: srcArray3 -> dstArray3 Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1055
 --- ESMCI::Array::print start ---
  Base name    = Array011
  Status: Base = Ready,  object = Ready
@@ -356,8 +358,21 @@
       "NamedAliasCount": 0
     }
   }
- Status: Base = Ready,  object = Ready
- Proxy        = no
+}Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x55d32a2a6780:
+            rank = 2, typekind = 3, base_addr = 0x55d32a2a4860
+            dim[0] = 2  dim[1] = 2  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  350
+( 2, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+--- ESMCI::Array::print end ---
  Root Info (Attributes):
 {
   "ESMF": {
@@ -377,8 +392,8 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x556809e0adf0:
-            rank = 2, typekind = 3, base_addr = 0x556809e08ed0
+LocalArrayPrint: Array at address 0x55faaf783df0:
+            rank = 2, typekind = 3, base_addr = 0x55faaf781ed0
             dim[0] = 2  dim[1] = 2  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
@@ -398,8 +413,8 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x559a2f9ccb90:
-            rank = 2, typekind = 3, base_addr = 0x559a2f9cac70
+LocalArrayPrint: Array at address 0x55995bf61b90:
+            rank = 2, typekind = 3, base_addr = 0x55995bf5fc70
             dim[0] = 2  dim[1] = 2  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
@@ -412,39 +427,9 @@ LocalArrayPrint: Array at address 0x559a2f9ccb90:
 DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
-~ local data in LocalArray for DE 4 ~
-LocalArrayPrint: Array at address 0x562bff851d90:
-            rank = 2, typekind = 3, base_addr = 0x562bff84fe70
-            dim[0] = 2  dim[1] = 2  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  0
-( 2, 1) =  0
-( 1, 2) =  0
-( 2, 2) =  665
---- ESMCI::Array::print end ---
-}Array typekind/rank: Integer*4 / 2 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 6
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x55b2588a8570:
-            rank = 2, typekind = 3, base_addr = 0x55b2588a6650
-            dim[0] = 2  dim[1] = 2  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  350
-( 2, 1) =  0
-( 1, 2) =  0
-( 2, 2) =  0
---- ESMCI::Array::print end ---
-}Array typekind/rank: Integer*4 / 2 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 6
-localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x55a529cd1b80:
-            rank = 2, typekind = 3, base_addr = 0x55a529ccfc60
+LocalArrayPrint: Array at address 0x563e9e6e7b80:
+            rank = 2, typekind = 3, base_addr = 0x563e9e6e5c60
             dim[0] = 2  dim[1] = 2  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
@@ -457,9 +442,24 @@ LocalArrayPrint: Array at address 0x55a529cd1b80:
 DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
+~ local data in LocalArray for DE 4 ~
+LocalArrayPrint: Array at address 0x55739d0b4d90:
+            rank = 2, typekind = 3, base_addr = 0x55739d0b2e70
+            dim[0] = 2  dim[1] = 2  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  665
+--- ESMCI::Array::print end ---
+}Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 6
+localDeCount = 1
 ~ local data in LocalArray for DE 5 ~
-LocalArrayPrint: Array at address 0x563867634cb0:
-            rank = 2, typekind = 3, base_addr = 0x563867632d90
+LocalArrayPrint: Array at address 0x5600cb583cb0:
+            rank = 2, typekind = 3, base_addr = 0x5600cb581d90
             dim[0] = 2  dim[1] = 2  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
@@ -467,86 +467,6 @@ LocalArrayPrint: Array at address 0x563867634cb0:
 ( 1, 2) =  0
 ( 2, 2) =  0
 --- ESMCI::Array::print end ---
-  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
-  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1104
-  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1128
-  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
-  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
-  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
-  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
-  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
-  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
-  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
-  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
-  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
-  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
-  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
-  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
-  PET            3  Test Elapsed Time     10.07823100000001       msec.
-  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
-  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1095
-  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1119
-  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
-  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
-  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
-  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
-  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
-  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
-  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
-  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
-  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
-  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
-  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
-  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
-  PET            0  Test Elapsed Time     10.26079300000000       msec.
-  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
-  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1098
-  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1122
-  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
-  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
-  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
-  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
-  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
-  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
-  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
-  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
-  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
-  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
-  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
-  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
-  PET            1  Test Elapsed Time     10.24170700000000       msec.
-  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
-  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1101
-  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1125
-  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
-  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
-  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
-  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
-  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
-  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
-  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
-  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
-  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
-  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
-  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
-  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
-  PET            2  Test Elapsed Time     10.26247599999999       msec.
-  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
-  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1107
-  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1131
-  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
-  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
-  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
-  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
-  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
-  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
-  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
-  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
-  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
-  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
-  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
-  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
-  PET            4  Test Elapsed Time     10.26549100000000       msec.
   PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
   PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1110
   PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1134
@@ -562,4 +482,84 @@ LocalArrayPrint: Array at address 0x563867634cb0:
   PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
   PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
   Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
-  PET            5  Test Elapsed Time     10.65515300000000       msec.
+  PET            5  Test Elapsed Time     9.976278999999991       msec.
+  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
+  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1098
+  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1122
+  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
+  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
+  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
+  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
+  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
+  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
+  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
+  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
+  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
+  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
+  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
+  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
+  PET            1  Test Elapsed Time     10.12504900000000       msec.
+  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
+  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1095
+  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1119
+  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
+  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
+  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
+  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
+  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
+  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
+  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
+  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
+  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
+  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
+  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
+  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
+  PET            0  Test Elapsed Time     10.14722999999999       msec.
+  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
+  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1101
+  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1125
+  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
+  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
+  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
+  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
+  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
+  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
+  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
+  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
+  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
+  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
+  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
+  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
+  PET            2  Test Elapsed Time     10.13971600000001       msec.
+  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
+  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1107
+  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1131
+  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
+  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
+  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
+  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
+  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
+  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
+  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
+  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
+  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
+  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
+  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
+  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
+  PET            4  Test Elapsed Time     10.14191000000000       msec.
+  PASS  dstArray3 Get Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1084
+  PASS  Verify results in dstArray3 (tensor dim j=1) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1104
+  PASS  Verify results in dstArray3 (tensor dim j=2) Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1128
+  PASS  routehandle3 Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1142
+  PASS  srcArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1151
+  PASS  srcDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1158
+  PASS  srcArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1166
+  PASS  srcArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1173
+  PASS  srcDistgrid2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1180
+  PASS  dstArray Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1188
+  PASS  dstArray2 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1196
+  PASS  dstArray3 Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1203
+  PASS  dstDistgrid Destroy Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1211
+  PASS  routehandle Release Test, ESMF_ArrayArbIdxSMMUTest.F90, line 1218
+  Ending Test, file ESMF_ArrayArbIdxSMMUTest.F90, line 1225
+  PET            3  Test Elapsed Time     10.49336900000000       msec.

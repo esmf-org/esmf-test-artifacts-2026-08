@@ -1,4 +1,4 @@
-2026-07-27 04:44:13
+2026-07-28 05:08:51
   Beginning Test, file ESMF_FieldRegridXGSMMUTest.F90, line 51
   NUMBER_OF_PROCESSORS            2
   PASS  Create xgrid and regrid through xgrid, const src flux, ESMF_FieldRegridXGSMMUTest.F90, line 60
@@ -84,6 +84,13 @@ Member on this PET appears to be an actual member.
 DistGrid-VM: localPet = 0, CurrentVM: localPet = 0
 DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
 --- ESMCI::DistGrid::print end ---
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'Field068'
+ Base name    = Field068
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
   Beginning Test, file ESMF_FieldRegridXGSMMUTest.F90, line 51
   NUMBER_OF_PROCESSORS            2
   PASS  Create xgrid and regrid through xgrid, const src flux, ESMF_FieldRegridXGSMMUTest.F90, line 60
@@ -176,10 +183,25 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'Field068'
- Base name    = Field068
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Field status =             4
+ gridrank =             1
+--- ESMCI::Array::print start ---
+ Base name    = Array069
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
 {
   "ESMF": {
     "Instance": {
@@ -205,8 +227,8 @@ DistGrid dimCount = 1
 deCount = 2
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x5599ff66df60:
-            rank = 1, typekind = 6, base_addr = 0x5599ff95b0f0
+LocalArrayPrint: Array at address 0x55863335ad50:
+            rank = 1, typekind = 6, base_addr = 0x558633647ee0
             dim[0] = 7  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -217,36 +239,14 @@ LocalArrayPrint: Array at address 0x5599ff66df60:
 ( 6) =  0
 ( 7) =  0
 --- ESMCI::Array::print end ---
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =             4
- gridrank =             1
---- ESMCI::Array::print start ---
- Base name    = Array069
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
 }Array typekind/rank: Real*8 / 1 
 ~ lower class' values ~
 DistGrid dimCount = 1
 deCount = 2
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x5596b03d5760:
-            rank = 1, typekind = 6, base_addr = 0x5596b06c2680
+LocalArrayPrint: Array at address 0x56444d7bf760:
+            rank = 1, typekind = 6, base_addr = 0x56444daac6a0
             dim[0] = 5  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -788,6 +788,141 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
             8 ->           14
             9 ->           14
             1 ->           15
+           11 ->           15
+            1 ->           16
+            2 ->           16
+           11 ->           16
+           12 ->           16
+            2 ->           17
+           12 ->           17
+            2 ->           18
+            3 ->           18
+           12 ->           18
+           13 ->           18
+            3 ->           19
+           13 ->           19
+            3 ->           20
+            4 ->           20
+           13 ->           20
+           14 ->           20
+            4 ->           21
+            5 ->           21
+           14 ->           21
+           15 ->           21
+           11 ->           29
+           11 ->           30
+           12 ->           30
+           12 ->           31
+           12 ->           32
+           13 ->           32
+           13 ->           33
+           13 ->           34
+           14 ->           34
+           14 ->           35
+           15 ->           35
+           11 ->           43
+           21 ->           43
+           11 ->           44
+           12 ->           44
+           21 ->           44
+           22 ->           44
+           12 ->           45
+           22 ->           45
+           12 ->           46
+           13 ->           46
+           22 ->           46
+           23 ->           46
+           13 ->           47
+           23 ->           47
+           13 ->           48
+           14 ->           48
+           23 ->           48
+           24 ->           48
+           14 ->           49
+           15 ->           49
+           24 ->           49
+           25 ->           49
+           21 ->           57
+           21 ->           58
+           22 ->           58
+           31 ->           58
+           32 ->           58
+           22 ->           59
+           22 ->           60
+           23 ->           60
+           32 ->           60
+           33 ->           60
+           23 ->           61
+           23 ->           62
+           24 ->           62
+           24 ->           63
+           25 ->           63
+           34 ->           63
+           35 ->           63
+           21 ->           71
+           31 ->           71
+           21 ->           72
+           22 ->           72
+           31 ->           72
+           32 ->           72
+           22 ->           73
+           32 ->           73
+           22 ->           74
+           23 ->           74
+           32 ->           74
+           33 ->           74
+           23 ->           75
+           33 ->           75
+           23 ->           76
+           24 ->           76
+           33 ->           76
+           34 ->           76
+           24 ->           77
+           25 ->           77
+           34 ->           77
+           35 ->           77
+           31 ->           85
+           41 ->           85
+           31 ->           86
+           32 ->           86
+           41 ->           86
+           42 ->           86
+           32 ->           87
+           42 ->           87
+           32 ->           88
+           33 ->           88
+           42 ->           88
+           43 ->           88
+           33 ->           89
+           43 ->           89
+           33 ->           90
+           34 ->           90
+           43 ->           90
+           44 ->           90
+           34 ->           91
+           35 ->           91
+           44 ->           91
+           45 ->           91
+           41 ->           99
+           41 ->          100
+           42 ->          100
+           42 ->          101
+           42 ->          102
+           43 ->          102
+           43 ->          103
+           43 ->          104
+           44 ->          104
+           44 ->          105
+           45 ->          105
+           41 ->          113
+           51 ->          113
+           41 ->          114
+           42 ->          114
+           51 ->          114
+           52 ->          114
+           42 ->          115
+           52 ->          115
+           42 ->          116
             5 ->           22
            15 ->           22
             5 ->           23
@@ -924,143 +1059,8 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
            46 ->          122
            56 ->          122
            46 ->          123
-           47 ->          123
-           11 ->           15
-            1 ->           16
-            2 ->           16
-           11 ->           16
-           12 ->           16
-            2 ->           17
-           12 ->           17
-            2 ->           18
-            3 ->           18
-           12 ->           18
-           13 ->           18
-            3 ->           19
-           13 ->           19
-            3 ->           20
-            4 ->           20
-           13 ->           20
-           14 ->           20
-            4 ->           21
-            5 ->           21
-           14 ->           21
-           15 ->           21
-           11 ->           29
-           11 ->           30
-           12 ->           30
-           12 ->           31
-           12 ->           32
-           13 ->           32
-           13 ->           33
-           13 ->           34
-           14 ->           34
-           14 ->           35
-           15 ->           35
-           11 ->           43
-           21 ->           43
-           11 ->           44
-           12 ->           44
-           21 ->           44
-           22 ->           44
-           12 ->           45
-           22 ->           45
-           12 ->           46
-           13 ->           46
-           22 ->           46
-           23 ->           46
-           13 ->           47
-           23 ->           47
-           13 ->           48
-           14 ->           48
-           23 ->           48
-           24 ->           48
-           14 ->           49
-           15 ->           49
-           24 ->           49
-           25 ->           49
-           21 ->           57
-           21 ->           58
-           22 ->           58
-           31 ->           58
-           32 ->           58
-           22 ->           59
-           22 ->           60
-           23 ->           60
-           32 ->           60
-           33 ->           60
-           23 ->           61
-           23 ->           62
-           24 ->           62
-           24 ->           63
-           25 ->           63
-           34 ->           63
-           35 ->           63
-           21 ->           71
-           31 ->           71
-           21 ->           72
-           22 ->           72
-           31 ->           72
-           32 ->           72
-           22 ->           73
-           32 ->           73
-           22 ->           74
-           23 ->           74
-           32 ->           74
-           33 ->           74
-           23 ->           75
-           33 ->           75
-           23 ->           76
-           24 ->           76
-           33 ->           76
-           34 ->           76
-           24 ->           77
-           25 ->           77
-           34 ->           77
-           35 ->           77
-           31 ->           85
-           41 ->           85
-           31 ->           86
-           32 ->           86
-           41 ->           86
-           42 ->           86
-           32 ->           87
-           42 ->           87
-           32 ->           88
-           33 ->           88
-           42 ->           88
-           43 ->           88
-           33 ->           89
-           43 ->           89
-           33 ->           90
-           34 ->           90
-           43 ->           90
-           44 ->           90
-           34 ->           91
-           35 ->           91
-           44 ->           91
-           45 ->           91
-           41 ->           99
-           41 ->          100
-           42 ->          100
-           42 ->          101
-           42 ->          102
-           43 ->          102
-           43 ->          103
-           43 ->          104
-           44 ->          104
-           44 ->          105
-           45 ->          105
-           41 ->          113
-           51 ->          113
-           41 ->          114
-           42 ->          114
-           51 ->          114
-           52 ->          114
-           42 ->          115
-           52 ->          115
-           42 ->          116
            43 ->          116
+           47 ->          123
            52 ->          116
            53 ->          116
            43 ->          117
@@ -1290,6 +1290,18 @@ contigFlagPDimPDe (dims separated by / ):
  for DE 0: (1, 98) / 
  for DE 1: (99, 196) / 
 indexListPDimPLocalDe (dims separated by / ):
+ for localDE 0 - DE 0:  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98) /
+diffCollocationCount = 1
+collocationPDim:	1
+arbSeqIndexListPCollPLocalDe:
+ for collocation 1, localDE 0 - DE 0 -  elementCountPCollPLocalDe 98: (1, 2, 3, 4, 5, 6, 7, 15, 16, 17, 18, 19, 20, 21, 29, 30, 31, 32, 33, 34, 35, 43, 44, 45, 46, 47, 48, 49, 57, 58, 59, 60, 61, 62, 63, 71, 72, 73, 74, 75, 76, 77, 85, 86, 87, 88, 89, 90, 91, 99, 100, 101, 102, 103, 104, 105, 113, 114, 115, 116, 117, 118, 119, 127, 128, 129, 130, 131, 132, 133, 141, 142, 143, 144, 145, 146, 147, 155, 156, 157, 158, 159, 160, 161, 169, 170, 171, 172, 173, 174, 175, 183, 184, 185, 186, 187, 188, 189)
+connectionCount = 0
+~ lower class' values ~
+deCount = 2
+Member on this PET appears to be an actual member.
+DistGrid-VM: localPet = 0, CurrentVM: localPet = 0
+DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
+--- ESMCI::DistGrid::print end ---
 --- ESMCI::DistGrid::print start ---
 indexTK: Integer*4
 dimCount = 1
@@ -1305,18 +1317,6 @@ contigFlagPDimPDe (dims separated by / ):
  for DE 0: (1, 98) / 
  for DE 1: (99, 196) / 
 indexListPDimPLocalDe (dims separated by / ):
- for localDE 0 - DE 0:  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98) /
-diffCollocationCount = 1
-collocationPDim:	1
-arbSeqIndexListPCollPLocalDe:
- for collocation 1, localDE 0 - DE 0 -  elementCountPCollPLocalDe 98: (1, 2, 3, 4, 5, 6, 7, 15, 16, 17, 18, 19, 20, 21, 29, 30, 31, 32, 33, 34, 35, 43, 44, 45, 46, 47, 48, 49, 57, 58, 59, 60, 61, 62, 63, 71, 72, 73, 74, 75, 76, 77, 85, 86, 87, 88, 89, 90, 91, 99, 100, 101, 102, 103, 104, 105, 113, 114, 115, 116, 117, 118, 119, 127, 128, 129, 130, 131, 132, 133, 141, 142, 143, 144, 145, 146, 147, 155, 156, 157, 158, 159, 160, 161, 169, 170, 171, 172, 173, 174, 175, 183, 184, 185, 186, 187, 188, 189)
-connectionCount = 0
-~ lower class' values ~
-deCount = 2
-Member on this PET appears to be an actual member.
-DistGrid-VM: localPet = 0, CurrentVM: localPet = 0
-DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
---- ESMCI::DistGrid::print end ---
  for localDE 0 - DE 1:  (99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196) /
 diffCollocationCount = 1
 collocationPDim:	1
@@ -1364,7 +1364,7 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
     2.000000000000000         1.999999999999997         2.000000000000001     
   PASS  Regrid then create xgrid and regrid through xgrid, overlapping cut, ESMF_FieldRegridXGSMMUTest.F90, line 102
   Ending Test, file ESMF_FieldRegridXGSMMUTest.F90, line 112
-  PET            1  Test Elapsed Time     95.39769300000000       msec.
+  PET            1  Test Elapsed Time     95.89171999999999       msec.
             0    2.000000000000000         1.999999999999999      
     2.000000000000000         1.999999999999999         2.000000000000000      
     2.000000000000001         1.999999999999997         1.999999999999998      
@@ -1400,4 +1400,4 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
     2.000000000000003         2.000000000000000         1.999999999999997     
   PASS  Regrid then create xgrid and regrid through xgrid, overlapping cut, ESMF_FieldRegridXGSMMUTest.F90, line 102
   Ending Test, file ESMF_FieldRegridXGSMMUTest.F90, line 112
-  PET            0  Test Elapsed Time     96.33819200000001       msec.
+  PET            0  Test Elapsed Time     96.80140800000001       msec.
