@@ -1,4 +1,4 @@
-2026-07-28 05:00:37
+2026-07-29 04:51:59
 Beginning Test, file ESMC_FieldUTest.c, line 76
 Beginning Test, file ESMC_FieldUTest.c, line 76NUMBER_OF_PROCESSORS 1
 PASS MeshCreate, ESMC_FieldUTest.c, line 88
@@ -11,10 +11,6 @@ PASS Set up gridToFieldMap, ESMC_FieldUTest.c, line 164
 PASS Set up ungriddedLBound, ESMC_FieldUTest.c, line 175
 PASS Set up ungriddedUBound, ESMC_FieldUTest.c, line 186
 PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 195
-PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 205
-PASS Get an ESMC_Mesh object from ESMC_Field object, ESMC_FieldUTest.c, line 213
-PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 221
-PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 229
  Field Print Starts ====>
  Field base status = Ready
    Name = 'field1'
@@ -47,14 +43,14 @@ DistGrid dimCount = 1
 deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x55aa9c8b45d0:
-            rank = 1, typekind = 3, base_addr = 0x55aa9c8b4910
+LocalArrayPrint: Array at address 0x55e3a0e975d0:
+            rank = 1, typekind = 3, base_addr = 0x55e3a0e97910
             dim[0] = 372  
   Integer, *4, Dim 1, Data values:
-( 1) =  -1668593424
-( 2) =  21930
-( 3) =  -1668593424
-( 4) =  21930
+( 1) =  -1595311888
+( 2) =  21987
+( 3) =  -1595311888
+( 4) =  21987
 ( 5) =  1234
 ( 6) =  1236
 ( 7) =  1238
@@ -73,10 +69,15 @@ LocalArrayPrint: Array at address 0x55aa9c8b45d0:
 (371) =  2363
 (372) =  2364
 --- ESMCI::Array::print end ---
+PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 205
+PASS Get an ESMC_Mesh object from ESMC_Field object, ESMC_FieldUTest.c, line 213
+PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 221
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 229
 PASS Print an ESMC_Field object, ESMC_FieldUTest.c, line 237
 PASS Destroy ESMC_Field object, ESMC_FieldUTest.c, line 245
 PASS Get an ESMC_Mesh object from ESMC_Field object, ESMC_FieldUTest.c, line 253
 PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 261
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 269
  arrayrank =             1
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
             1           -1           -1                 0            0
@@ -91,7 +92,6 @@ PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 26
  Field base status = Ready
    Name = 'field2'
  Base name    = field2
-PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 269
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
@@ -120,8 +120,8 @@ DistGrid dimCount = 1
 deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x55aa9c8b8eb0:
-            rank = 1, typekind = 6, base_addr = 0x55aa9c8bb5e0
+LocalArrayPrint: Array at address 0x55e3a0e9beb0:
+            rank = 1, typekind = 6, base_addr = 0x55e3a0e9e5e0
             dim[0] = 608  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -172,4 +172,4 @@ Ending Test, file ESMC_FieldUTest.c, line 507
            -1           -1           -1                -1           -1
            -1           -1           -1                -1           -1
  Field Print Ends   ====>
-Ending Test, file ESMC_FieldUTest.c, line 507 PET 0 Test Elapsed Time 5.093 msec.
+Ending Test, file ESMC_FieldUTest.c, line 507 PET 0 Test Elapsed Time 5.186 msec.

@@ -1,4 +1,4 @@
-2026-07-28 05:00:37
+2026-07-29 04:51:59
  The user code called MPI_Init() and does IO before ESMF_Initialize() is called
   Beginning Test, file ESMF_VMUserMpiInitUTest.F90, line 548
   NUMBER_OF_PROCESSORS            4
@@ -11,9 +11,9 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x561e6964bba0
+vm located at: 0x55d1c99b4ba0
 npets = 4, mypet=0
-  pth_mutex =		 0x561e696adce0
+  pth_mutex =		 0x55d1c9a16ce0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -45,9 +45,9 @@ ncores = 4
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x556f6e50fd20
+vm located at: 0x55d485458d20
 npets = 4, mypet=1
-  pth_mutex =		 0x556f6e571b80
+  pth_mutex =		 0x55d4854bab80
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 1
@@ -79,9 +79,9 @@ ncores = 4
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x563eeb03dd20
+vm located at: 0x55c15b1c7d20
 npets = 4, mypet=2
-  pth_mutex =		 0x563eeb09fb80
+  pth_mutex =		 0x55c15b229b80
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -113,9 +113,9 @@ ncores = 4
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x5625ad265d20
+vm located at: 0x55eaad729d20
 npets = 4, mypet=3
-  pth_mutex =		 0x5625ad2c7b80
+  pth_mutex =		 0x55eaad78bb80
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -375,40 +375,6 @@ ncores = 4
   PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 398
             3 f4array3(            1 )=    1.000000     f4array3_soln( 
             1 )=    1.000000    
-            3 f4array3(            2 )=    2.000000     f4array3_soln( 
-            2 )=    2.000000    
-  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 411
-  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest, ESMF_VMUserMpiInitUTest.F90, line 209
-  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUserMpiInitUTest.F90, line 217
-            3  func_results:           302  myresults:          302
-  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 230
-  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 238
-            3  float_results:     302.0000000000000       my_float_results: 
-    302.0000000000000     
-  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 251
-  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 259
-            3  float4_results:     302.0000      my_float4_results: 
-    302.0000    
-  PASS  VM All Reduce ESMF_REDUCE_MAXTest, ESMF_VMUserMpiInitUTest.F90, line 426
-            3 array3(            1 )=          301 array3_soln(            1 )=
-           301
-            3 array3(            2 )=          302 array3_soln(            2 )=
-           302
-  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUserMpiInitUTest.F90, line 439
-  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 450
-            3 farray3(            1 )=    301.0000000000000      farray3_soln( 
-            1 )=    301.0000000000000     
-            3 farray3(            2 )=    302.0000000000000      farray3_soln( 
-            2 )=    302.0000000000000     
-  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 463
-  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 474
-            3 f4array3(            1 )=    301.0000     f4array3_soln( 
-            1 )=    301.0000    
-            3 f4array3(            2 )=    302.0000     f4array3_soln( 
-            2 )=    302.0000    
-  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 487
-  Ending Test, file ESMF_VMUserMpiInitUTest.F90, line 646
-  PET            3  Test Elapsed Time     1.201673000000000       msec.
             1 f4array3(            2 )=    2.000000     f4array3_soln( 
             2 )=    2.000000    
   PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 411
@@ -442,7 +408,41 @@ ncores = 4
             2 )=    302.0000    
   PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 487
   Ending Test, file ESMF_VMUserMpiInitUTest.F90, line 646
-  PET            1  Test Elapsed Time     1.236478999999999       msec.
+  PET            1  Test Elapsed Time     1.219958000000007       msec.
+            3 f4array3(            2 )=    2.000000     f4array3_soln( 
+            2 )=    2.000000    
+  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 411
+  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest, ESMF_VMUserMpiInitUTest.F90, line 209
+  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUserMpiInitUTest.F90, line 217
+            3  func_results:           302  myresults:          302
+  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 230
+  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 238
+            3  float_results:     302.0000000000000       my_float_results: 
+    302.0000000000000     
+  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 251
+  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 259
+            3  float4_results:     302.0000      my_float4_results: 
+    302.0000    
+  PASS  VM All Reduce ESMF_REDUCE_MAXTest, ESMF_VMUserMpiInitUTest.F90, line 426
+            3 array3(            1 )=          301 array3_soln(            1 )=
+           301
+            3 array3(            2 )=          302 array3_soln(            2 )=
+           302
+  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUserMpiInitUTest.F90, line 439
+  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 450
+            3 farray3(            1 )=    301.0000000000000      farray3_soln( 
+            1 )=    301.0000000000000     
+            3 farray3(            2 )=    302.0000000000000      farray3_soln( 
+            2 )=    302.0000000000000     
+  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUserMpiInitUTest.F90, line 463
+  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 474
+            3 f4array3(            1 )=    301.0000     f4array3_soln( 
+            1 )=    301.0000    
+            3 f4array3(            2 )=    302.0000     f4array3_soln( 
+            2 )=    302.0000    
+  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 487
+  Ending Test, file ESMF_VMUserMpiInitUTest.F90, line 646
+  PET            3  Test Elapsed Time     1.186234999999994       msec.
             0 f4array3(            2 )=    2.000000     f4array3_soln( 
             2 )=    2.000000    
   PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 411
@@ -476,7 +476,7 @@ ncores = 4
             2 )=    302.0000    
   PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 487
   Ending Test, file ESMF_VMUserMpiInitUTest.F90, line 646
-  PET            0  Test Elapsed Time     1.271253999999999       msec.
+  PET            0  Test Elapsed Time     1.231709000000011       msec.
             2 f4array3(            2 )=    2.000000     f4array3_soln( 
             2 )=    2.000000    
   PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 411
@@ -510,4 +510,4 @@ ncores = 4
             2 )=    302.0000    
   PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUserMpiInitUTest.F90, line 487
   Ending Test, file ESMF_VMUserMpiInitUTest.F90, line 646
-  PET            2  Test Elapsed Time     1.507798000000005       msec.
+  PET            2  Test Elapsed Time     1.513187999999999       msec.

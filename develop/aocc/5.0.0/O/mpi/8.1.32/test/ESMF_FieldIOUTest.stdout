@@ -1,4 +1,4 @@
-2026-07-28 05:00:37
+2026-07-29 04:51:59
   Beginning Test, file ESMF_FieldIOUTest.F90, line 126
   NUMBER_OF_PROCESSORS            4
   PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 149
@@ -215,8 +215,8 @@
   PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 955
   PASS  Get Farray_gr from field, ESMF_FieldIOUTest.F90, line 969
   PASS  Compare read-in data with expected, ESMF_FieldIOUTest.F90, line 983
-  PASS  Create a gl-r--r--r-- 1 Gerhard.Theurich nggps_emc 1736 Jul 28 05:29 field_2DE.nc
--rw-r--r-- 1 Gerhard.Theurich nggps_emc 1736 Jul 28 05:29 field_2DE.nc
+  PASS  Create a gl-r--r--r-- 1 Gerhard.Theurich nggps_emc 1736 Jul 29 05:18 field_2DE.nc
+-rw-r--r-- 1 Gerhard.Theurich nggps_emc 1736 Jul 29 05:18 field_2DE.nc
 oablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
   PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 1009
   PASS  Destroy globally indexed Grid, ESMF_FieldIOUTest.F90, line 1021
@@ -286,6 +286,38 @@ oablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
       "NamedAliasCount": 0
     }
   }
+}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x55d9ff95c880:
+            rank = 2, typekind = 6, base_addr = 0x55d9ff951ea0
+            dim[0] = 10  dim[1] = 8  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  6.91293e-310
+( 2, 1) =  0
+( 3, 1) =  6.91293e-310
+( 4, 1) =  0
+( 5, 1) =  6.91293e-310
+( 6, 1) =  6.91293e-310
+( 7, 1) =  6.91293e-310
+( 8, 1) =  6.91293e-310
+( 9, 1) =  6.91293e-310
+(10, 1) =  0
+  skipping to end ...
+( 1, 8) =  4.94066e-324
+( 2, 8) =  0
+( 3, 8) =  0
+( 4, 8) =  0
+( 5, 8) =  4.66372e-310
+( 6, 8) =  0
+( 7, 8) =  0
+( 8, 8) =  0
+( 9, 8) =  0
+(10, 8) =  4.66372e-310
+--- ESMCI::Array::print end ---
   PASS  Create a gloablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
   PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 1009
   PASS  Destroy globally indexed Grid, ESMF_FieldIOUTest.F90, line 1021
@@ -336,8 +368,8 @@ DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x55e0cc02b200:
-            rank = 2, typekind = 6, base_addr = 0x55e0cc024fd0
+LocalArrayPrint: Array at address 0x55dc0a756650:
+            rank = 2, typekind = 6, base_addr = 0x55dc0a750420
             dim[0] = 10  dim[1] = 8  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  -nan
@@ -348,14 +380,14 @@ LocalArrayPrint: Array at address 0x55e0cc02b200:
 ( 6, 1) =  0
 ( 7, 1) =  0
 ( 8, 1) =  2.61361e-321
-( 9, 1) =  4.66516e-310
-(10, 1) =  4.66516e-310
+( 9, 1) =  4.66416e-310
+(10, 1) =  4.66416e-310
   skipping to end ...
 ( 1, 8) =  0
 ( 2, 8) =  0
 ( 3, 8) =  3.00392e-321
 ( 4, 8) =  3.95253e-322
-( 5, 8) =  4.66618e-310
+( 5, 8) =  4.66358e-310
 ( 6, 8) =  0
 ( 7, 8) =  -nan
 ( 8, 8) =  0
@@ -412,8 +444,8 @@ DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x55688e17fc80:
-            rank = 2, typekind = 6, base_addr = 0x55688e179aa0
+LocalArrayPrint: Array at address 0x55778a121d80:
+            rank = 2, typekind = 6, base_addr = 0x55778a11bb60
             dim[0] = 10  dim[1] = 8  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  -nan
@@ -424,14 +456,14 @@ LocalArrayPrint: Array at address 0x55688e17fc80:
 ( 6, 1) =  0
 ( 7, 1) =  0
 ( 8, 1) =  2.61361e-321
-( 9, 1) =  4.63965e-310
-(10, 1) =  4.63965e-310
+( 9, 1) =  4.64283e-310
+(10, 1) =  4.64283e-310
   skipping to end ...
 ( 1, 8) =  0
 ( 2, 8) =  0
 ( 3, 8) =  3.00392e-321
 ( 4, 8) =  3.95253e-322
-( 5, 8) =  4.64077e-310
+( 5, 8) =  4.64184e-310
 ( 6, 8) =  0
 ( 7, 8) =  -nan
 ( 8, 8) =  0
@@ -463,63 +495,31 @@ DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x559199076070:
-            rank = 2, typekind = 6, base_addr = 0x559199074ed0
+LocalArrayPrint: Array at address 0x5654ccc55170:
+            rank = 2, typekind = 6, base_addr = 0x5654ccc57d90
             dim[0] = 10  dim[1] = 8  
   Real, *8, Dim 2, Data values:
-( 1, 1) =  0
+( 1, 1) =  6.92164e-310
 ( 2, 1) =  0
-( 3, 1) =  2.37152e-322
-( 4, 1) =  2.37152e-322
-( 5, 1) =  4.64903e-310
-( 6, 1) =  2.122e-314
-( 7, 1) =  4.19305e+228
-( 8, 1) =  1.2732e-312
-( 9, 1) =  0
-(10, 1) =  2.53456e-321
-  skipping to end ...
-( 1, 8) =  0
-( 2, 8) =  0
-( 3, 8) =  3.00392e-321
-( 4, 8) =  3.95253e-322
-( 5, 8) =  4.64903e-310
-( 6, 8) =  0
-( 7, 8) =  -nan
-( 8, 8) =  0
-( 9, 8) =  0
-(10, 8) =  0
---- ESMCI::Array::print end ---
-}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x55f1ac0fb6a0:
-            rank = 2, typekind = 6, base_addr = 0x55f1ac279f70
-            dim[0] = 10  dim[1] = 8  
-  Real, *8, Dim 2, Data values:
-( 1, 1) =  0
-( 2, 1) =  0
-( 3, 1) =  0
+( 3, 1) =  6.92164e-310
 ( 4, 1) =  0
-( 5, 1) =  4.66875e-310
-( 6, 1) =  4.66875e-310
-( 7, 1) =  0
-( 8, 1) =  0
-( 9, 1) =  4.66875e-310
-(10, 1) =  4.66875e-310
+( 5, 1) =  6.92164e-310
+( 6, 1) =  6.92164e-310
+( 7, 1) =  6.92164e-310
+( 8, 1) =  6.92164e-310
+( 9, 1) =  6.92164e-310
+(10, 1) =  0
   skipping to end ...
-( 1, 8) =  0
-( 2, 8) =  3.79936e-321
-( 3, 8) =  4.66875e-310
-( 4, 8) =  4.66875e-310
-( 5, 8) =  0
-( 6, 8) =  3.64126e-321
-( 7, 8) =  4.66875e-310
-( 8, 8) =  4.66875e-310
-( 9, 8) =  0
-(10, 8) =  3.48316e-321
+( 1, 8) =  4.68911e-310
+( 2, 8) =  4.94066e-324
+( 3, 8) =  4.74303e-322
+( 4, 8) =  2.37152e-322
+( 5, 8) =  4.68911e-310
+( 6, 8) =  4.68978e-310
+( 7, 8) =  3.99727e+252
+( 8, 8) =  3.28476e-317
+( 9, 8) =  3.24107e-321
+(10, 8) =  3.95253e-322
 --- ESMCI::Array::print end ---
  arrayrank =             2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
@@ -717,19 +717,19 @@ LocalArrayPrint: Array at address 0x55f1ac0fb6a0:
   PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1836
   PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1888
   Ending Test, file ESMF_FieldIOUTest.F90, line 1898
-  PET            1  Test Elapsed Time     90.86686800000000       msec.
+  PET            1  Test Elapsed Time     90.38907300000000       msec.
   PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1828
   PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1836
   PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1888
   Ending Test, file ESMF_FieldIOUTest.F90, line 1898
-  PET            3  Test Elapsed Time     91.83086300000001       msec.
+  PET            3  Test Elapsed Time     91.19371500000001       msec.
   PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1828
   PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1836
   PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1888
   Ending Test, file ESMF_FieldIOUTest.F90, line 1898
-  PET            2  Test Elapsed Time     88.84702700000001       msec.
+  PET            2  Test Elapsed Time     88.45668400000000       msec.
   PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1828
   PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1836
   PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1888
   Ending Test, file ESMF_FieldIOUTest.F90, line 1898
-  PET            0  Test Elapsed Time     65.56742700000000       msec.
+  PET            0  Test Elapsed Time     65.19389500000000       msec.
