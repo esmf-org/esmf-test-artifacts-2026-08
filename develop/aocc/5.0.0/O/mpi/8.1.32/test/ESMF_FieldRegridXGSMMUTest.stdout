@@ -1,4 +1,4 @@
-2026-07-30 04:43:58
+2026-07-31 04:49:39
   Beginning Test, file ESMF_FieldRegridXGSMMUTest.F90, line 51
   NUMBER_OF_PROCESSORS            2
   PASS  Create xgrid and regrid through xgrid, const src flux, ESMF_FieldRegridXGSMMUTest.F90, line 60
@@ -84,32 +84,6 @@ Member on this PET appears to be an actual member.
 DistGrid-VM: localPet = 0, CurrentVM: localPet = 0
 DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
 --- ESMCI::DistGrid::print end ---
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'Field068'
- Base name    = Field068
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
-} Field status =             4
- gridrank =             1
---- ESMCI::Array::print start ---
- Base name    = Array069
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{
-  "ESMF": {
-    "Instance": {
-      "NamedAliasCount": 0
-    }
-  }
   Beginning Test, file ESMF_FieldRegridXGSMMUTest.F90, line 51
   NUMBER_OF_PROCESSORS            2
   PASS  Create xgrid and regrid through xgrid, const src flux, ESMF_FieldRegridXGSMMUTest.F90, line 60
@@ -202,6 +176,50 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'Field068'
+ Base name    = Field068
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+} Field status =             4
+ gridrank =             1
+--- ESMCI::Array::print start ---
+ Base name    = Array069
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{
+  "ESMF": {
+    "Instance": {
+      "NamedAliasCount": 0
+    }
+  }
+}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 2
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x560f74ef2f60:
+            rank = 1, typekind = 6, base_addr = 0x560f751e0130
+            dim[0] = 7  
+  Real, *8, Dim 1, Data values:
+( 1) =  0
+( 2) =  0
+( 3) =  0
+( 4) =  0
+( 5) =  0
+( 6) =  0
+( 7) =  0
+--- ESMCI::Array::print end ---
 {
   "ESMF": {
     "Instance": {
@@ -227,8 +245,8 @@ DistGrid dimCount = 1
 deCount = 2
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x5587fc5ca760:
-            rank = 1, typekind = 6, base_addr = 0x5587fc8b7750
+LocalArrayPrint: Array at address 0x55f23ef16760:
+            rank = 1, typekind = 6, base_addr = 0x55f23f2036a0
             dim[0] = 5  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -236,24 +254,6 @@ LocalArrayPrint: Array at address 0x5587fc5ca760:
 ( 3) =  0
 ( 4) =  0
 ( 5) =  0
---- ESMCI::Array::print end ---
-}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 2
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x564bf6e8cf60:
-            rank = 1, typekind = 6, base_addr = 0x564bf717a0f0
-            dim[0] = 7  
-  Real, *8, Dim 1, Data values:
-( 1) =  0
-( 2) =  0
-( 3) =  0
-( 4) =  0
-( 5) =  0
-( 6) =  0
-( 7) =  0
 --- ESMCI::Array::print end ---
  arrayrank =             1
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
@@ -924,7 +924,6 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
            46 ->          122
            56 ->          122
            46 ->          123
-           47 ->          123
            11 ->           15
             1 ->           16
             2 ->           16
@@ -1061,6 +1060,7 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
            52 ->          115
            42 ->          116
            43 ->          116
+           47 ->          123
            52 ->          116
            53 ->          116
            43 ->          117
@@ -1353,7 +1353,7 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
     2.000000000000002         2.000000000000000         1.999999999994355      
     2.000000000000000         2.000000000000000         2.000000000018177      
     2.000000000000000         1.999999999997238         2.000000000000002      
-    1.999999999999996         1.999999999999996         1.999999999999994      
+    1.999999999999997         1.999999999999996         1.999999999999994      
     1.999999999999999         1.999999999999996         2.000000000000000      
     1.999999999999999         2.000000000000006         2.000000000000004      
     2.000000000000002         2.000000000000008         1.999999999999996      
@@ -1364,7 +1364,7 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
     2.000000000000000         1.999999999999997         2.000000000000001     
   PASS  Regrid then create xgrid and regrid through xgrid, overlapping cut, ESMF_FieldRegridXGSMMUTest.F90, line 102
   Ending Test, file ESMF_FieldRegridXGSMMUTest.F90, line 112
-  PET            1  Test Elapsed Time     93.17053100000000       msec.
+  PET            1  Test Elapsed Time     92.88130799999999       msec.
             0    2.000000000000000         1.999999999999999      
     2.000000000000000         1.999999999999999         2.000000000000000      
     2.000000000000001         1.999999999999997         1.999999999999998      
@@ -1400,4 +1400,4 @@ DistGrid-VM: petCount = 2, CurrentVM: petCount = 2
     2.000000000000003         2.000000000000000         1.999999999999997     
   PASS  Regrid then create xgrid and regrid through xgrid, overlapping cut, ESMF_FieldRegridXGSMMUTest.F90, line 102
   Ending Test, file ESMF_FieldRegridXGSMMUTest.F90, line 112
-  PET            0  Test Elapsed Time     93.59388199999999       msec.
+  PET            0  Test Elapsed Time     93.78442900000000       msec.
