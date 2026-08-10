@@ -215,14 +215,14 @@ ESMF_F90ESMFPRELOADLINKLIBS=-lesmf -lesmftrace_preload -lpioc -lnetcdff -lnetcdf
 
 
 --------------------------------------------------------------
-Compiling on Sun Aug 9 04:53:48 AM EDT 2026 on c5n1112
-Machine characteristics: Linux c5n1112 6.4.0-150600.23.53_15.0.11-cray_shasta_c #1 SMP Tue Jul 15 19:33:24 UTC 2025 (80d95d6) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Aug 10 04:19:06 AM EDT 2026 on c5n1781
+Machine characteristics: Linux c5n1781 6.4.0-150600.23.53_15.0.11-cray_shasta_c #1 SMP Tue Jul 15 19:33:24 UTC 2025 (80d95d6) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf'
 Making directory /tmp/nvhpc_25.5_mpi_g_develop/esmf/lib/libg/Unicos.nvhpc.64.mpi.default for library
-Making directory /tmp/nvhpc_25.5_mpi_g_develop/esmf/src/include for include files
 Making directory /tmp/nvhpc_25.5_mpi_g_develop/esmf/mod/modg/Unicos.nvhpc.64.mpi.default for *.mod files
+Making directory /tmp/nvhpc_25.5_mpi_g_develop/esmf/src/include for include files
 Making directory /tmp/nvhpc_25.5_mpi_g_develop/esmf/obj/objg/Unicos.nvhpc.64.mpi.default for *.o files
 cd /tmp/nvhpc_25.5_mpi_g_develop/esmf ;\
 make ACTION=tree_include tree
@@ -2559,15 +2559,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
           this->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
                     ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C", line 1121: warning: variable "ringingDueToCurrTimeStep" was declared but never referenced [declared_but_not_referenced]
-        bool ringingDueToCurrTimeStep=false;
-             ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C", line 109: warning: subscript out of range [subscript_out_of_range]
           clock->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
                      ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C", line 1121: warning: variable "ringingDueToCurrTimeStep" was declared but never referenced [declared_but_not_referenced]
+        bool ringingDueToCurrTimeStep=false;
+             ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C", line 334: warning: subscript out of range [subscript_out_of_range]
           this->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
@@ -2635,18 +2635,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
           break;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 1863: warning: statement is unreachable [code_is_unreachable]
-          break;
-          ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 1867: warning: statement is unreachable [code_is_unreachable]
-          break;
-          ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 1875: warning: statement is unreachable [code_is_unreachable]
-          break;
-          ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C", line 840: warning: statement is unreachable [code_is_unreachable]
             break;
             ^
@@ -2673,11 +2661,17 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
             break;
             ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_BaseTime.C", line 42: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 1863: warning: statement is unreachable [code_is_unreachable]
+          break;
+          ^
 
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 1867: warning: statement is unreachable [code_is_unreachable]
+          break;
+          ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 1875: warning: statement is unreachable [code_is_unreachable]
+          break;
+          ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C", line 2617: warning: statement is unreachable [code_is_unreachable]
           break;
@@ -2691,13 +2685,23 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
           break;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C", line 37: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_BaseTime.C", line 42: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C", line 1577: warning: statement is unreachable [code_is_unreachable]
             break;
             ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C", line 37: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C", line 37: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C", line 1305: warning: statement is unreachable [code_is_unreachable]
               break;
@@ -2708,10 +2712,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C", line 1313: warning: statement is unreachable [code_is_unreachable]
               break;
               ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C", line 37: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C", line 2514: warning: statement is unreachable [code_is_unreachable]
           break;
@@ -3844,7 +3844,7 @@ CMAKE_EXE_LINKER_FLAGS
 # General
 -------
 PIO Version:		2.6.6
-Configured On:		Sun Aug  9 04:58:55 AM EDT 2026
+Configured On:		Mon Aug 10 04:24:13 AM EDT 2026
 Host System:		x86_64-Linux-6.4.0-150600.23.53_15.0.11-cray_shasta_c
 Build Directory: 	/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/PIO/Build
 Install Prefix:         /tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/PIO/Install
@@ -3876,7 +3876,7 @@ PIO Logging:		yes
 MPIEXEC:		mpiexec
 Fortran:		no
 
--- Configuring done (5.6s)
+-- Configuring done (5.5s)
 -- Generating done (0.1s)
 -- Build files have been written to: /tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/PIO/Build
 make[7]: Entering directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/PIO/Build'
@@ -4051,15 +4051,15 @@ CC -c -std=c++11 -g  -fpic -mcmodel=small -pthread  -mp -I/tmp/nvhpc_25.5_mpi_g_
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C", line 197: warning: variable "numPETs" was set but never used [set_but_not_used]
-      int mypet, numPETs;
-                 ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/../include/ESMCI_IO.h", line 268: warning: type qualifier on return type is meaningless [useless_type_qualifier_on_return_type]
       const int getNtiles(void) {
       ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C", line 197: warning: variable "numPETs" was set but never used [set_but_not_used]
+      int mypet, numPETs;
+                 ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
@@ -4071,15 +4071,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int localrc = ESMC_RC_NOT_IMPL;         // local return code
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/ESMCI_IO.C", line 492: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/ESMCI_IO_Handler.C", line 491: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc = ESMF_RC_NOT_IMPL;         // local return code
         ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/ESMCI_IO.C", line 492: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/IO/src/ESMCI_PIO_Handler.C", line 548: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc; // Only for debug!
@@ -4490,6 +4490,16 @@ make[7]: Entering directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf/mod/modg/Unicos.
 make[8]: Entering directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf/mod/modg/Unicos.nvhpc.64.mpi.default'
 CC -c -std=c++11 -g  -fpic -mcmodel=small -pthread  -mp -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/../include -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/build_config/Unicos.nvhpc.default -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.11/nvidia/23.3/include -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+g17f2be238d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DYAML=ESMF_YAML -DESMF_YAMLCPP=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/nvhpc_25.5_mpi_g_develop/esmf -D__SDIR__='"src/Infrastructure/Grid/interface"' -DESMF_CXXSTD=11 -DESMF_NO_F2018ASSUMEDTYPE /tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C -o /tmp/nvhpc_25.5_mpi_g_develop/esmf/obj/objg/Unicos.nvhpc.64.mpi.default/ESMCI_Grid_F.o
 CC -c -std=c++11 -g  -fpic -mcmodel=small -pthread  -mp -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/../include -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/build_config/Unicos.nvhpc.default -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.11/nvidia/23.3/include -I/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"develop+g17f2be238d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_PIO=1 -DESMF_NETCDF=1 -DYAML=ESMF_YAML -DESMF_YAMLCPP=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/nvhpc_25.5_mpi_g_develop/esmf -D__SDIR__='"src/Infrastructure/Grid/interface"' -DESMF_CXXSTD=11 -DESMF_NO_F2018ASSUMEDTYPE /tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMC_Grid.C -o /tmp/nvhpc_25.5_mpi_g_develop/esmf/obj/objg/Unicos.nvhpc.64.mpi.default/ESMC_Grid.o
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMC_Grid.C", line 184: warning: variable "gridXCoord" was set but never used [set_but_not_used]
+    double *gridXCoord;
+            ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMC_Grid.C", line 188: warning: variable "gridYCoord" was set but never used [set_but_not_used]
+    double *gridYCoord;
+            ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C", line 254: warning: variable "localrc" was set but never used [set_but_not_used]
       int localrc;
           ^
@@ -4551,16 +4561,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C", line 942: warning: variable "localrc" was set but never used [set_but_not_used]
       int localrc;
           ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMC_Grid.C", line 184: warning: variable "gridXCoord" was set but never used [set_but_not_used]
-    double *gridXCoord;
-            ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMC_Grid.C", line 188: warning: variable "gridYCoord" was set but never used [set_but_not_used]
-    double *gridYCoord;
-            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C", line 1221: warning: variable "tile" was declared but never referenced [declared_but_not_referenced]
       int tile, coord,localDE,staggerloc,dimCount,distDimCount;
@@ -4910,12 +4910,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     double lon_r,lat_r;
                  ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C", line 30: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C", line 3332: warning: incompatible redefinition of macro "DOT_PRODUCT3D" (declared at line 1061) [bad_macro_redef]
   #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
           ^
@@ -4938,9 +4932,21 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C", line 30: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 82: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
    int rc;
        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C", line 122: warning: variable "idx" was declared but never referenced [declared_but_not_referenced]
       UInt idx = lids[i];
@@ -4950,15 +4956,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     UInt list1_size;
          ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C", line 177: warning: variable "rc" was set but never used [set_but_not_used]
+    int rc, localrc;
+        ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
                          ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C", line 177: warning: variable "rc" was set but never used [set_but_not_used]
-    int rc, localrc;
-        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
@@ -4986,53 +4992,9 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   }
   ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 768: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
    int rc;
        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1720: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1786: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1851: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1897: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 140: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 215: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C", line 133: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-   int merr;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C", line 269: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-    int merr;
-        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 97: warning: variable "found_attr" was declared but never referenced [declared_but_not_referenced]
       bool found_attr=false;
@@ -5048,17 +5010,27 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 668: warning: variable "buf" was declared but never referenced [declared_but_not_referenced]
-     char buf[512];
-          ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 705: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C", line 133: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+   int merr;
+       ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C", line 269: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+    int merr;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 810: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
-        ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1720: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1786: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
@@ -5066,37 +5038,29 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 871: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 140: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 934: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 1001: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 1073: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-    int dimid;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 2172: warning: missing return statement at end of non-void function "_num_nodes_to_elem_type" [implicit_return_from_non_void_function]
-  }
-  ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1851: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 169: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 1897: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 215: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
         ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 195: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
         ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 449: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
-      int dimid;
-          ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 298: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
@@ -5110,12 +5074,12 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int dimid;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 1044: warning: conversion from a string literal to "char *" is deprecated [deprecated_string_conv]
-      char *esmfmesh_filename=".esmf.nc";
-                              ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 705: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
+        ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 1024: warning: variable "piorc" was declared but never referenced [declared_but_not_referenced]
-    int piorc;
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 810: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
         ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 635: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
@@ -5126,11 +5090,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int varid;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 871: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
+        ^
 
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 934: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 759: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
@@ -5140,23 +5106,87 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int varid;
         ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 1001: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C", line 1073: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+    int dimid;
+        ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 883: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 1502: warning: variable "nonde_index" was declared but never referenced [declared_but_not_referenced]
-        int nonde_index[2];
-            ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 449: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
+      int dimid;
+          ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 1008: warning: variable "dimid" was declared but never referenced [declared_but_not_referenced]
     int dimid;
         ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 1044: warning: conversion from a string literal to "char *" is deprecated [deprecated_string_conv]
+      char *esmfmesh_filename=".esmf.nc";
+                              ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
                          ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 1024: warning: variable "piorc" was declared but never referenced [declared_but_not_referenced]
+    int piorc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 2172: warning: missing return statement at end of non-void function "_num_nodes_to_elem_type" [implicit_return_from_non_void_function]
+  }
+  ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 668: warning: variable "buf" was declared but never referenced [declared_but_not_referenced]
+     char buf[512];
+          ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 117: warning: variable "iiptr" was declared but never referenced [declared_but_not_referenced]
+      ESMCI::InterArray<int> *iiptr = &ii;
+                              ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 2570: warning: variable "orig_sdim" was declared but never referenced [declared_but_not_referenced]
+      int orig_sdim=mesh->orig_spatial_dim;
+          ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 239: warning: variable "iiptr" was declared but never referenced [declared_but_not_referenced]
+      ESMCI::InterArray<int> *iiptr = &ii;
+                              ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 328: warning: variable "iiptr" was declared but never referenced [declared_but_not_referenced]
+      ESMCI::InterArray<int> *iiptr = &ii;
+                              ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 3046: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 3112: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 1502: warning: variable "nonde_index" was declared but never referenced [declared_but_not_referenced]
+        int nonde_index[2];
+            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 1936: warning: integer conversion resulted in a change of sign [integer_sign_change]
       int proc=BAD_PROC;
@@ -5168,9 +5198,17 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1957: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 2240: warning: variable "index" was set but never used [set_but_not_used]
          int index[2];
              ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 2007: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+   int rc;
+       ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 2299: warning: variable "index" was set but never used [set_but_not_used]
      int index[2];
@@ -5188,39 +5226,29 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
      int nonde_index[2];
          ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 2570: warning: variable "orig_sdim" was declared but never referenced [declared_but_not_referenced]
-      int orig_sdim=mesh->orig_spatial_dim;
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 2063: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
+      int rc;
           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 2510: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
     int rc;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 3046: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 3112: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C", line 2605: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
       int rc;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C", line 2189: warning: pointless comparison of unsigned integer with zero [unsigned_compare_with_zero]
+         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
                          ^
 
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C", line 2215: warning: pointless comparison of unsigned integer with zero [unsigned_compare_with_zero]
+         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+                         ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C", line 296: warning: expression has no effect [expr_has_no_effect]
      for (ni2; ni2 != ne2; ++ni2) {
           ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 117: warning: variable "iiptr" was declared but never referenced [declared_but_not_referenced]
-      ESMCI::InterArray<int> *iiptr = &ii;
-                              ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C", line 369: warning: expression has no effect [expr_has_no_effect]
      for (ni2; ni2 != ne2; ++ni2) {
@@ -5234,13 +5262,11 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int pdim=2, sdim=2, ndof=2;
                         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 239: warning: variable "iiptr" was declared but never referenced [declared_but_not_referenced]
-      ESMCI::InterArray<int> *iiptr = &ii;
-                              ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 328: warning: variable "iiptr" was declared but never referenced [declared_but_not_referenced]
-      ESMCI::InterArray<int> *iiptr = &ii;
-                              ^
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C", line 629: warning: missing return statement at end of non-void function "ESMCI::ElemType2TopoCXX" [implicit_return_from_non_void_function]
   }
@@ -5254,24 +5280,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     for (ni2; ni2 != ne2; ++ni2) {
          ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C", line 1875: warning: variable "r" was declared but never referenced [declared_but_not_referenced]
-    int r;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C", line 2189: warning: pointless comparison of unsigned integer with zero [unsigned_compare_with_zero]
-         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
-                         ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C", line 2215: warning: pointless comparison of unsigned integer with zero [unsigned_compare_with_zero]
-         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
-                         ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C", line 184: warning: integer conversion resulted in a change of sign [integer_sign_change]
         int elem_gid=GTOM_BAD_ID;
                      ^
@@ -5279,6 +5287,10 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C", line 313: warning: variable "nonde_index" was declared but never referenced [declared_but_not_referenced]
         int nonde_index[2];
             ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C", line 1875: warning: variable "r" was declared but never referenced [declared_but_not_referenced]
+    int r;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C", line 646: warning: variable "index" was set but never used [set_but_not_used]
          int index[2];
@@ -5300,29 +5312,17 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
      int nonde_index[2];
          ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1957: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 2007: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-   int rc;
-       ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C", line 260: warning: variable "rc" was set but never used [set_but_not_used]
+    int rc, localrc;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 6414: warning: variable "pdim" was declared but never referenced [declared_but_not_referenced]
        int pdim=*pdim_ptr;
            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 2063: warning: variable "rc" was declared but never referenced [declared_but_not_referenced]
-      int rc;
-          ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C", line 1157: warning: missing return statement at end of non-void function "ESMCI::ElemType2Topo" [implicit_return_from_non_void_function]
   }
   ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C", line 260: warning: variable "rc" was set but never used [set_but_not_used]
-    int rc, localrc;
-        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C", line 1171: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
             int localrc;
@@ -5343,10 +5343,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 730: warning: variable "i" was declared but never referenced [declared_but_not_referenced]
     int i; int num_clip_p=clip.size(), num_subject_p=subject.size();
         ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 808: warning: variable "count" was declared but never referenced [declared_but_not_referenced]
-    static unsigned int count = 0;
-                        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 244: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc, merr;
@@ -5376,25 +5372,17 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
         *src_elem_area=*src_elem_area+src_elem_area2;
                                       ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 808: warning: variable "count" was declared but never referenced [declared_but_not_referenced]
+    static unsigned int count = 0;
+                        ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 487: warning: expression has no effect [expr_has_no_effect]
       for (ei; ei != ee; ++ei) {
            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C", line 322: warning: variable "rc" was set but never used [set_but_not_used]
-    int rc, localrc;
-        ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 617: warning: expression has no effect [expr_has_no_effect]
       for (ei; ei != ee; ++ei) {
            ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 2249: warning: variable "DEG2RAD" was declared but never referenced [declared_but_not_referenced]
-    const double DEG2RAD = M_PI/180.0;
-                 ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 2277: warning: variable "RAD2DEG" was declared but never referenced [declared_but_not_referenced]
-    const double RAD2DEG = 180.0/M_PI;
-                 ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 70: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
@@ -5412,10 +5400,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int localrc, merr;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 73: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-                   ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C", line 1349: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
       int merr,localrc;
                ^
@@ -5424,9 +5408,9 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int localrc, merr;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 1014: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-      int localrc;
-          ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C", line 322: warning: variable "rc" was set but never used [set_but_not_used]
+    int rc, localrc;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 898: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
       int merr;
@@ -5436,9 +5420,65 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       MBMesh *mbmp_regrid=mbmp;
               ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 1110: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 220: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
-          ^
+                   ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 2249: warning: variable "DEG2RAD" was declared but never referenced [declared_but_not_referenced]
+    const double DEG2RAD = M_PI/180.0;
+                 ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 73: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+                   ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C", line 2277: warning: variable "RAD2DEG" was declared but never referenced [declared_but_not_referenced]
+    const double RAD2DEG = 180.0/M_PI;
+                 ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1016: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1032: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1049: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1067: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1083: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 518: warning: missing return statement at end of non-void function "MBMesh_ElemType2NumNodes" [implicit_return_from_non_void_function]
+  }
+  ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1100: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1121: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 535: warning: missing return statement at end of non-void function "MBMesh_num_nodes_to_esmf_etype" [implicit_return_from_non_void_function]
+  }
+  ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1141: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1161: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C", line 160: warning: variable "ignoreDegenerate" was set but never used [set_but_not_used]
       bool ignoreDegenerate=false;
@@ -5456,9 +5496,9 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       bool degenerate=false;
            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 220: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-                   ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1181: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+    int localrc;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C", line 133: warning: variable "srcarray" was declared but never referenced [declared_but_not_referenced]
     ESMCI::Array &srcarray = **arraysrcpp;
@@ -5468,59 +5508,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     ESMCI::Array &dstarray = **arraydstpp;
                   ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 518: warning: missing return statement at end of non-void function "MBMesh_ElemType2NumNodes" [implicit_return_from_non_void_function]
-  }
-  ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 1014: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+      int localrc;
+          ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1016: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1296: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 535: warning: missing return statement at end of non-void function "MBMesh_num_nodes_to_esmf_etype" [implicit_return_from_non_void_function]
-  }
-  ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1032: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 1343: warning: variable "mpi_comm" was set but never used [set_but_not_used]
-      MPI_Comm mpi_comm;
-               ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1049: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1067: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1083: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1100: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1121: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1141: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 124: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-                   ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1161: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1181: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1334: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
         ^
 
@@ -5532,13 +5528,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int localrc, merr;
                    ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1296: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 124: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+                   ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1334: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-    int localrc;
-        ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 1110: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+          ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1495: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc, merr;
@@ -5547,14 +5543,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1519: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
         ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 296: warning: variable "coordSys" was declared but never referenced [declared_but_not_referenced]
-      ESMC_CoordSys_Flag coordSys=mbmp->coordsys;
-                         ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 855: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-                   ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1535: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
@@ -5580,9 +5568,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int localrc;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1188: warning: missing return statement at end of non-void function "MBMesh_get_entity_type" [implicit_return_from_non_void_function]
-  }
-  ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 855: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+                   ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 1343: warning: variable "mpi_comm" was set but never used [set_but_not_used]
+      MPI_Comm mpi_comm;
+               ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1652: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
@@ -5608,13 +5600,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int localrc;
         ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1208: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-          ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1188: warning: missing return statement at end of non-void function "MBMesh_get_entity_type" [implicit_return_from_non_void_function]
+  }
+  ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1208: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-                   ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 296: warning: variable "coordSys" was declared but never referenced [declared_but_not_referenced]
+      ESMC_CoordSys_Flag coordSys=mbmp->coordsys;
+                         ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1762: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
@@ -5624,8 +5616,24 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int localrc;
         ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1208: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+          ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1208: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+                   ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 132: warning: variable "mpi_comm" was set but never used [set_but_not_used]
       MPI_Comm mpi_comm;
+               ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C", line 212: warning: variable "moab_meshA" was declared but never referenced [declared_but_not_referenced]
+    Interface *moab_meshA=mbmAp->mesh;
+               ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C", line 213: warning: variable "moab_meshB" was declared but never referenced [declared_but_not_referenced]
+    Interface *moab_meshB=mbmBp->mesh;
                ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1328: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
@@ -5636,14 +5644,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int localrc, merr;
                    ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C", line 212: warning: variable "moab_meshA" was declared but never referenced [declared_but_not_referenced]
-    Interface *moab_meshA=mbmAp->mesh;
-               ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C", line 213: warning: variable "moab_meshB" was declared but never referenced [declared_but_not_referenced]
-    Interface *moab_meshB=mbmBp->mesh;
-               ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1574: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
           ^
@@ -5651,10 +5651,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 1574: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
                    ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 219: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int merr;
-          ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 1827: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
     int localrc;
@@ -5700,6 +5696,14 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int localrc;
         ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 219: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int merr;
+          ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 2460: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+                   ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 1238: warning: variable "tmp_coords" was declared but never referenced [declared_but_not_referenced]
     double tmp_coords[MAX_NUM_POLY_COORDS];
            ^
@@ -5712,13 +5716,9 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int pdim=mbmp->pdim;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 2460: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 2786: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
-                   ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C", line 551: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-    int merr;
-        ^
+          ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 510: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
@@ -5736,9 +5736,9 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int localrc, merr;
                    ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C", line 2786: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-          ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C", line 551: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+    int merr;
+        ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 1110: warning: missing return statement at end of non-void function "ESMCI::calc_size_vert_comm" [implicit_return_from_non_void_function]
   }
@@ -5764,13 +5764,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int merr;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2245: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
-      int localrc, merr;
-                   ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 1454: warning: missing return statement at end of non-void function "ESMCI::calc_size_from_buff_elem_comm" [implicit_return_from_non_void_function]
   }
   ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C", line 2245: warning: variable "merr" was declared but never referenced [declared_but_not_referenced]
+      int localrc, merr;
+                   ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C", line 1468: warning: variable "localrc" was declared but never referenced [declared_but_not_referenced]
       int localrc, merr;
@@ -5824,7 +5824,7 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
       int localrc, merr;
           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C", line 41: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C", line 43: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -5844,7 +5844,11 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C", line 43: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C", line 41: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C", line 42: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -5860,14 +5864,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
    static const char *const version = "$Id$";
                             ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 68: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-   static const char *const version = "$Id$";
-                            ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C", line 42: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C", line 65: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
    static const char *const version = "$Id$";
                             ^
@@ -5876,19 +5872,27 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
    static const char *const version = "$Id$";
                             ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C", line 68: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+   static const char *const version = "$Id$";
+                            ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C", line 42: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
    static const char *const version =
                             ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1482: warning: function "cnsrv_check_for_mesh_errors" was declared but never referenced [declared_but_not_referenced]
+  static void cnsrv_check_for_mesh_errors(Mesh &mesh, bool ignore_degenerate, bool *concave, bool *clockwise, bool *degenerate) {
+              ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/ESMCI_DInfo.h", line 362: warning: variable "req_size" was declared but never referenced [declared_but_not_referenced]
     UInt req_size;
          ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C", line 36: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C", line 51: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C", line 51: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C", line 36: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -5896,25 +5900,17 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id: ESMCI_MeshRedist.C,v 1.23 2012/01/06 20:17:51 svasquez Exp $";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C", line 1482: warning: function "cnsrv_check_for_mesh_errors" was declared but never referenced [declared_but_not_referenced]
-  static void cnsrv_check_for_mesh_errors(Mesh &mesh, bool ignore_degenerate, bool *concave, bool *clockwise, bool *degenerate) {
-              ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 53: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C", line 49: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
    static const char *const version = "$Id$";
                             ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C", line 53: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C", line 35: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 52: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-   static const char *const version = "$Id$";
-                            ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 575: warning: function "triangulate" was declared but never referenced [declared_but_not_referenced]
-  static void triangulate(int sdim, int num_p, double *p, double *td, int *ti, int *tri_ind,
-              ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C", line 43: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id: ESMCI_MeshDual.C,v 1.23 2012/01/06 20:17:51 svasquez Exp $";
@@ -5928,20 +5924,24 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static bool debug=false;
               ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh.C", line 35: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 52: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+   static const char *const version = "$Id$";
+                            ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C", line 575: warning: function "triangulate" was declared but never referenced [declared_but_not_referenced]
+  static void triangulate(int sdim, int num_p, double *p, double *td, int *ti, int *tri_ind,
+              ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C", line 50: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 57: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id: ESMCI_MeshDual.C,v 1.23 2012/01/06 20:17:51 svasquez Exp $";
-                           ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C", line 43: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
+                           ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C", line 57: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id: ESMCI_MeshDual.C,v 1.23 2012/01/06 20:17:51 svasquez Exp $";
                            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C", line 72: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
@@ -6034,21 +6034,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Attr.C", line 18: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
@@ -6082,15 +6076,21 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MCoord.C", line 18: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
                          ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MCoord.C", line 18: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
@@ -6149,6 +6149,18 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GlobalIds.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_IOField.C", line 17: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
@@ -6159,16 +6171,20 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GlobalIds.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFamily.C", line 21: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C", line 284: warning: variable "done" was declared but never referenced [declared_but_not_referenced]
+    bool done = false;
+         ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
                          ^
@@ -6180,6 +6196,26 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
                          ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.C", line 26: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C", line 17: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshField.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C", line 1247: warning: pointless comparison of unsigned integer with zero [unsigned_compare_with_zero]
       if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
@@ -6194,42 +6230,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
                          ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C", line 284: warning: variable "done" was declared but never referenced [declared_but_not_referenced]
-    bool done = false;
-         ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.C", line 26: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C", line 17: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshField.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
@@ -6247,15 +6247,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C", line 27: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
                          ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C", line 27: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
@@ -6287,15 +6287,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C", line 22: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C", line 22: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C", line 22: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
    *        /           \ 
@@ -6315,12 +6315,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_SFuncAdaptor.C", line 19: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
@@ -6331,11 +6325,17 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C", line 19: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_RefineTopo.C", line 19: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_RefineTopo.C", line 19: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C", line 19: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -6346,12 +6346,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Migrator.C", line 18: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
-   *        /           \ 
-                         ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
@@ -6373,9 +6367,11 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C", line 32: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjTopo.h", line 110: warning: white space between backslash and newline in line splice ignored [white_space_inside_splice]
+   *        /           \ 
+                         ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C", line 34: warning: variable "ESMCI::version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
@@ -6386,6 +6382,10 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
                            ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C", line 32: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C", line 27: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
@@ -6427,6 +6427,10 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     unsigned int num_components = 0;
                  ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C", line 425: warning: variable "num_pnts" was declared but never referenced [declared_but_not_referenced]
+    int num_pnts;
+        ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h", line 315: warning: overloaded virtual function "ESMCI::MEValues<METRAITS, FIELD>::Setup [with METRAITS=ESMCI::METraits<double, double>, FIELD=ESMCI::MEField<ESMCI::_field>]" is only partially overridden in class "ESMCI::MESideValues<ESMCI::METraits<double, double>, ESMCI::MEField<ESMCI::_field>>" [partial_override]
   class MESideValues : public MEValues<METRAITS,FIELD> {
         ^
@@ -6437,9 +6441,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
         ^
           detected during instantiation of class "ESMCI::MESideValues<METRAITS, FIELD> [with METRAITS=ESMCI::METraits<ESMCI::fad_type, double>, FIELD=ESMCI::MEField<ESMCI::SField>]" at line 471 of "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C", line 425: warning: variable "num_pnts" was declared but never referenced [declared_but_not_referenced]
-    int num_pnts;
-        ^
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C", line 610: warning: variable "i" was declared but never referenced [declared_but_not_referenced]
+      for (UInt i = 0; ei != ee; ++ei) {
+                ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C", line 678: warning: variable "i" was declared but never referenced [declared_but_not_referenced]
+      for (UInt i = 0; ni != ne; ++ni) {
+                ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C", line 1055: warning: variable "subject_area" was declared but never referenced [declared_but_not_referenced]
               double subject_area = 0.;    
@@ -6453,14 +6461,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
               double *cd_sph, *clip_cd_sph;
                                ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C", line 610: warning: variable "i" was declared but never referenced [declared_but_not_referenced]
-      for (UInt i = 0; ei != ee; ++ei) {
-                ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C", line 678: warning: variable "i" was declared but never referenced [declared_but_not_referenced]
-      for (UInt i = 0; ni != ne; ++ni) {
-                ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C", line 1771: warning: variable "cd_sph" was declared but never referenced [declared_but_not_referenced]
               double *cd_sph, *clip_cd_sph;
                       ^
@@ -6468,10 +6468,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C", line 1771: warning: variable "clip_cd_sph" was declared but never referenced [declared_but_not_referenced]
               double *cd_sph, *clip_cd_sph;
                                ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C", line 345: warning: variable "found_elem" was set but never used [set_but_not_used]
-        bool found_elem = false;
-             ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C", line 1088: warning: variable "sdim" was declared but never referenced [declared_but_not_referenced]
     UInt sdim(0), pdim(0);
@@ -6492,6 +6488,10 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C", line 183: warning: statement is unreachable [code_is_unreachable]
       return false;
       ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C", line 345: warning: variable "found_elem" was set but never used [set_but_not_used]
+        bool found_elem = false;
+             ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C", line 221: warning: variable "num_sintd_nodes" was declared but never referenced [declared_but_not_referenced]
       int num_sintd_nodes;
@@ -6521,21 +6521,21 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C", line 39: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C", line 25: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C", line 44: warning: function "ESMCI::share_parametric_dim" was declared but never referenced [declared_but_not_referenced]
   static UInt share_parametric_dim(UInt pdim) {
               ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C", line 25: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C", line 40: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
@@ -6549,23 +6549,23 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C", line 28: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C", line 771: warning: function "ESMCI::OldProlongField" was declared but never referenced [declared_but_not_referenced]
   static void OldProlongField(std::vector<MeshObj*> &elems, MEField<> &coord) {
               ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C", line 28: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C", line 22: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C", line 27: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C", line 33: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C", line 33: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C", line 27: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -6585,10 +6585,6 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C", line 25: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C", line 30: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
@@ -6598,6 +6594,10 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
                            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C", line 44: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C", line 25: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -6842,7 +6842,7 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     int m = nsamples, n = ncoef, nrhs = 0, info=0, rank, ldb;
                                                    ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C", line 26: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C", line 24: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
    static const char *const version = "$Id$";
                             ^
 
@@ -6850,15 +6850,11 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C", line 24: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C", line 26: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
    static const char *const version = "$Id$";
                             ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C", line 38: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C", line 45: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -6870,9 +6866,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C", line 49: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C", line 45: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+   static const char *const version = "$Id$";
+                            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C", line 1407: warning: function "ESMCI::_write_level" was declared but never referenced [declared_but_not_referenced]
    static void _write_level(const char *filename, 
@@ -6882,15 +6882,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
     static void _add_weights_from_CreepNode(CreepNode *cnode, WMat &wts) {
                 ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C", line 23: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-   static const char *const version = "$Id$";
-                            ^
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C", line 45: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C", line 49: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C", line 36: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C", line 45: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -7773,15 +7773,15 @@ CC -c -std=c++11 -g  -fpic -mcmodel=small -pthread  -mp -I/tmp/nvhpc_25.5_mpi_g_
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C", line 34: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+   static const char *const version =
+                            ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C", line 49: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C", line 34: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-   static const char *const version =
-                            ^
 
 make[8]: Leaving directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf/mod/modg/Unicos.nvhpc.64.mpi.default'
 make[8]: Entering directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf/mod/modg/Unicos.nvhpc.64.mpi.default'
@@ -8405,15 +8405,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
         int rc;
             ^
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/State/interface/ESMCI_State.C", line 50: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/State/interface/ESMC_State.C", line 45: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/State/interface/ESMCI_State.C", line 50: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/State/interface/ESMCI_State_F.C", line 34: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
    static const char *const version = 
@@ -8906,13 +8906,13 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServCompSvrInfo.C", line 37: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServClientSocket.C", line 36: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServClientSocket.C", line 36: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServCompSvrInfo.C", line 37: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -8960,15 +8960,15 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServSocketUtils.C", line 48: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
+
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServDataMgr.C", line 40: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServSocketUtils.C", line 48: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
 
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServLowLevelSocket.C", line 58: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
@@ -9006,17 +9006,11 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
           int                             bytesSent = 0;
                                           ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServCompSvrMgr.C", line 40: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
-  static const char *const version = "$Id$";
-                           ^
-
-Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
-
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServCompSvrClient.C", line 49: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
-"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServGRAMClient.C", line 40: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServCompSvrMgr.C", line 40: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
   static const char *const version = "$Id$";
                            ^
 
@@ -9025,6 +9019,12 @@ Remark: individual warnings can be suppressed with "--diag_suppress <warning-nam
 "/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C", line 192: warning: variable "bytesSent" was set but never used [set_but_not_used]
           int                             bytesSent = 0;
                                           ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/tmp/nvhpc_25.5_mpi_g_develop/esmf/src/Superstructure/WebServices/src/ESMCI_WebServGRAMClient.C", line 40: warning: variable "version" was declared but never referenced [declared_but_not_referenced]
+  static const char *const version = "$Id$";
+                           ^
 
 Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
 
@@ -9820,6 +9820,6 @@ make[1]: Leaving directory '/tmp/nvhpc_25.5_mpi_g_develop/esmf'
 /tmp/nvhpc_25.5_mpi_g_develop/esmf/cmake/generate_config.py --esmfmkfile=/tmp/nvhpc_25.5_mpi_g_develop/esmf/lib/libg/Unicos.nvhpc.64.mpi.default/esmf.mk --template=/tmp/nvhpc_25.5_mpi_g_develop/esmf/cmake/ESMFConfig.cmake.in --outputdir=/tmp/nvhpc_25.5_mpi_g_develop/esmf/lib/libg/Unicos.nvhpc.64.mpi.default/cmake/ESMF
 Successfully generated config: /tmp/nvhpc_25.5_mpi_g_develop/esmf/lib/libg/Unicos.nvhpc.64.mpi.default/cmake/ESMF/ESMFConfig.cmake (MPI: TRUE, Imported Target: libesmf.so)
 Successfully generated version handler: /tmp/nvhpc_25.5_mpi_g_develop/esmf/lib/libg/Unicos.nvhpc.64.mpi.default/cmake/ESMF/ESMFConfigVersion.cmake
-ESMF library built successfully on Sun Aug 9 05:10:39 AM EDT 2026
+ESMF library built successfully on Mon Aug 10 04:36:02 AM EDT 2026
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
